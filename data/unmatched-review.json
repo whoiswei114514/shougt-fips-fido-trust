@@ -25,30 +25,6 @@
       ]
     },
     {
-      "aaguid": "d716019a-9f4e-4041-9750-17c78f8ae81a",
-      "description": "eToken Fusion BIO",
-      "vendor_guess": "thales",
-      "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FIDO20020260120002",
-      "versions": [
-        "FIDO_2_0",
-        "FIDO_2_1",
-        "FIDO_2_1_PRE"
-      ]
-    },
-    {
-      "aaguid": "146e77ef-11eb-4423-b847-ce77864e9411",
-      "description": "eToken Fusion NFC PIV",
-      "vendor_guess": "thales",
-      "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FIDO20020250617001",
-      "versions": [
-        "FIDO_2_0",
-        "FIDO_2_1",
-        "FIDO_2_1_PRE"
-      ]
-    },
-    {
       "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
       "description": "Feitian AllinOne FIDO2 Authenticator",
       "vendor_guess": "feitian",
@@ -232,40 +208,6 @@
       "vendor_guess": "hid",
       "fido_status": "FIDO_CERTIFIED_L1",
       "fido_cert_number": "FIDO20020251010002",
-      "versions": [
-        "FIDO_2_0",
-        "FIDO_2_1"
-      ]
-    },
-    {
-      "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
-      "description": "ID-One Card",
-      "vendor_guess": "idemia",
-      "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FIDO20020240906001",
-      "versions": [
-        "FIDO_2_0",
-        "FIDO_2_1"
-      ]
-    },
-    {
-      "aaguid": "6169eb16-f87a-42d8-978d-e1ac0c3f319f",
-      "description": "IDEMIA Access FIDO Smart Card",
-      "vendor_guess": "idemia",
-      "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FAXXX202600000",
-      "versions": [
-        "FIDO_2_0",
-        "FIDO_2_1",
-        "FIDO_2_1_PRE"
-      ]
-    },
-    {
-      "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
-      "description": "IDEMIA ID-ONE Card",
-      "vendor_guess": "idemia",
-      "fido_status": "FIDO_CERTIFIED_L1",
-      "fido_cert_number": "FIDO20020231019001",
       "versions": [
         "FIDO_2_0",
         "FIDO_2_1"

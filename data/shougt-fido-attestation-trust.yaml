@@ -1,5 +1,35 @@
 # Auto-generated FIDO_ATTESTATION_TRUST entries for shougt-v0-backend.
 # Place downloaded root PEMs under the backend working path and paste under `fido_attestation_trust:`.
+- id: etoken-fusion-bio-d716019a-050d4ebb
+  root_pem: certs/050d4ebb551eac10-etoken-fusion-bio.pem
+  aaguids:
+  - d716019a-9f4e-4041-9750-17c78f8ae81a
+  attachment: cross-platform
+  assurance: fips140-2-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID d716019a-9f4e-4041-9750-17c78f8ae81a,
+    FIDO_CERTIFIED_L2, FIDO20020260120002)
+  certification_reference: 'NIST CMVP #4517 (FIPS 140-2 Level 2, Historical, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517)'
+  valid_until: '2030-07-05T14:37:18Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-2
+    level: L2
+    reference: 'NIST CMVP #4517 (IDPrime 3930 FIDO, Historical)'
+- id: etoken-fusion-bio-d716019a-0c247f03
+  root_pem: certs/0c247f03fd5237a2-etoken-fusion-bio.pem
+  aaguids:
+  - d716019a-9f4e-4041-9750-17c78f8ae81a
+  attachment: cross-platform
+  assurance: fips140-2-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID d716019a-9f4e-4041-9750-17c78f8ae81a,
+    FIDO_CERTIFIED_L2, FIDO20020260120002)
+  certification_reference: 'NIST CMVP #4517 (FIPS 140-2 Level 2, Historical, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517)'
+  valid_until: '2028-06-09T14:45:50Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-2
+    level: L2
+    reference: 'NIST CMVP #4517 (IDPrime 3930 FIDO, Historical)'
 - id: etoken-fusion-fips-050dd0bc-050d4ebb
   root_pem: certs/050d4ebb551eac10-etoken-fusion-fips.pem
   aaguids:
@@ -60,6 +90,36 @@
   - standard: FIPS 140-2
     level: L2
     reference: 'NIST CMVP #4517 (IDPrime 3930 FIDO, Historical)'
+- id: etoken-fusion-nfc-piv-146e77ef-050d4ebb
+  root_pem: certs/050d4ebb551eac10-etoken-fusion-nfc-piv.pem
+  aaguids:
+  - 146e77ef-11eb-4423-b847-ce77864e9411
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID 146e77ef-11eb-4423-b847-ce77864e9411,
+    FIDO_CERTIFIED_L2, FIDO20020250617001)
+  certification_reference: 'NIST CMVP #5532 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532)'
+  valid_until: '2030-07-05T14:37:18Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5532 (IDPrime PIV 4.0 FIDO on IDCore3230 Platform, Active)'
+- id: etoken-fusion-nfc-piv-146e77ef-0c247f03
+  root_pem: certs/0c247f03fd5237a2-etoken-fusion-nfc-piv.pem
+  aaguids:
+  - 146e77ef-11eb-4423-b847-ce77864e9411
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID 146e77ef-11eb-4423-b847-ce77864e9411,
+    FIDO_CERTIFIED_L2, FIDO20020250617001)
+  certification_reference: 'NIST CMVP #5532 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532)'
+  valid_until: '2028-06-09T14:45:50Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5532 (IDPrime PIV 4.0 FIDO on IDCore3230 Platform, Active)'
 - id: ewbm-efa310-fido2-authenticator-95442b2e-200886c7
   root_pem: certs/200886c7f54c469e-ewbm-efa310-fido2-authenticator.pem
   aaguids:
@@ -874,6 +934,36 @@
   - standard: FIPS 140-2
     level: L2
     reference: 'NIST CMVP #4680 (Hypersecu HYP2003 MFA Cryptographic Module, Historical)'
+- id: id-one-card-bb405265-02346555
+  root_pem: certs/023465554da6ec7e-id-one-card.pem
+  aaguids:
+  - bb405265-40cf-4115-93e5-a332c1968d8c
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID bb405265-40cf-4115-93e5-a332c1968d8c,
+    FIDO_CERTIFIED_L2, FIDO20020240906001)
+  certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
+  valid_until: '2031-11-18T23:59:59Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
+- id: id-one-card-bb405265-3d997e79
+  root_pem: certs/3d997e79c911ddab-id-one-card.pem
+  aaguids:
+  - bb405265-40cf-4115-93e5-a332c1968d8c
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID bb405265-40cf-4115-93e5-a332c1968d8c,
+    FIDO_CERTIFIED_L2, FIDO20020240906001)
+  certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
+  valid_until: '2031-11-18T23:59:59Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
 - id: id-one-key-82b0a720-02346555
   root_pem: certs/023465554da6ec7e-id-one-key.pem
   aaguids:
@@ -904,6 +994,36 @@
   - standard: FIPS 140-3
     level: L2
     reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
+- id: idemia-access-fido-smart-card-6169eb16-76acad4a
+  root_pem: certs/76acad4ae0374579-idemia-access-fido-smart-card.pem
+  aaguids:
+  - 6169eb16-f87a-42d8-978d-e1ac0c3f319f
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID 6169eb16-f87a-42d8-978d-e1ac0c3f319f,
+    FIDO_CERTIFIED_L2, FAXXX202600000)
+  certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
+  valid_until: '2031-11-18T23:59:59Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
+- id: idemia-access-fido-smart-card-6169eb16-db97608b
+  root_pem: certs/db97608be80509cf-idemia-access-fido-smart-card.pem
+  aaguids:
+  - 6169eb16-f87a-42d8-978d-e1ac0c3f319f
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID 6169eb16-f87a-42d8-978d-e1ac0c3f319f,
+    FIDO_CERTIFIED_L2, FAXXX202600000)
+  certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
+  valid_until: '2031-11-18T23:59:59Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
 - id: idemia-cosmo-fido-r2-usb-c-fips-e-23485084-e489ca78
   root_pem: certs/e489ca78b8fc3b50-idemia-cosmo-fido-r2-usb-c-fips-e.pem
   aaguids:
@@ -912,6 +1032,21 @@
   assurance: fips140-3-level2
   metadata_reference: FIDO Alliance MDS3 (AAGUID 23485084-2d0d-49e1-9b7d-b1a63cd8c891,
     FIDO_CERTIFIED_L2, FA001202600045)
+  certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
+  valid_until: '2031-11-18T23:59:59Z'
+  revoked_certificates: []
+  certifications:
+  - standard: FIPS 140-3
+    level: L2
+    reference: 'NIST CMVP #5597 (ID-One PIV 243 & FIDO 213, Active)'
+- id: idemia-id-one-card-8d1b1fcb-e8db8ad5
+  root_pem: certs/e8db8ad570f8e55e-idemia-id-one-card.pem
+  aaguids:
+  - 8d1b1fcb-3c76-49a9-9129-5515b346aa02
+  attachment: cross-platform
+  assurance: fips140-3-level2
+  metadata_reference: FIDO Alliance MDS3 (AAGUID 8d1b1fcb-3c76-49a9-9129-5515b346aa02,
+    FIDO_CERTIFIED_L1, FIDO20020231019001)
   certification_reference: 'NIST CMVP #5597 (FIPS 140-3 Level 2, Active, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597)'
   valid_until: '2031-11-18T23:59:59Z'
   revoked_certificates: []

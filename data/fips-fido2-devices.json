@@ -2,10 +2,86 @@
   "schema_version": 1,
   "mds_blob_no": 303,
   "mds_next_update": "2026-12-01",
-  "device_count": 51,
-  "fips_140_3_count": 28,
-  "fips_140_2_count": 23,
+  "device_count": 56,
+  "fips_140_3_count": 32,
+  "fips_140_2_count": 24,
   "devices": [
+    {
+      "aaguid": "d716019a-9f4e-4041-9750-17c78f8ae81a",
+      "name": "eToken Fusion BIO",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales SafeNet eToken Fusion BIO validated with NIST #4517 (FIPS 140-2 Level 2, Physical Level 3; Historical via sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2028-06-09T14:45:50Z",
+      "nist": {
+        "cert_number": "4517",
+        "all_active_cert_numbers": [
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "4517"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-05-09",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "IDPrime 3930 FIDO",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020260120002",
+        "certification_descriptor": "eToken Fusion Bio 2",
+        "effective_date": "2026-01-20"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "050d4ebb551eac10382d05c147124f1c6347af433802dc51702c0cbf1153de1a",
+          "cert_pem_path": "certs/050d4ebb551eac10-etoken-fusion-bio.pem",
+          "pubkey_sha256": "74ea905ea02928c8c717dbd22b5053881d8e3dafdeaf5eabe16662d351bfcc21",
+          "pubkey_pem_path": "pubkeys/050d4ebb551eac10-etoken-fusion-bio.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "issuer": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "not_before": "2020-07-07T14:37:18Z",
+          "not_after": "2030-07-05T14:37:18Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvAKOeqC5/p0D1isCYKQJ\nlVUOrB6I7DLocunE/Rm8duGTbyxQht3CbFVTv3N2Lp2fbjxlI+3sOSGk33FTYkTq\nxcdJIrJ7SskBcUSNrfKOaQT/6KQcP4Cm7V+655Tq+TWxyxWQhDygt15qoP7MuK6b\nT9SwpCjpfKhaMSmyQaMoUcRAbLqdzBCac0hzB+Ze+gqJlnWV9UaSI2rFsVuH4ZE0\ncRO+MOpaLgM/s248nGGHp22ewSQfbnPaBbb8iqyAP+cu52GLsUpKRJebE+R6+PMQ\n9JCdWeQZR3DkfSidkv3mcb4jq1iIta+MqKhRnwrfXh911KWLnYAl9ENChLX0c6Sj\n1QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "0c247f03fd5237a2df6661bf878faa09b38f2cfdcb89a2f24c61d48ca13b91da",
+          "cert_pem_path": "certs/0c247f03fd5237a2-etoken-fusion-bio.pem",
+          "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
+          "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-etoken-fusion-bio.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO CA",
+          "issuer": "CN=Gemalto MultiApp FIDO CA",
+          "not_before": "2018-06-12T14:45:50Z",
+          "not_after": "2028-06-09T14:45:50Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWModalsPtNKUzGhyNOX\nqch/vHfY+axD3Ma4sYaoDRRBmgirdcvMvothS8nkDmDS7IUaWUcR8YAqsRoJDwVW\n89L9SHQXJ/NaFEDOJNKKOMwghWOONS/2b28WZxdJyAeKDs53PzznxXSSs0f32oab\nfCOBo56tNaa36NcJR+fTUiRM/DEbYeWAR3jmM0tJXtWiiX4p7wTaSLiUSRN4fNui\n6VHkZRunecyLsTjtUxBrds3CfNYFuxoFJJCEuTebkdoqGHFrrAkMrjs2IwKQKR0g\ne5ZJAtUB+bzlQA420Q4/CLQ64rept7zIo4UZ/QqEHkwx4DKbsxX8zhbRrj2iA8P2\nkwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
     {
       "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
       "name": "eToken Fusion FIPS",
@@ -164,6 +240,92 @@
           "cert_pem_path": "certs/0c247f03fd5237a2-etoken-fusion-nfc-fips.pem",
           "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
           "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-etoken-fusion-nfc-fips.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO CA",
+          "issuer": "CN=Gemalto MultiApp FIDO CA",
+          "not_before": "2018-06-12T14:45:50Z",
+          "not_after": "2028-06-09T14:45:50Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWModalsPtNKUzGhyNOX\nqch/vHfY+axD3Ma4sYaoDRRBmgirdcvMvothS8nkDmDS7IUaWUcR8YAqsRoJDwVW\n89L9SHQXJ/NaFEDOJNKKOMwghWOONS/2b28WZxdJyAeKDs53PzznxXSSs0f32oab\nfCOBo56tNaa36NcJR+fTUiRM/DEbYeWAR3jmM0tJXtWiiX4p7wTaSLiUSRN4fNui\n6VHkZRunecyLsTjtUxBrds3CfNYFuxoFJJCEuTebkdoqGHFrrAkMrjs2IwKQKR0g\ne5ZJAtUB+bzlQA420Q4/CLQ64rept7zIo4UZ/QqEHkwx4DKbsxX8zhbRrj2iA8P2\nkwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "146e77ef-11eb-4423-b847-ce77864e9411",
+      "name": "eToken Fusion NFC PIV",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales SafeNet eToken Fusion NFC PIV backed by Active FIPS 140-3 Level 2 (#5532, IDPrime PIV 4.0 FIDO on IDCore3230 Platform) and IDPrime PIV 4.1 FIDO 2.1 MIP.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2028-06-09T14:45:50Z",
+      "nist": {
+        "cert_number": "5532",
+        "all_active_cert_numbers": [
+          "5532",
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "5532",
+          "4517"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "IDPrime PIV 4.1 FIDO 2.1 on IDcore 3230",
+          "vendor": "Thales",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Comment Resolution - Lab (11/13/2026)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2026-10-13",
+        "sunset_date": "2031-09-27",
+        "sunset_iso": "2031-09-27T23:59:59Z",
+        "module_name": "IDPrime PIV 4.0 FIDO on IDCore3230 Platform",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5532.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250617001",
+        "certification_descriptor": "eToken Fusion NFC PIV Enterprise",
+        "effective_date": "2025-06-17"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "050d4ebb551eac10382d05c147124f1c6347af433802dc51702c0cbf1153de1a",
+          "cert_pem_path": "certs/050d4ebb551eac10-etoken-fusion-nfc-piv.pem",
+          "pubkey_sha256": "74ea905ea02928c8c717dbd22b5053881d8e3dafdeaf5eabe16662d351bfcc21",
+          "pubkey_pem_path": "pubkeys/050d4ebb551eac10-etoken-fusion-nfc-piv.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "issuer": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "not_before": "2020-07-07T14:37:18Z",
+          "not_after": "2030-07-05T14:37:18Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvAKOeqC5/p0D1isCYKQJ\nlVUOrB6I7DLocunE/Rm8duGTbyxQht3CbFVTv3N2Lp2fbjxlI+3sOSGk33FTYkTq\nxcdJIrJ7SskBcUSNrfKOaQT/6KQcP4Cm7V+655Tq+TWxyxWQhDygt15qoP7MuK6b\nT9SwpCjpfKhaMSmyQaMoUcRAbLqdzBCac0hzB+Ze+gqJlnWV9UaSI2rFsVuH4ZE0\ncRO+MOpaLgM/s248nGGHp22ewSQfbnPaBbb8iqyAP+cu52GLsUpKRJebE+R6+PMQ\n9JCdWeQZR3DkfSidkv3mcb4jq1iIta+MqKhRnwrfXh911KWLnYAl9ENChLX0c6Sj\n1QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "0c247f03fd5237a2df6661bf878faa09b38f2cfdcb89a2f24c61d48ca13b91da",
+          "cert_pem_path": "certs/0c247f03fd5237a2-etoken-fusion-nfc-piv.pem",
+          "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
+          "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-etoken-fusion-nfc-piv.pub.pem",
           "pubkey_algorithm": "RSA-2048",
           "subject": "CN=Gemalto MultiApp FIDO CA",
           "issuer": "CN=Gemalto MultiApp FIDO CA",
@@ -2265,6 +2427,80 @@
       ]
     },
     {
+      "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
+      "name": "ID-One Card",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Card (FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020240906001",
+        "certification_descriptor": "ID-One Card",
+        "effective_date": "2024-09-06"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "023465554da6ec7ec9dc5d095600fa0d4956784b96c9493e6df7abe1137790a0",
+          "cert_pem_path": "certs/023465554da6ec7e-id-one-card.pem",
+          "pubkey_sha256": "ba00c9fe681a570d1bac625f459039600a90e024ee3119a4176b448d615c13ad",
+          "pubkey_pem_path": "pubkeys/023465554da6ec7e-id-one-card.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "issuer": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "not_before": "2024-09-18T22:00:00Z",
+          "not_after": "2064-09-19T21:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAlcTYsCV2LxuwK8Q5PK+03/wSAPSp\nQZR6k12P2pqfB1p7M3JUfUwvemitohKJY2EepPLadIiwz2gVarPB6MFc/H4BRmv5\nycUYhWwJyPiRfqFJQrcnOr2QmGUm7n/GZhQKVz5ur8L7NOpnonvxcuhceujee1xH\npIU+WryCo2hpNfXoYiI=\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "3d997e79c911ddabc538428e615c55247f145a21081a81bcea674aa65b664f64",
+          "cert_pem_path": "certs/3d997e79c911ddab-id-one-card.pem",
+          "pubkey_sha256": "ba00c9fe681a570d1bac625f459039600a90e024ee3119a4176b448d615c13ad",
+          "pubkey_pem_path": "pubkeys/3d997e79c911ddab-id-one-card.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "issuer": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "not_before": "2024-07-24T21:59:59Z",
+          "not_after": "2064-07-24T21:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAlcTYsCV2LxuwK8Q5PK+03/wSAPSp\nQZR6k12P2pqfB1p7M3JUfUwvemitohKJY2EepPLadIiwz2gVarPB6MFc/H4BRmv5\nycUYhWwJyPiRfqFJQrcnOr2QmGUm7n/GZhQKVz5ur8L7NOpnonvxcuhceujee1xH\npIU+WryCo2hpNfXoYiI=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "82b0a720-127a-4788-b56d-d1d4b2d82eac",
       "name": "ID-One Key",
       "vendor": "IDEMIA",
@@ -2391,6 +2627,83 @@
       ]
     },
     {
+      "aaguid": "6169eb16-f87a-42d8-978d-e1ac0c3f319f",
+      "name": "IDEMIA Access FIDO Smart Card",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA Access FIDO Smart Card (FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FAXXX202600000",
+        "certification_descriptor": "GoTrust Idem Card",
+        "effective_date": "2026-10-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "76acad4ae03745798f9d8c20efb8ac42c1dd18d7a3648bb26c8f9cbdd1596e6c",
+          "cert_pem_path": "certs/76acad4ae0374579-idemia-access-fido-smart-card.pem",
+          "pubkey_sha256": "054b6d2837ce1902e584a06ff2e3541c4829a3118156f1138bf2f2e314f50973",
+          "pubkey_pem_path": "pubkeys/76acad4ae0374579-idemia-access-fido-smart-card.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=IDEMIA ACCESS FIDO Smart Card CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "issuer": "CN=IDEMIA ACCESS FIDO Smart Card CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "not_before": "2026-09-22T02:47:22Z",
+          "not_after": "2051-05-14T02:47:22Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE3HOoiiZmqISjgUrANqxDzlAEmp4f\nfpfPe6cSztNmjDM7gYbYrgeajAjG5exHHI5U3hbzxvIaoLkybj8i57e0/A==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "db97608be80509cf1ceb0d3847954d83ea47601d0d9cb2cdae62ef2c44a5aaee",
+          "cert_pem_path": "certs/db97608be80509cf-idemia-access-fido-smart-card.pem",
+          "pubkey_sha256": "04626be72d87a953b2551f298d9c39d02f81e51a0617803151e8073c8572be52",
+          "pubkey_pem_path": "pubkeys/db97608be80509cf-idemia-access-fido-smart-card.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "O=GoTrustID Inc.,CN=GoTrust FIDO2 Root CA 2",
+          "issuer": "O=GoTrustID Inc.,CN=GoTrust FIDO2 Root CA 2",
+          "not_before": "2025-08-29T08:52:51Z",
+          "not_after": "2050-08-29T08:52:51Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEr3zn0ZtuHLhfMhHvau+EaARkyDAS\nyutVF28xYstqNyWtbjbOl7l9ySsWEtChaZKnanntnXBbHy85Z5Oy000geg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "23485084-2d0d-49e1-9b7d-b1a63cd8c891",
       "name": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
       "vendor": "IDEMIA",
@@ -2450,6 +2763,71 @@
           "not_before": "2025-08-28T22:00:00Z",
           "not_after": "2065-08-29T21:59:59Z",
           "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAJ7yN1KdVMq3OSCwIokW6KlYv25SL\nOxGvr+JMJ74MqufTZKemw8dnKjhZnnylS7rpPqS98HxoYDmLt6pQlKCFC0YARt+V\n1LMYhu1a9c+ECMRF7J9KfdvGgQFF+m3XGHaXUYla2ASrpgj1KqQIhdYGnVHfHqJp\nsT0dbc5gVAgOuYlS4TQ=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
+      "name": "IDEMIA ID-ONE Card",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-ONE Card.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020231019001",
+        "certification_descriptor": "IDEMIA ID-ONE Card",
+        "effective_date": "2023-10-19"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "e8db8ad570f8e55e71760039ffc0c04e8dd597075871586d24c69c4170198cbc",
+          "cert_pem_path": "certs/e8db8ad570f8e55e-idemia-id-one-card.pem",
+          "pubkey_sha256": "ecbfb0a346fb3f20659f736b9624b5b25ee6f07651934dcfea51a804838208f3",
+          "pubkey_pem_path": "pubkeys/e8db8ad570f8e55e-idemia-id-one-card.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=IDEMIA FIDO Root CA,OU=Authenticator Attestation,O=IDEMIA,L=Reston,ST=Virginia,C=US",
+          "issuer": "CN=IDEMIA FIDO Root CA,OU=Authenticator Attestation,O=IDEMIA,L=Reston,ST=Virginia,C=US",
+          "not_before": "2023-09-14T05:38:03Z",
+          "not_after": "2053-09-06T05:38:03Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdtP5GmQCj0Rwv456UKPyGKGd8VQo\nM6k2yx2sfCx76q4VhXQcv2PBBc7fnmaQjh2GndOydswnQAn2OvqjsGgISQ==\n-----END PUBLIC KEY-----\n"
         }
       ]
     },

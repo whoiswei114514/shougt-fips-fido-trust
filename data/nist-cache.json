@@ -1585,7 +1585,7 @@
       "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
       "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5390",
       "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5390.pdf",
-      "cached_at": "2026-11-24T18:15:34Z"
+      "cached_at": "2026-11-24T18:19:57Z"
     },
     "5432": {
       "cert_number": "5432",
@@ -1654,7 +1654,7 @@
       "caveat": "None",
       "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532",
       "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5532.pdf",
-      "cached_at": "2026-11-24T18:15:34Z"
+      "cached_at": "2026-11-24T18:19:57Z"
     },
     "5568": {
       "cert_number": "5568",
