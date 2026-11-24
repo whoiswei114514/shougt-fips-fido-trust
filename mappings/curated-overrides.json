@@ -223,6 +223,23 @@
       "notes": "Thales SafeNet eToken Fusion NFC 930C FIDO2.1 backed by Active FIPS 140-3 Level 2 (#5532, IDPrime PIV 4.0 FIDO on IDCore3230 Platform) with 930C/3930C FIDO2.1 MIP tracking."
     },
     {
+      "nist_cert": "4517",
+      "aaguid": "d716019a-9f4e-4041-9750-17c78f8ae81a",
+      "device_name": "eToken Fusion BIO",
+      "notes": "Thales SafeNet eToken Fusion BIO validated with NIST #4517 (FIPS 140-2 Level 2, Physical Level 3; Historical via sunset)."
+    },
+    {
+      "nist_cert": "5532",
+      "additional_nist_certs": ["4517"],
+      "aaguid": "146e77ef-11eb-4423-b847-ce77864e9411",
+      "device_name": "eToken Fusion NFC PIV",
+      "in_process_match": {
+        "vendor": "thales",
+        "module_keyword": "idprime piv 4.1"
+      },
+      "notes": "Thales SafeNet eToken Fusion NFC PIV backed by Active FIPS 140-3 Level 2 (#5532, IDPrime PIV 4.0 FIDO on IDCore3230 Platform) and IDPrime PIV 4.1 FIDO 2.1 MIP."
+    },
+    {
       "nist_cert": "5390",
       "aaguid": "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed",
       "device_name": "HID Crescendo 4000 FIPS",
@@ -296,6 +313,24 @@
       "aaguid": "f2145e86-211e-4931-b874-e22bba7d01cc",
       "device_name": "ID-One Key",
       "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Key."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
+      "device_name": "ID-One Card",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Card (FIDO2 L2)."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "6169eb16-f87a-42d8-978d-e1ac0c3f319f",
+      "device_name": "IDEMIA Access FIDO Smart Card",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA Access FIDO Smart Card (FIDO2 L2)."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
+      "device_name": "IDEMIA ID-ONE Card",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-ONE Card."
     },
     {
       "nist_cert": "4680",
