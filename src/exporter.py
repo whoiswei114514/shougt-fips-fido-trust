@@ -3,9 +3,24 @@ from __future__ import annotations
 
 import json
 import re
+from datetime import datetime, timezone
 from pathlib import Path
 
 import yaml
+
+
+def _root_valid_until(device: dict, root: dict) -> str:
+    candidates: list[datetime] = []
+    sunset_iso = (device.get("nist") or {}).get("sunset_iso") or ""
+    for raw in (sunset_iso, root.get("not_after") or ""):
+        if raw:
+            try:
+                candidates.append(datetime.fromisoformat(str(raw).replace("Z", "+00:00")))
+            except ValueError:
+                pass
+    if not candidates:
+        return str(device.get("valid_until") or "")
+    return min(candidates).astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 
 def _slugify(value: str, *, max_len: int = 44) -> str:
@@ -113,7 +128,7 @@ def export_all(
                     "assurance": device["assurance"],
                     "metadata_reference": f"FIDO Alliance MDS3 (AAGUID {device['aaguid']}, {fido_level}, {cert_num})",
                     "certification_reference": cert_ref,
-                    "valid_until": device["valid_until"],
+                    "valid_until": _root_valid_until(device, root),
                     "revoked_certificates": [],
                     "certifications": [
                         {

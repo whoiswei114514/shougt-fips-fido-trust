@@ -69,7 +69,7 @@ def _gen_leaf(root_key, root_cert, dns_name: str = "mds.fidoalliance.org", days:
     return key, cert
 
 
-def _gen_device_root(cn: str = "Device Attestation Root"):
+def _gen_device_root(cn: str = "Device Attestation Root", valid_days: int = 3650):
     key = ec.generate_private_key(ec.SECP256R1())
     now = datetime.now(timezone.utc)
     name = x509.Name([x509.NameAttribute(NameOID.COMMON_NAME, cn)])
@@ -79,8 +79,8 @@ def _gen_device_root(cn: str = "Device Attestation Root"):
         .issuer_name(name)
         .public_key(key.public_key())
         .serial_number(x509.random_serial_number())
-        .not_valid_before(now - timedelta(days=1))
-        .not_valid_after(now + timedelta(days=3650))
+        .not_valid_before(now - timedelta(days=365))
+        .not_valid_after(now + timedelta(days=valid_days))
         .add_extension(x509.BasicConstraints(ca=True, path_length=1), critical=True)
         .sign(key, hashes.SHA256())
     )
@@ -227,6 +227,42 @@ class FidoMdsTests(unittest.TestCase):
         self.assertTrue(any(e["reason"] == "not_fido_certified:NOT_FIDO_CERTIFIED" for e in excluded_fips))
         self.assertTrue(any(e["reason"] == "disqualified_status:REVOKED" for e in excluded_fips))
         self.assertTrue(any(e["reason"] == "invalid_attestation_root_certificate" for e in excluded_fips))
+
+    def test_expired_root_ca_filtered_and_all_expired_quarantined(self):
+        valid_root_b64 = _gen_device_root("Active Root", valid_days=1000)
+        expired_root_b64 = _gen_device_root("Expired Root", valid_days=-10)
+        payload = {
+            "entries": [
+                {
+                    "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
+                    "metadataStatement": {
+                        "protocolFamily": "fido2",
+                        "description": "eWBM eFA310 FIDO2 Authenticator",
+                        "attachmentHint": ["external", "wired"],
+                        "authenticatorGetInfo": {"versions": ["FIDO_2_0"]},
+                        "attestationRootCertificates": [expired_root_b64, valid_root_b64],
+                    },
+                    "statusReports": [{"status": "FIDO_CERTIFIED_L1", "effectiveDate": "2020-01-01"}],
+                },
+                {
+                    "aaguid": "66666666-6666-6666-6666-666666666666",
+                    "metadataStatement": {
+                        "protocolFamily": "fido2",
+                        "description": "Expired Only FIPS Key",
+                        "attachmentHint": ["external", "wired"],
+                        "authenticatorGetInfo": {"versions": ["FIDO_2_0"]},
+                        "attestationRootCertificates": [expired_root_b64],
+                    },
+                    "statusReports": [{"status": "FIDO_CERTIFIED_L2", "effectiveDate": "2020-01-01"}],
+                },
+            ]
+        }
+        qualified, excluded_fips = extract_fido2_authenticators(payload)
+        self.assertEqual(len(qualified), 1)
+        self.assertEqual(qualified[0]["aaguid"], "95442b2e-f15e-4def-b270-efb106facb4e")
+        self.assertEqual(len(qualified[0]["attestation_roots"]), 1)
+        self.assertEqual(len(excluded_fips), 1)
+        self.assertEqual(excluded_fips[0]["reason"], "expired_attestation_root_certificates")
 
 
 if __name__ == "__main__":

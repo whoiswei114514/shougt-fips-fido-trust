@@ -288,8 +288,13 @@ def _evaluate_status_reports(reports: list[dict]) -> tuple[bool, str, dict]:
     }
 
 
-def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[dict]]:
+def extract_fido2_authenticators(
+    mds_payload: dict,
+    *,
+    now: datetime | None = None,
+) -> tuple[list[dict], list[dict]]:
     """Extract qualified FIDO2+ external authenticators and FIPS-labeled excluded entries."""
+    current_time = now or datetime.now(timezone.utc)
     qualified: list[dict] = []
     excluded_fips: list[dict] = []
 
@@ -344,10 +349,16 @@ def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[di
             continue
 
         parsed_roots: list[dict] = []
+        expired_roots: list[dict] = []
         root_parse_errors: list[str] = []
         for b64_der in raw_roots:
             try:
-                parsed_roots.append(_extract_root_cert_info(b64_der))
+                info = _extract_root_cert_info(b64_der)
+                not_after_dt = datetime.fromisoformat(info["not_after"].replace("Z", "+00:00"))
+                if not_after_dt <= current_time:
+                    expired_roots.append({"cert_sha256": info["cert_sha256"], "not_after": info["not_after"]})
+                else:
+                    parsed_roots.append(info)
             except (ValueError, TypeError) as exc:
                 root_parse_errors.append(str(exc))
 
@@ -356,8 +367,9 @@ def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[di
                 excluded_fips.append({
                     "aaguid": raw_aaguid,
                     "description": description,
-                    "reason": "invalid_attestation_root_certificate",
+                    "reason": "expired_attestation_root_certificates" if expired_roots else "invalid_attestation_root_certificate",
                     "status_info": status_info,
+                    "expired_roots": expired_roots,
                     "errors": root_parse_errors,
                 })
             continue
