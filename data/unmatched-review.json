@@ -1,0 +1,192 @@
+{
+  "mds_fips_without_active_nist": [
+    {
+      "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
+      "description": "eToken Fusion FIPS",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020241023002"
+    },
+    {
+      "aaguid": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
+      "description": "eToken Fusion NFC FIPS",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020241023001"
+    },
+    {
+      "aaguid": "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed",
+      "description": "HID Crescendo 4000 FIPS",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5390"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    },
+    {
+      "aaguid": "19bca99b-7c09-44fe-a969-8cba45764542",
+      "description": "HID Crescendo Key V3 FIPS",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5028"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    },
+    {
+      "aaguid": "23485084-2d0d-49e1-9b7d-b1a63cd8c891",
+      "description": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FA001202600045"
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
+      "description": "OneSpan DIGIPASS FX1-C",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020250826003"
+    },
+    {
+      "aaguid": "817cdab8-0d51-4de1-a821-e25b88519cf3",
+      "description": "Swissbit iShield Key 2 FIPS",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260320003"
+    },
+    {
+      "aaguid": "5eaff75a-dd43-451f-af9f-87c9eeae293e",
+      "description": "Swissbit iShield Key 2 FIPS Enterprise",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260320002"
+    },
+    {
+      "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
+      "description": "YubiKey 5 FIPS Series",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020241221003"
+    },
+    {
+      "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
+      "description": "YubiKey 5 FIPS Series",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5291"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    },
+    {
+      "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
+      "description": "YubiKey 5 FIPS Series (Enterprise Profile)",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020241221004"
+    },
+    {
+      "aaguid": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
+      "description": "YubiKey 5 FIPS Series with Lightning",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020241221005"
+    },
+    {
+      "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
+      "description": "YubiKey 5 FIPS Series with Lightning",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5291"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    },
+    {
+      "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
+      "description": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020241221006"
+    },
+    {
+      "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+      "description": "YubiKey 5 FIPS Series with NFC",
+      "reason": "no_active_nist_match",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020230328001"
+    },
+    {
+      "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
+      "description": "YubiKey 5 FIPS Series with NFC",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5291"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    },
+    {
+      "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
+      "description": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
+      "reason": "curated_nist_cert_not_active",
+      "configured_nist_certs": [
+        "5291"
+      ],
+      "fido_status": "FIDO_CERTIFIED_L2"
+    }
+  ],
+  "mds_fips_disqualified_or_preview": [
+    {
+      "aaguid": "5b0e46ba-db02-44ac-b979-ca9b84f5e335",
+      "description": "YubiKey 5 FIPS Series with Lightning Preview",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2024-04-07"
+      }
+    },
+    {
+      "aaguid": "62e54e98-c209-4df3-b692-de71bb6a8528",
+      "description": "YubiKey 5 FIPS Series with NFC Preview",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2024-04-07"
+      }
+    },
+    {
+      "aaguid": "9e66c661-e428-452a-a8fb-51f7ed088acf",
+      "description": "YubiKey 5 FIPS Series with Lightning (RC Preview)",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2024-10-15"
+      }
+    },
+    {
+      "aaguid": "c1bee13f-f347-4f53-9cd4-e8a2f98ee008",
+      "description": "ZTPass SmartAuth FIPS",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2026-09-07"
+      }
+    },
+    {
+      "aaguid": "ce6bf97f-9f69-4ba7-9032-97adc6ca5cf1",
+      "description": "YubiKey 5 FIPS Series with NFC (RC Preview)",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2024-10-15"
+      }
+    },
+    {
+      "aaguid": "d2fbd093-ee62-488d-9dad-1e36389f8826",
+      "description": "YubiKey 5 FIPS Series (RC Preview)",
+      "reason": "not_fido_certified:NOT_FIDO_CERTIFIED",
+      "status_info": {
+        "status": "NOT_FIDO_CERTIFIED",
+        "effectiveDate": "2024-10-15"
+      }
+    }
+  ],
+  "nist_fido_without_mds_aaguid": []
+}
