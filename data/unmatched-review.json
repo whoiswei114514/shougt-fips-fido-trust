@@ -1,66 +1,561 @@
 {
-  "mds_fips_without_active_nist": [
+  "mds_fips_without_active_nist": [],
+  "mds_known_fips_vendor_unmatched": [
     {
-      "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
-      "description": "eToken Fusion FIPS",
-      "reason": "no_active_nist_match",
+      "aaguid": "1d1b4e33-76a1-47fb-97a0-14b10d0933f1",
+      "description": "Cryptnox FIDO2.1",
+      "vendor_guess": "feitian",
       "fido_status": "FIDO_CERTIFIED_L1",
-      "fido_cert_number": "FIDO20020241023002"
+      "fido_cert_number": "FIDO20020250116002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
     },
     {
-      "aaguid": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
-      "description": "eToken Fusion NFC FIPS",
-      "reason": "no_active_nist_match",
+      "aaguid": "b113a455-cfb6-4c17-8cba-cd952feb7d48",
+      "description": "eToken FIDO NFC",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260120001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "d716019a-9f4e-4041-9750-17c78f8ae81a",
+      "description": "eToken Fusion BIO",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260120002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "146e77ef-11eb-4423-b847-ce77864e9411",
+      "description": "eToken Fusion NFC PIV",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020250617001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "12ded745-4bed-47d4-abaa-e713f51d6393",
+      "description": "Feitian AllinOne FIDO2 Authenticator",
+      "vendor_guess": "feitian",
       "fido_status": "FIDO_CERTIFIED_L1",
-      "fido_cert_number": "FIDO20020241023001"
+      "fido_cert_number": "FIDO20020190311004",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1_PRE"
+      ]
     },
     {
-      "aaguid": "23485084-2d0d-49e1-9b7d-b1a63cd8c891",
-      "description": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
-      "reason": "no_active_nist_match",
+      "aaguid": "238ab2f5-b57f-4917-b3c6-3d3c6c0c350f",
+      "description": "FEITIAN FT-JCOS BioCard",
+      "vendor_guess": "feitian",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260626001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE",
+        "FIDO_2_3"
+      ]
+    },
+    {
+      "aaguid": "7a53c643-9dec-4219-b3a4-f9d24aca4e12",
+      "description": "G+D StarKey FIDO2-NFC",
+      "vendor_guess": "",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020251209001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "6d4aa745-dad5-40c4-b9b4-6a252fcee70f",
+      "description": "GoTrust Cyber Key",
+      "vendor_guess": "gotrust",
       "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FA001202600045"
+      "fido_cert_number": "FIDO20020260421001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
     },
     {
-      "aaguid": "817cdab8-0d51-4de1-a821-e25b88519cf3",
-      "description": "Swissbit iShield Key 2 FIPS",
-      "reason": "no_active_nist_match",
+      "aaguid": "9f0d8150-baa5-4c00-9299-ad62c8bb4e87",
+      "description": "GoTrust Idem Card",
+      "vendor_guess": "gotrust",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020190520001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "3b1adb99-0dfe-46fd-90b8-7f7614a4de2a",
+      "description": "GoTrust Idem Key",
+      "vendor_guess": "gotrust",
       "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FIDO20020260320003"
+      "fido_cert_number": "FIDO20020210305001",
+      "versions": [
+        "FIDO_2_0"
+      ]
     },
     {
-      "aaguid": "5eaff75a-dd43-451f-af9f-87c9eeae293e",
-      "description": "Swissbit iShield Key 2 FIPS Enterprise",
-      "reason": "no_active_nist_match",
+      "aaguid": "c611b55c-77b2-4527-8082-590e931b2f08",
+      "description": "GoTrust Idem Key",
+      "vendor_guess": "gotrust",
       "fido_status": "FIDO_CERTIFIED_L2",
-      "fido_cert_number": "FIDO20020260320002"
+      "fido_cert_number": "FIDO20020251027001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
     },
     {
-      "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
-      "description": "YubiKey 5 FIPS Series",
-      "reason": "curated_nist_cert_not_active",
-      "configured_nist_certs": [
-        "3929"
-      ],
-      "fido_status": "FIDO_CERTIFIED_L2"
+      "aaguid": "72a2b5b1-95a5-4df9-a881-4192aff4f72e",
+      "description": "GoTrust Idem Key mini",
+      "vendor_guess": "gotrust",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260410001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
     },
     {
-      "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
-      "description": "YubiKey 5 FIPS Series with Lightning",
-      "reason": "curated_nist_cert_not_active",
-      "configured_nist_certs": [
-        "3929"
-      ],
-      "fido_status": "FIDO_CERTIFIED_L2"
+      "aaguid": "0b8b05a4-ebd4-4b0b-8f5f-33d7b6e606ab",
+      "description": "HID Crescendo 4000",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260114002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
     },
     {
-      "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
-      "description": "YubiKey 5 FIPS Series with NFC",
-      "reason": "curated_nist_cert_not_active",
-      "configured_nist_certs": [
-        "3930"
-      ],
-      "fido_status": "FIDO_CERTIFIED_L2"
+      "aaguid": "2a55aee6-27cb-42c0-bc6e-04efe999e88a",
+      "description": "HID Crescendo 4000",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020240829001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "aa79f476-ea00-417e-9628-1e8365123922",
+      "description": "HID Crescendo 4000 FIDO",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020250728001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "c80dbd9a-533f-4a17-b941-1a2f1c7cedff",
+      "description": "HID Crescendo C3000",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020230120002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "54d9fee8-e621-4291-8b18-7157b99c5bec",
+      "description": "HID Crescendo Enabled",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020220104002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "c4ddaf11-3032-4e77-b3b9-3a340369b9ad",
+      "description": "HID Crescendo Fusion",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020250317001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "7991798a-a7f3-487f-98c0-3faf7a458a04",
+      "description": "HID Crescendo Key V3",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020250113001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "87c13177-85d6-40ac-8c61-fe7ab3de9dfb",
+      "description": "HID Crescendo Key V3",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260114001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "13ac47cf-1d78-4fd5-9060-aedaabacf826",
+      "description": "HID Crescendo Key V3 - Enterprise Edition",
+      "vendor_guess": "hid",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020251010002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "bb405265-40cf-4115-93e5-a332c1968d8c",
+      "description": "ID-One Card",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020240906001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "6169eb16-f87a-42d8-978d-e1ac0c3f319f",
+      "description": "IDEMIA Access FIDO Smart Card",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FAXXX202600000",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "8d1b1fcb-3c76-49a9-9129-5515b346aa02",
+      "description": "IDEMIA ID-ONE Card",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020231019001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "dda9aa35-aaf1-4d3c-b6db-7902fd7dbbbf",
+      "description": "IDEMIA SOLVO Fly 80 R3 FIDO Card c",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020250827002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "def8ab1a-9f91-44f1-a103-088d8dc7d681",
+      "description": "IDEMIA SOLVO Fly 80 R3 FIDO Card e",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020250827001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "b68c4b8d-65cb-42ae-b4f6-8606dfba3c22",
+      "description": "IDEMIA SOLVO Fly 80 R3 FIDO Card for j",
+      "vendor_guess": "idemia",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260717001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "b50d5e0a-7f81-4959-9b12-f45407407503",
+      "description": "IDPrime 3940 FIDO",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020201118001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "2194b428-9397-4046-8f39-007a1605a482",
+      "description": "IDPrime 931 Fido",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020220106002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "2ffd6452-01da-471f-821b-ea4bf6c8676a",
+      "description": "IDPrime 941 Fido",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020220314001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff1-b00b-addc96ba6a98",
+      "description": "OneSpan DIGIPASS FX1 BIO",
+      "vendor_guess": "onespan",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020231116001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff1-010b-addc96ba6a98",
+      "description": "OneSpan DIGIPASS FX1a",
+      "vendor_guess": "onespan",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020240802003",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff7-020b-addc96ba6a98",
+      "description": "OneSpan DIGIPASS FX7",
+      "vendor_guess": "onespan",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020250902002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff7-b00b-addc96ba6a98",
+      "description": "OneSpan DIGIPASS FX7",
+      "vendor_guess": "onespan",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020250306001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4fc1-b00b-addc96ba6a97",
+      "description": "OneSpan FIDO Touch",
+      "vendor_guess": "onespan",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020200213001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "efb96b10-a9ee-4b6c-a4a9-d32125ccd4a4",
+      "description": "Safenet eToken FIDO",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020200207001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "74820b05-a6c9-40f9-8fb0-9f86aca93998",
+      "description": "SafeNet eToken Fusion",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020220822001",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "23786452-f02d-4344-87ed-aaf703726881",
+      "description": "SafeNet eToken Fusion CC",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020220822002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "516d3969-5a57-5651-5958-4e7a49434167",
+      "description": "SmartDisplayer BobeePass FIDO2 Authenticator",
+      "vendor_guess": "feitian",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020230602001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "7787a482-13e8-4784-8a06-c7ed49a7aaf4",
+      "description": "Swissbit iShield Key 2",
+      "vendor_guess": "swissbit",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260320001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "e400ef8c-711d-4692-af46-7f2cf7da23ad",
+      "description": "Swissbit iShield Key 2 Enterprise",
+      "vendor_guess": "swissbit",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020260320004",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "931327dd-c89b-406c-a81e-ed7058ef36c6",
+      "description": "Swissbit iShield Key FIDO2",
+      "vendor_guess": "swissbit",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020230913002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "5d629218-d3a5-11ed-afa1-0242ac120002",
+      "description": "Swissbit iShield Key Pro",
+      "vendor_guess": "swissbit",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020230913002",
+      "versions": [
+        "FIDO_2_0"
+      ]
+    },
+    {
+      "aaguid": "0f00cc22-4640-41e7-9585-384ec73ffe9b",
+      "description": "Taglio CTAP2.1 BIO",
+      "vendor_guess": "",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260116001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "092277e5-8437-46b5-b911-ea64b294acb7",
+      "description": "Taglio CTAP2.1 CS",
+      "vendor_guess": "",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020240614002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "7d2afadd-bf6b-44a2-a66b-e831fceb8eff",
+      "description": "Taglio CTAP2.1 EP",
+      "vendor_guess": "",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020240614001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1"
+      ]
+    },
+    {
+      "aaguid": "4d41190c-7beb-4a84-8018-adf265a6352d",
+      "description": "Thales IDPrime FIDO Bio",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L2",
+      "fido_cert_number": "FIDO20020240806002",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "04a8fcf2-19c1-457b-911e-69219f17583f",
+      "description": "Thales PAY GFCX13 authenticator",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260123001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "0fbb74b5-f1ac-4f14-a0f1-ec39b5edfdae",
+      "description": "Thales PAY GFCX19 authenticator",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260720001",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
+    },
+    {
+      "aaguid": "11544c3c-3693-40ba-9dbb-3b8d2b977988",
+      "description": "Thales PAY GFCX20.1 authenticator",
+      "vendor_guess": "thales",
+      "fido_status": "FIDO_CERTIFIED_L1",
+      "fido_cert_number": "FIDO20020260720003",
+      "versions": [
+        "FIDO_2_0",
+        "FIDO_2_1",
+        "FIDO_2_1_PRE"
+      ]
     }
   ],
   "mds_fips_disqualified_or_preview": [
@@ -121,40 +616,264 @@
   ],
   "nist_fido_without_mds_aaguid": [
     {
-      "cert_number": "5597",
-      "vendor": "IDEMIA",
-      "module_name": "ID-One PIV 243 & FIDO 213",
+      "cert_number": "5437",
+      "vendor": "Chunghwa Telecom Co., Ltd.",
+      "module_name": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
       "standard": "FIPS 140-3",
-      "overall_level": 2,
-      "sunset_date": "2031-11-18",
-      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597"
-    },
-    {
-      "cert_number": "5532",
-      "vendor": "Thales",
-      "module_name": "IDPrime PIV 4.0 FIDO on IDCore3230 Platform",
-      "standard": "FIPS 140-3",
-      "overall_level": 2,
-      "sunset_date": "2031-09-27",
-      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532"
-    },
-    {
-      "cert_number": "5151",
-      "vendor": "FEITIAN Technologies Co., Ltd.",
-      "module_name": "FEITIAN ePass Token Cryptographic Module",
-      "standard": "FIPS 140-3",
+      "status": "Active",
       "overall_level": 3,
-      "sunset_date": "2031-01-27",
-      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151"
+      "sunset_date": "2031-07-26",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5437"
     },
     {
-      "cert_number": "5087",
+      "cert_number": "5166",
       "vendor": "Google, LLC.",
-      "module_name": "OpenSK Cryptographic Module",
+      "module_name": "Titan-BPN Cryptographic Module",
       "standard": "FIPS 140-3",
+      "status": "Active",
       "overall_level": 1,
-      "sunset_date": "2030-10-22",
-      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5087"
+      "sunset_date": "2031-03-17",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5166"
+    },
+    {
+      "cert_number": "5027",
+      "vendor": "IDEMIA",
+      "module_name": "ID-One PIV 243 in SPE Configurations",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "overall_level": 3,
+      "sunset_date": "2030-06-16",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5027"
+    },
+    {
+      "cert_number": "5024",
+      "vendor": "IDEMIA",
+      "module_name": "ID-One PIV 243 in NPIVP & CIV Configurations",
+      "standard": "FIPS 140-3",
+      "status": "Active",
+      "overall_level": 2,
+      "sunset_date": "2030-06-08",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5024"
+    },
+    {
+      "cert_number": "4652",
+      "vendor": "Google, LLC",
+      "module_name": "Cr50 U2F Cryptographic Library",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4652"
+    },
+    {
+      "cert_number": "4563",
+      "vendor": "Gemalto",
+      "module_name": "IDPrime PIV v3.0 Applet on IDCore 3130 Platform",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4563"
+    },
+    {
+      "cert_number": "4544",
+      "vendor": "Thales",
+      "module_name": "eToken 5300 Mini and Micro MD 4.3.5",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4544"
+    },
+    {
+      "cert_number": "4480",
+      "vendor": "Thales",
+      "module_name": "eToken 5110+ FIPS",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4480"
+    },
+    {
+      "cert_number": "4479",
+      "vendor": "Thales",
+      "module_name": "eToken 5110+ FIPS",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4479"
+    },
+    {
+      "cert_number": "4388",
+      "vendor": "OneSpan",
+      "module_name": "DIGIPASS GO7",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4388"
+    },
+    {
+      "cert_number": "4367",
+      "vendor": "Google, LLC.",
+      "module_name": "Titan-D Chip",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4367"
+    },
+    {
+      "cert_number": "3907",
+      "vendor": "Yubico, Inc.",
+      "module_name": "YubiKey 5 Cryptographic Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3907"
+    },
+    {
+      "cert_number": "3864",
+      "vendor": "IDEMIA",
+      "module_name": "ID-One PIV 2.4 on Cosmo V8.2 SPE Configurations",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3864"
+    },
+    {
+      "cert_number": "3863",
+      "vendor": "IDEMIA",
+      "module_name": "ID-One PIV 2.4 on Cosmo V8.2 NPIVP & CIV Configurations",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3863"
+    },
+    {
+      "cert_number": "3851",
+      "vendor": "Google, LLC.",
+      "module_name": "Titan Security Key, Chip Boundary",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3851"
+    },
+    {
+      "cert_number": "3796",
+      "vendor": "Thales",
+      "module_name": "IDPrime 930 / 3930",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3796"
+    },
+    {
+      "cert_number": "3670",
+      "vendor": "Thales",
+      "module_name": "IDPrime 930 / 3930",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3670"
+    },
+    {
+      "cert_number": "3602",
+      "vendor": "Hypersecu Information Systems Inc",
+      "module_name": "HYP2003 Cryptographic Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3602"
+    },
+    {
+      "cert_number": "3517",
+      "vendor": "Yubico, Inc.",
+      "module_name": "YubiKey 4 Cryptographic Module",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3517"
+    },
+    {
+      "cert_number": "3465",
+      "vendor": "Chunghwa Telecom Co., Ltd.",
+      "module_name": "HiCOS PKI Applet v2.0 on IDEMIA ID-One Cosmo v8.1-R2",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3465"
+    },
+    {
+      "cert_number": "3417",
+      "vendor": "Gemalto",
+      "module_name": "IDPrime PIV v3.0 Applet on IDCore 3130 Platform",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3417"
+    },
+    {
+      "cert_number": "3382",
+      "vendor": "Google, Inc.",
+      "module_name": "Titan Chip",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382"
+    },
+    {
+      "cert_number": "3361",
+      "vendor": "Google, Inc.",
+      "module_name": "Titan Security Key, Chip Boundary",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 1,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3361"
+    },
+    {
+      "cert_number": "3334",
+      "vendor": "Thales",
+      "module_name": "eToken 5300 Micro MD 4.3.5",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 2,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3334"
+    },
+    {
+      "cert_number": "3322",
+      "vendor": "Thales",
+      "module_name": "eToken 5300 Mini MD 4.3.5",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3322"
+    },
+    {
+      "cert_number": "3202",
+      "vendor": "Feitian Technologies Co., Ltd.",
+      "module_name": "ePass2003 Token and ePass2003Auto Token",
+      "standard": "FIPS 140-2",
+      "status": "Historical",
+      "overall_level": 3,
+      "sunset_date": "",
+      "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3202"
     }
   ]
 }

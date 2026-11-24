@@ -1,0 +1,141 @@
+{
+  "count": 17,
+  "entries": [
+    {
+      "list_type": "IUT",
+      "module_name": "G+D PIV200 and G+D FIDO201 Applet on Sm@rtCafé Expert 8.1",
+      "vendor": "Giesecke+Devrient ePayments GmbH",
+      "standard": "FIPS 140-3",
+      "status_or_date": "5/12/2026",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "G+D SCE8.1 with HID Applet 2.7.9",
+      "vendor": "Giesecke+Devrient ePayments GmbH",
+      "standard": "FIPS 140-3",
+      "status_or_date": "10/15/2026",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "HIRSCH uTrust FIDO Cryptographic Module",
+      "vendor": "Hirsch Inc.",
+      "standard": "FIPS 140-3",
+      "status_or_date": "12/2/2024",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "Quantum eMotion SecureKey Cryptographic Module",
+      "vendor": "Quantum eMotion Corporation",
+      "standard": "FIPS 140-3",
+      "status_or_date": "7/13/2026",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "CE Crypto Module",
+      "vendor": "Senetas Corporation Ltd., distributed by Thales SA",
+      "standard": "FIPS 140-3",
+      "status_or_date": "9/10/2025",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "CN Series Encryptors",
+      "vendor": "Senetas Corporation Ltd., distributed by Thales SA",
+      "standard": "FIPS 140-3",
+      "status_or_date": "9/10/2025",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "MultiApp v5.1",
+      "vendor": "Thales",
+      "standard": "FIPS 140-3",
+      "status_or_date": "3/12/2025",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "Thales Advanced Security Platform (TASP)",
+      "vendor": "Thales",
+      "standard": "FIPS 140-3",
+      "status_or_date": "8/10/2026",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "IUT",
+      "module_name": "Thales CipherTrust Manager Core Security Module",
+      "vendor": "Thales",
+      "standard": "FIPS 140-3",
+      "status_or_date": "5/14/2026",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "OTP Token",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Review (10/6/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "Digipass GO7",
+      "vendor": "OneSpan",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Review (11/3/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "iShield Key Module",
+      "vendor": "Swissbit",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Pending Resubmission (12/1/2025)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "IDCore 3230 / 230 Platform",
+      "vendor": "Thales",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Review (8/18/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "IDPrime PIV 4.1 FIDO 2.1 on IDcore 3230",
+      "vendor": "Thales",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Comment Resolution - Lab (11/13/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "IDPrime930C/3930C",
+      "vendor": "THALES",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Comment Resolution - Lab (11/19/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "IDPrime930C/3930C FIDO2.1",
+      "vendor": "THALES",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Comment Resolution - CMVP (11/10/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    },
+    {
+      "list_type": "MIP",
+      "module_name": "THCL FIPS Provider for OpenSSL",
+      "vendor": "Thales DIS (Singapore) Pte. Ltd.",
+      "standard": "FIPS 140-3",
+      "status_or_date": "Comment Resolution - Lab (4/30/2026)",
+      "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+    }
+  ]
+}

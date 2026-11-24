@@ -2,14 +2,1668 @@
   "schema_version": 1,
   "mds_blob_no": 303,
   "mds_next_update": "2026-12-01",
-  "device_count": 10,
+  "device_count": 51,
+  "fips_140_3_count": 28,
+  "fips_140_2_count": 23,
   "devices": [
+    {
+      "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
+      "name": "eToken Fusion FIPS",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales SafeNet eToken Fusion FIPS paired with IDPrime 3930 FIDO (#4517, FIPS 140-2 Level 2) and tracked against Thales IDPrime930C/3930C FIPS 140-3 MIP.",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2028-06-09T14:45:50Z",
+      "nist": {
+        "cert_number": "4517",
+        "all_active_cert_numbers": [
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "4517"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "IDPrime930C/3930C",
+          "vendor": "THALES",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Comment Resolution - Lab (11/19/2026)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2023-05-09",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "IDPrime 3930 FIDO",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020241023002",
+        "certification_descriptor": "eToken Fusion FIPS",
+        "effective_date": "2024-10-23"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "050d4ebb551eac10382d05c147124f1c6347af433802dc51702c0cbf1153de1a",
+          "cert_pem_path": "certs/050d4ebb551eac10-etoken-fusion-fips.pem",
+          "pubkey_sha256": "74ea905ea02928c8c717dbd22b5053881d8e3dafdeaf5eabe16662d351bfcc21",
+          "pubkey_pem_path": "pubkeys/050d4ebb551eac10-etoken-fusion-fips.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "issuer": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "not_before": "2020-07-07T14:37:18Z",
+          "not_after": "2030-07-05T14:37:18Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvAKOeqC5/p0D1isCYKQJ\nlVUOrB6I7DLocunE/Rm8duGTbyxQht3CbFVTv3N2Lp2fbjxlI+3sOSGk33FTYkTq\nxcdJIrJ7SskBcUSNrfKOaQT/6KQcP4Cm7V+655Tq+TWxyxWQhDygt15qoP7MuK6b\nT9SwpCjpfKhaMSmyQaMoUcRAbLqdzBCac0hzB+Ze+gqJlnWV9UaSI2rFsVuH4ZE0\ncRO+MOpaLgM/s248nGGHp22ewSQfbnPaBbb8iqyAP+cu52GLsUpKRJebE+R6+PMQ\n9JCdWeQZR3DkfSidkv3mcb4jq1iIta+MqKhRnwrfXh911KWLnYAl9ENChLX0c6Sj\n1QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "0c247f03fd5237a2df6661bf878faa09b38f2cfdcb89a2f24c61d48ca13b91da",
+          "cert_pem_path": "certs/0c247f03fd5237a2-etoken-fusion-fips.pem",
+          "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
+          "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-etoken-fusion-fips.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO CA",
+          "issuer": "CN=Gemalto MultiApp FIDO CA",
+          "not_before": "2018-06-12T14:45:50Z",
+          "not_after": "2028-06-09T14:45:50Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWModalsPtNKUzGhyNOX\nqch/vHfY+axD3Ma4sYaoDRRBmgirdcvMvothS8nkDmDS7IUaWUcR8YAqsRoJDwVW\n89L9SHQXJ/NaFEDOJNKKOMwghWOONS/2b28WZxdJyAeKDs53PzznxXSSs0f32oab\nfCOBo56tNaa36NcJR+fTUiRM/DEbYeWAR3jmM0tJXtWiiX4p7wTaSLiUSRN4fNui\n6VHkZRunecyLsTjtUxBrds3CfNYFuxoFJJCEuTebkdoqGHFrrAkMrjs2IwKQKR0g\ne5ZJAtUB+bzlQA420Q4/CLQ64rept7zIo4UZ/QqEHkwx4DKbsxX8zhbRrj2iA8P2\nkwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
+      "name": "eToken Fusion NFC FIPS",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales SafeNet eToken Fusion NFC FIPS paired with IDPrime 3930 FIDO (#4517, FIPS 140-2 Level 2) and tracked against Thales IDPrime930C/3930C FIPS 140-3 MIP.",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2028-06-09T14:45:50Z",
+      "nist": {
+        "cert_number": "4517",
+        "all_active_cert_numbers": [
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "4517"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "IDPrime930C/3930C",
+          "vendor": "THALES",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Comment Resolution - Lab (11/19/2026)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2023-05-09",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "IDPrime 3930 FIDO",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020241023001",
+        "certification_descriptor": "eToken Fusion NFC FIPS",
+        "effective_date": "2024-10-23"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "050d4ebb551eac10382d05c147124f1c6347af433802dc51702c0cbf1153de1a",
+          "cert_pem_path": "certs/050d4ebb551eac10-etoken-fusion-nfc-fips.pem",
+          "pubkey_sha256": "74ea905ea02928c8c717dbd22b5053881d8e3dafdeaf5eabe16662d351bfcc21",
+          "pubkey_pem_path": "pubkeys/050d4ebb551eac10-etoken-fusion-nfc-fips.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "issuer": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "not_before": "2020-07-07T14:37:18Z",
+          "not_after": "2030-07-05T14:37:18Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvAKOeqC5/p0D1isCYKQJ\nlVUOrB6I7DLocunE/Rm8duGTbyxQht3CbFVTv3N2Lp2fbjxlI+3sOSGk33FTYkTq\nxcdJIrJ7SskBcUSNrfKOaQT/6KQcP4Cm7V+655Tq+TWxyxWQhDygt15qoP7MuK6b\nT9SwpCjpfKhaMSmyQaMoUcRAbLqdzBCac0hzB+Ze+gqJlnWV9UaSI2rFsVuH4ZE0\ncRO+MOpaLgM/s248nGGHp22ewSQfbnPaBbb8iqyAP+cu52GLsUpKRJebE+R6+PMQ\n9JCdWeQZR3DkfSidkv3mcb4jq1iIta+MqKhRnwrfXh911KWLnYAl9ENChLX0c6Sj\n1QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "0c247f03fd5237a2df6661bf878faa09b38f2cfdcb89a2f24c61d48ca13b91da",
+          "cert_pem_path": "certs/0c247f03fd5237a2-etoken-fusion-nfc-fips.pem",
+          "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
+          "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-etoken-fusion-nfc-fips.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO CA",
+          "issuer": "CN=Gemalto MultiApp FIDO CA",
+          "not_before": "2018-06-12T14:45:50Z",
+          "not_after": "2028-06-09T14:45:50Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWModalsPtNKUzGhyNOX\nqch/vHfY+axD3Ma4sYaoDRRBmgirdcvMvothS8nkDmDS7IUaWUcR8YAqsRoJDwVW\n89L9SHQXJ/NaFEDOJNKKOMwghWOONS/2b28WZxdJyAeKDs53PzznxXSSs0f32oab\nfCOBo56tNaa36NcJR+fTUiRM/DEbYeWAR3jmM0tJXtWiiX4p7wTaSLiUSRN4fNui\n6VHkZRunecyLsTjtUxBrds3CfNYFuxoFJJCEuTebkdoqGHFrrAkMrjs2IwKQKR0g\ne5ZJAtUB+bzlQA420Q4/CLQ64rept7zIo4UZ/QqEHkwx4DKbsxX8zhbRrj2iA8P2\nkwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
+      "name": "eWBM eFA310 FIDO2 Authenticator",
+      "vendor": "eWBM",
+      "match_method": "curated",
+      "match_notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2073-06-28T03:46:14Z",
+      "nist": {
+        "cert_number": "4045",
+        "all_active_cert_numbers": [
+          "4045"
+        ],
+        "all_matched_cert_numbers": [
+          "4045"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "SP 800-56Arev3 transition",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-10-18",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "MS1201 Security Sub-system",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4045",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4045.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020190709003",
+        "certification_descriptor": "eWBM eFA310 FIDO2 Authenticator",
+        "effective_date": "2019-07-18"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "200886c7f54c469efa617dfbce5c61aea9a9b6610674264520a0b4dd8adbc7d8",
+          "cert_pem_path": "certs/200886c7f54c469e-ewbm-efa310-fido2-authenticator.pem",
+          "pubkey_sha256": "ab137d3e9286c4052938d81e7c02f3a27f55d79bfb074363f27e6ebac7481090",
+          "pubkey_pem_path": "pubkeys/200886c7f54c469e-ewbm-efa310-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "issuer": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "not_before": "2023-07-11T03:46:14Z",
+          "not_after": "2073-06-28T03:46:14Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECH6h4rItKDv3sjqkmg66/YrRtiMp\ngZB50gxkCCGJk/r6gPAIDvNZqJnNi3eTxqRDeprhOeMDx0I73P8goofLtg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
+      "name": "eWBM eFA320 FIDO2 Authenticator",
+      "vendor": "eWBM",
+      "match_method": "curated",
+      "match_notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2073-06-28T03:46:14Z",
+      "nist": {
+        "cert_number": "4045",
+        "all_active_cert_numbers": [
+          "4045"
+        ],
+        "all_matched_cert_numbers": [
+          "4045"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "SP 800-56Arev3 transition",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-10-18",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "MS1201 Security Sub-system",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4045",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4045.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020190709002",
+        "certification_descriptor": "eWBM eFA320 FIDO2 Authenticator",
+        "effective_date": "2019-07-18"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "200886c7f54c469efa617dfbce5c61aea9a9b6610674264520a0b4dd8adbc7d8",
+          "cert_pem_path": "certs/200886c7f54c469e-ewbm-efa320-fido2-authenticator.pem",
+          "pubkey_sha256": "ab137d3e9286c4052938d81e7c02f3a27f55d79bfb074363f27e6ebac7481090",
+          "pubkey_pem_path": "pubkeys/200886c7f54c469e-ewbm-efa320-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "issuer": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "not_before": "2023-07-11T03:46:14Z",
+          "not_after": "2073-06-28T03:46:14Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECH6h4rItKDv3sjqkmg66/YrRtiMp\ngZB50gxkCCGJk/r6gPAIDvNZqJnNi3eTxqRDeprhOeMDx0I73P8goofLtg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "361a3082-0278-4583-a16f-72a527f973e4",
+      "name": "eWBM eFA500 FIDO2 Authenticator",
+      "vendor": "eWBM",
+      "match_method": "curated",
+      "match_notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2073-06-28T03:46:14Z",
+      "nist": {
+        "cert_number": "4045",
+        "all_active_cert_numbers": [
+          "4045"
+        ],
+        "all_matched_cert_numbers": [
+          "4045"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "SP 800-56Arev3 transition",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-10-18",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "MS1201 Security Sub-system",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4045",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4045.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020190709001",
+        "certification_descriptor": "eWBM eFA500 FIDO2 Authenticator",
+        "effective_date": "2019-07-18"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "200886c7f54c469efa617dfbce5c61aea9a9b6610674264520a0b4dd8adbc7d8",
+          "cert_pem_path": "certs/200886c7f54c469e-ewbm-efa500-fido2-authenticator.pem",
+          "pubkey_sha256": "ab137d3e9286c4052938d81e7c02f3a27f55d79bfb074363f27e6ebac7481090",
+          "pubkey_pem_path": "pubkeys/200886c7f54c469e-ewbm-efa500-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "issuer": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "not_before": "2023-07-11T03:46:14Z",
+          "not_after": "2073-06-28T03:46:14Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECH6h4rItKDv3sjqkmg66/YrRtiMp\ngZB50gxkCCGJk/r6gPAIDvNZqJnNi3eTxqRDeprhOeMDx0I73P8goofLtg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
+      "name": "eWBM eFPA FIDO2 Authenticator",
+      "vendor": "eWBM",
+      "match_method": "curated",
+      "match_notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2073-06-28T03:46:14Z",
+      "nist": {
+        "cert_number": "4045",
+        "all_active_cert_numbers": [
+          "4045"
+        ],
+        "all_matched_cert_numbers": [
+          "4045"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "SP 800-56Arev3 transition",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-10-18",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "MS1201 Security Sub-system",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4045",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4045.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020180926020",
+        "certification_descriptor": "eWBM eFPA FIDO2 Authenticator",
+        "effective_date": "2019-04-04"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "200886c7f54c469efa617dfbce5c61aea9a9b6610674264520a0b4dd8adbc7d8",
+          "cert_pem_path": "certs/200886c7f54c469e-ewbm-efpa-fido2-authenticator.pem",
+          "pubkey_sha256": "ab137d3e9286c4052938d81e7c02f3a27f55d79bfb074363f27e6ebac7481090",
+          "pubkey_pem_path": "pubkeys/200886c7f54c469e-ewbm-efpa-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "issuer": "1.2.840.113549.1.9.1=info@e-wbm.com,CN=eWBM Certificate,OU=Certificate Unit,O=eWBM Co.\\, Ltd.,L=Gangnam,ST=Seoul,C=KR",
+          "not_before": "2023-07-11T03:46:14Z",
+          "not_after": "2073-06-28T03:46:14Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAECH6h4rItKDv3sjqkmg66/YrRtiMp\ngZB50gxkCCGJk/r6gPAIDvNZqJnNi3eTxqRDeprhOeMDx0I73P8goofLtg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+      "name": "Feitian BioPass FIDO2 Authenticator",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass / ePass K26 & K27 Series validated under NIST #3979 (FEITIAN Biometric FIDO Key Module, FIPS 140-2 Level 2; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2048-03-31T23:59:59Z",
+      "nist": {
+        "cert_number": "3979",
+        "all_active_cert_numbers": [
+          "3979"
+        ],
+        "all_matched_cert_numbers": [
+          "3979"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 2,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-07-12",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN Biometric FIDO Key Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3979",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3979.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020180929001",
+        "certification_descriptor": "Feitian BioPass FIDO2 authenticator",
+        "effective_date": "2018-10-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2c86cb00e189ca0431d33867bbb145cc3abbd4900508e3e26e92e35f2e22877a",
+          "cert_pem_path": "certs/2c86cb00e189ca04-feitian-biopass-fido2-authenticator.pem",
+          "pubkey_sha256": "0dd35d5a3b0d0bb363c7684534b78a1c33ec30a2316bace12ab5b67dc1e3e0d5",
+          "pubkey_pem_path": "pubkeys/2c86cb00e189ca04-feitian-biopass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FT FIDO 0200",
+          "issuer": "CN=FT FIDO 0200",
+          "not_before": "2016-05-01T00:00:00Z",
+          "not_after": "2050-05-01T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0GatGpU7HO1MlU3X2+12pwvu0pB6\niXaeczb/JiC+SxmevnRIptWAgSTMdBU67zQtUQTeVWF47UeOCDECVPqjhQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "492bfc9bb0c655f695a9447b445ec4703cd92d63fd910b5043ba3b0a3964506d",
+          "cert_pem_path": "certs/492bfc9bb0c655f6-feitian-biopass-fido2-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/492bfc9bb0c655f6-feitian-biopass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "925f79f4350ac09645dc71adc611badc248e837625246f11558edb3d5ee615f6",
+          "cert_pem_path": "certs/925f79f4350ac096-feitian-biopass-fido2-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/925f79f4350ac096-feitian-biopass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "a02140b7-0cbd-42e1-a9b5-a39da2545114",
+      "name": "Feitian BioPass FIDO2 Plus (Enterprise Profile)",
+      "vendor": "FEITIAN Technologies US, Inc.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass FIDO2 Plus Enterprise (K26 / K27) covered by NIST #3979 and #4422 (FIPS 140-2 Level 2).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2052-06-07T23:59:59Z",
+      "nist": {
+        "cert_number": "4422",
+        "all_active_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "all_matched_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-01-23",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4422",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4422.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020240926003",
+        "certification_descriptor": "Feitian BioPass FIDO2 Plus (Enterprise Profile)",
+        "effective_date": "2024-09-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-biopass-fido2-plus-enterprise-profil.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-biopass-fido2-plus-enterprise-profil.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-biopass-fido2-plus-enterprise-profil.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-biopass-fido2-plus-enterprise-profil.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-biopass-fido2-plus-enterprise-profil.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-biopass-fido2-plus-enterprise-profil.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "42df17de-06ba-4177-a2bb-6701be1380d6",
+      "name": "Feitian BioPass FIDO2 Plus Authenticator",
+      "vendor": "FEITIAN Technologies US, Inc.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass FIDO2 Plus (K26 / K27 variant) covered by NIST #3979 and #4422 (FIPS 140-2 Level 2).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2052-06-07T23:59:59Z",
+      "nist": {
+        "cert_number": "4422",
+        "all_active_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "all_matched_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-01-23",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4422",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4422.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020240926005",
+        "certification_descriptor": "Feitian BioPass FIDO2 Plus Authenticator",
+        "effective_date": "2024-09-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
+      "name": "Feitian BioPass FIDO2 Plus Authenticator",
+      "vendor": "FEITIAN Technologies US, Inc.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass FIDO2 Plus (K26 / K27) covered by NIST #3979 (FIPS 140-2 L2) and #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 L2).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2048-03-31T23:59:59Z",
+      "nist": {
+        "cert_number": "4422",
+        "all_active_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "all_matched_cert_numbers": [
+          "4422",
+          "3979"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-01-23",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4422",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4422.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020180929001",
+        "certification_descriptor": "Feitian BioPass FIDO2 Authenticator",
+        "effective_date": "2018-09-29"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2c86cb00e189ca0431d33867bbb145cc3abbd4900508e3e26e92e35f2e22877a",
+          "cert_pem_path": "certs/2c86cb00e189ca04-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "0dd35d5a3b0d0bb363c7684534b78a1c33ec30a2316bace12ab5b67dc1e3e0d5",
+          "pubkey_pem_path": "pubkeys/2c86cb00e189ca04-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FT FIDO 0200",
+          "issuer": "CN=FT FIDO 0200",
+          "not_before": "2016-05-01T00:00:00Z",
+          "not_after": "2050-05-01T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0GatGpU7HO1MlU3X2+12pwvu0pB6\niXaeczb/JiC+SxmevnRIptWAgSTMdBU67zQtUQTeVWF47UeOCDECVPqjhQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "492bfc9bb0c655f695a9447b445ec4703cd92d63fd910b5043ba3b0a3964506d",
+          "cert_pem_path": "certs/492bfc9bb0c655f6-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/492bfc9bb0c655f6-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "925f79f4350ac09645dc71adc611badc248e837625246f11558edb3d5ee615f6",
+          "cert_pem_path": "certs/925f79f4350ac096-feitian-biopass-fido2-plus-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/925f79f4350ac096-feitian-biopass-fido2-plus-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "2bff89f2-323a-48fc-b7c8-9ff7fe87c07e",
+      "name": "Feitian BioPass FIDO2 Pro (Enterprise Profile)",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass FIDO2 Pro Enterprise (K45 / K49 / K50) covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020240926002",
+        "certification_descriptor": "BioPass FIDO2 Pro (Enterprise Profile)",
+        "effective_date": "2024-09-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-biopass-fido2-pro-enterprise-profile.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-biopass-fido2-pro-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-biopass-fido2-pro-enterprise-profile.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-biopass-fido2-pro-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-biopass-fido2-pro-enterprise-profile.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-biopass-fido2-pro-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "4c0cf95d-2f40-43b5-ba42-4c83a11c04ba",
+      "name": "Feitian BioPass FIDO2 Pro Authenticator",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN BioPass FIDO2 Pro (K45 / K49 / K50) covered by Active FIPS 140-3 Level 3 (#5151, K49/K50) and Historical FIPS 140-2 Level 2 (#4422).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020240926004",
+        "certification_descriptor": "BioPass FIDO2 Pro (Consumer Profile)",
+        "effective_date": "2024-09-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-biopass-fido2-pro-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-biopass-fido2-pro-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-biopass-fido2-pro-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-biopass-fido2-pro-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "12755c32-8ad1-46eb-881c-e0b38d848b09",
+      "name": "Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass FIDO (CTAP2.1) backed by FEITIAN MFA Cryptographic Module (#4422, FIPS 140-2 L2) and ePass Token Cryptographic Module (#5151, FIPS 140-3 L3).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020220718002",
+        "certification_descriptor": "Feitian ePass FIDO Authenticator (CTAP2.1, CTAP2.0, U2F)",
+        "effective_date": "2022-07-18"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-epass-fido-authenticator-ctap2-1-cta.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-epass-fido-authenticator-ctap2-1-cta.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-epass-fido-authenticator-ctap2-1-cta.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-epass-fido-authenticator-ctap2-1-cta.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-epass-fido-authenticator-ctap2-1-cta.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-epass-fido-authenticator-ctap2-1-cta.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "39589099-9a75-49fc-afaa-801ca211c62a",
+      "name": "Feitian ePass FIDO-NFC (Enterprise Profile) (CTAP2.1, CTAP2.0, U2F)",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass K40 / K9D Enterprise Profile covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250228001",
+        "certification_descriptor": "ePass FIDO-NFC Series (Enterprise Profile)",
+        "effective_date": "2025-02-28"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3b0e51e8199d3d4a598860967e68315e1f3c3f4d1cc78a0f993d5a0dc2c39dc0",
+          "cert_pem_path": "certs/3b0e51e8199d3d4a-feitian-epass-fido-nfc-enterprise-profile-ct.pem",
+          "pubkey_sha256": "d67f364e6353b4cc6765cc8634037ae4e6467d3bd0bc5d14d1e0d8033df2afd8",
+          "pubkey_pem_path": "pubkeys/3b0e51e8199d3d4a-feitian-epass-fido-nfc-enterprise-profile-ct.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=FEITIAN FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=FEITIAN FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2124-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAwm/HbN+icnGllPk+jE6WaC4PPgEw\nTiFtv1HMNVIPm4LN2I48135T/e08eOym1Cyw7oLuACzj9hpHZ71/+RSGpzIBoreb\ntFOS4h+MxMpEyKR1SZb1e8gAT1KOmmrodwEhhPRiCga69yonZrK7xLgXOja6t+qG\ncIGpOZKpaPzGdTdST1U=\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-epass-fido-nfc-enterprise-profile-ct.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-epass-fido-nfc-enterprise-profile-ct.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "f69133c148261664746d706bdddb5edd31684640a85c8c57140b264c0e2e1252",
+          "cert_pem_path": "certs/f69133c148261664-feitian-epass-fido-nfc-enterprise-profile-ct.pem",
+          "pubkey_sha256": "65ebd59defc509598daa6d6b6ea936b22460d92962709f53acff1649a133aae3",
+          "pubkey_pem_path": "pubkeys/f69133c148261664-feitian-epass-fido-nfc-enterprise-profile-ct.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=FEITIAN EA CA 02,O=Feitian Technologies,C=US",
+          "issuer": "CN=FEITIAN FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2100-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEv3WPVlIlYaEegO6hnnIx3krrvR8Ix3RL\nf4jhnDz3UsoZcGow1RevLfcDDfP+b5SGnijtK0ZxUJ5hpprlKLnqz9qDycCvk7i3\n8AwGq6myB41kbBbjsm/c+X3JHzH89kBI\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "78ba3993-d784-4f44-8d6e-cc0a8ad5230e",
+      "name": "Feitian ePass FIDO-NFC(CTAP2.1, CTAP2.0, U2F)",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass K40 / K9D Series covered by Active FIPS 140-3 Level 3 (#5151, K9/K40 Security Policy Table 2) and Historical FIPS 140-2 Level 2 (#4422).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250303001",
+        "certification_descriptor": "ePass FIDO-NFC Series",
+        "effective_date": "2025-03-03"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "1d0e48061d16ad771c76a4a2a4d856a497aa71578e1e9b3a309d1c0d6f68f7ba",
+          "cert_pem_path": "certs/1d0e48061d16ad77-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pem",
+          "pubkey_sha256": "009d4246e087930a3c982ebf111622610a20b425dbb26f576e5504c55591cfac",
+          "pubkey_pem_path": "pubkeys/1d0e48061d16ad77-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=FEITIAN FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=FEITIAN FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2124-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAM3K4RlbgKxBsfCjGUQtSK61JCaoM\n+ZlXBa8SxOHwAIqbHa1+i7Eo23RGxrfBx8eUBDeEwSLY6yNhMsYMcnhzX8ABea2G\nAy5Ayd/0o0yTXt4NKOgRVktuW7fbAKpOobAerDk7rNOFj5KIafcXym4xAfDpXEPI\nLiqXFpyyRrRMk/MDayM=\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "9c3fab00f8c7deebe66afdba08a8757e1d8feeb4ba48f3d1c695a7ba7ff5c493",
+          "cert_pem_path": "certs/9c3fab00f8c7deeb-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pem",
+          "pubkey_sha256": "e8dffe9223960ea0c4ee64855953a226df6b61936efff85193e439d208fa8c5d",
+          "pubkey_pem_path": "pubkeys/9c3fab00f8c7deeb-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=FEITIAN FIDO CA 02,O=Feitian Technologies,C=US",
+          "issuer": "CN=FEITIAN FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2100-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEbQ5nr0q1mrCYOiEFIYqi3R9hGMWsSpjf\nhVmms8BapaMgRCHN+4Dnh8UZCLgasBwtPtJ+3Rst5uf6poDlou1BwgYk/q/01Ij/\n4AwlK7v/PQddRhMkiupWkWNHL4zLC+Kw\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-epass-fido-nfc-ctap2-1-ctap2-0-u2f.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
+      "name": "Feitian ePass FIDO2 Authenticator",
+      "vendor": "FEITIAN Technologies US, Inc.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass FIDO2 Authenticator validated under NIST #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2048-03-31T23:59:59Z",
+      "nist": {
+        "cert_number": "4422",
+        "all_active_cert_numbers": [
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "4422"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-01-23",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4422",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4422.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020190311003",
+        "certification_descriptor": "Feitian ePass FIDO2 USB only",
+        "effective_date": "2019-05-27"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2c86cb00e189ca0431d33867bbb145cc3abbd4900508e3e26e92e35f2e22877a",
+          "cert_pem_path": "certs/2c86cb00e189ca04-feitian-epass-fido2-authenticator.pem",
+          "pubkey_sha256": "0dd35d5a3b0d0bb363c7684534b78a1c33ec30a2316bace12ab5b67dc1e3e0d5",
+          "pubkey_pem_path": "pubkeys/2c86cb00e189ca04-feitian-epass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FT FIDO 0200",
+          "issuer": "CN=FT FIDO 0200",
+          "not_before": "2016-05-01T00:00:00Z",
+          "not_after": "2050-05-01T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0GatGpU7HO1MlU3X2+12pwvu0pB6\niXaeczb/JiC+SxmevnRIptWAgSTMdBU67zQtUQTeVWF47UeOCDECVPqjhQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "492bfc9bb0c655f695a9447b445ec4703cd92d63fd910b5043ba3b0a3964506d",
+          "cert_pem_path": "certs/492bfc9bb0c655f6-feitian-epass-fido2-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/492bfc9bb0c655f6-feitian-epass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "925f79f4350ac09645dc71adc611badc248e837625246f11558edb3d5ee615f6",
+          "cert_pem_path": "certs/925f79f4350ac096-feitian-epass-fido2-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/925f79f4350ac096-feitian-epass-fido2-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
+      "name": "Feitian ePass FIDO2-NFC Authenticator",
+      "vendor": "FEITIAN Technologies US, Inc.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass FIDO2-NFC (K40 / K9) validated under NIST #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2038-05-19T23:59:59Z",
+      "nist": {
+        "cert_number": "4422",
+        "all_active_cert_numbers": [
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "4422"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-01-23",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "FEITIAN MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4422",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4422.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020180929002",
+        "certification_descriptor": "Feitian ePass FIDO2-NFC Authenticator",
+        "effective_date": "2018-10-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "196f98300ebe607fa45eeca5925cc61b5f6450a2da0330bf617335aa84820250",
+          "cert_pem_path": "certs/196f98300ebe607f-feitian-epass-fido2-nfc-authenticator.pem",
+          "pubkey_sha256": "12d98b3e19ecb574ca724847ea578744804e913b17cd9a4f0cbb0855f79542df",
+          "pubkey_pem_path": "pubkeys/196f98300ebe607f-feitian-epass-fido2-nfc-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO CA 04,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-05-20T00:00:00Z",
+          "not_after": "2038-05-19T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAExaEWVjmKkhb8crsoukpphTm/j0cr\nBmzIQCqdpJ/QJDPrtUdnRw9dh3qcTi6bcEfSWvhbziA9xkVR6tnbceu4Mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "2c86cb00e189ca0431d33867bbb145cc3abbd4900508e3e26e92e35f2e22877a",
+          "cert_pem_path": "certs/2c86cb00e189ca04-feitian-epass-fido2-nfc-authenticator.pem",
+          "pubkey_sha256": "0dd35d5a3b0d0bb363c7684534b78a1c33ec30a2316bace12ab5b67dc1e3e0d5",
+          "pubkey_pem_path": "pubkeys/2c86cb00e189ca04-feitian-epass-fido2-nfc-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FT FIDO 0200",
+          "issuer": "CN=FT FIDO 0200",
+          "not_before": "2016-05-01T00:00:00Z",
+          "not_after": "2050-05-01T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0GatGpU7HO1MlU3X2+12pwvu0pB6\niXaeczb/JiC+SxmevnRIptWAgSTMdBU67zQtUQTeVWF47UeOCDECVPqjhQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "492bfc9bb0c655f695a9447b445ec4703cd92d63fd910b5043ba3b0a3964506d",
+          "cert_pem_path": "certs/492bfc9bb0c655f6-feitian-epass-fido2-nfc-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/492bfc9bb0c655f6-feitian-epass-fido2-nfc-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "925f79f4350ac09645dc71adc611badc248e837625246f11558edb3d5ee615f6",
+          "cert_pem_path": "certs/925f79f4350ac096-feitian-epass-fido2-nfc-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/925f79f4350ac096-feitian-epass-fido2-nfc-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
+      "name": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN ePass FIDO2-NFC Series (K40) covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422).",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020220718001",
+        "certification_descriptor": "Feitian ePass FIDO2-NFC Series (CTAP2.1, CTAP2.0, U2F)",
+        "effective_date": "2022-07-18"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2b7f7417734ad972791ac23a53c596ff67d98c02d391c09ff1c128f097d9f8cc",
+          "cert_pem_path": "certs/2b7f7417734ad972-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/2b7f7417734ad972-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cc7dd421c2c559c30279bd9b56a90fb644377d370cfdeb6f9cd488466e4425b9",
+          "cert_pem_path": "certs/cc7dd421c2c559c3-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pem",
+          "pubkey_sha256": "6168447ea07b1cd97a742daba4f099a797d7e0fa68bddfcb7bf2b1cc34f98ec3",
+          "pubkey_pem_path": "pubkeys/cc7dd421c2c559c3-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO EA Root,O=Feitian Technologies,C=US",
+          "not_before": "2023-01-01T00:00:00Z",
+          "not_after": "2052-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEPYsccBCpht1HVZmW56u0zfStaGit\nhq9aYxVrid1f09nC5ESktDibWcSWpAoydETz/gL5GrCJq/6akjiTF3l7mw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d6358e8e4547793345fd98c4d1f768183cc847499506ebd736634beff4793ca2",
+          "cert_pem_path": "certs/d6358e8e45477933-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/d6358e8e45477933-feitian-epass-fido2-nfc-series-ctap2-1-ctap2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2022-06-08T00:00:00Z",
+          "not_after": "2052-06-07T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
+      "name": "Feitian iePass FIDO Authenticator",
+      "vendor": "FEITIAN Technologies Co., Ltd.",
+      "match_method": "curated",
+      "match_notes": "FEITIAN iePass FIDO (K44) validated under NIST #4422 (FIPS 140-2 Level 2, Physical Level 3) and covered by #5151 ePass Token line.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5151",
+        "all_active_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "all_matched_cert_numbers": [
+          "5151",
+          "4422"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-01-28",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "FEITIAN ePass Token Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5151",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5151.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020200417002",
+        "certification_descriptor": "Feitian iePass FIDO®",
+        "effective_date": "2020-04-24"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2c86cb00e189ca0431d33867bbb145cc3abbd4900508e3e26e92e35f2e22877a",
+          "cert_pem_path": "certs/2c86cb00e189ca04-feitian-iepass-fido-authenticator.pem",
+          "pubkey_sha256": "0dd35d5a3b0d0bb363c7684534b78a1c33ec30a2316bace12ab5b67dc1e3e0d5",
+          "pubkey_pem_path": "pubkeys/2c86cb00e189ca04-feitian-iepass-fido-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FT FIDO 0200",
+          "issuer": "CN=FT FIDO 0200",
+          "not_before": "2016-05-01T00:00:00Z",
+          "not_after": "2050-05-01T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE0GatGpU7HO1MlU3X2+12pwvu0pB6\niXaeczb/JiC+SxmevnRIptWAgSTMdBU67zQtUQTeVWF47UeOCDECVPqjhQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "492bfc9bb0c655f695a9447b445ec4703cd92d63fd910b5043ba3b0a3964506d",
+          "cert_pem_path": "certs/492bfc9bb0c655f6-feitian-iepass-fido-authenticator.pem",
+          "pubkey_sha256": "862cd984d19ca8699328cb4f16b89168c35852fe5b5ea0512722128818f56fe4",
+          "pubkey_pem_path": "pubkeys/492bfc9bb0c655f6-feitian-iepass-fido-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=US",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEsFYEEhiJuqqnMgQjSiivBjV7DGCT\nf4XBBH/B7uvZsKxXShF0L8uDISWUvcExixRs6gB3oldSrjox6L8T94NOzg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "925f79f4350ac09645dc71adc611badc248e837625246f11558edb3d5ee615f6",
+          "cert_pem_path": "certs/925f79f4350ac096-feitian-iepass-fido-authenticator.pem",
+          "pubkey_sha256": "eb3104a6fec59265e54ad452e240d640148a4faf81625126db2c3ad5468676d8",
+          "pubkey_pem_path": "pubkeys/925f79f4350ac096-feitian-iepass-fido-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "issuer": "CN=Feitian FIDO Root CA,O=Feitian Technologies,C=CN",
+          "not_before": "2018-04-01T00:00:00Z",
+          "not_after": "2048-03-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEnfAKbjvMX1Ey1b6k+WQQdNVMt9Jg\nGWyJ3PvM4BSK5XqTfo++0oAj/4tnwyIL0HFBR9St+ktjqSXDfjiXAurs8w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
+      "name": "Google Titan Security Key v2",
+      "vendor": "Google, LLC.",
+      "match_method": "curated",
+      "match_notes": "NIST #4574 (Google Titan Security Key Chip Boundary, FIPS 140-2 Overall Level 1 / Physical Level 3; excluded from Level 2+ trust bundle).",
+      "assurance": "standard",
+      "meets_shougt_high_assurance": false,
+      "valid_until": "2121-12-02T15:23:51Z",
+      "nist": {
+        "cert_number": "4574",
+        "all_active_cert_numbers": [
+          "4574"
+        ],
+        "all_matched_cert_numbers": [
+          "4574"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 1,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-08-31",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "Titan Security Key, Chip Boundary",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4574",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4574.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020230612002",
+        "certification_descriptor": "Google Titan Security Key v2",
+        "effective_date": "2023-06-12"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "198493807e92540a44a9e1cc9cb0634e27ac68eb37a442da8af9cf60f99e70a6",
+          "cert_pem_path": "certs/198493807e92540a-google-titan-security-key-v2.pem",
+          "pubkey_sha256": "01dd83bf17bc70778516bb3104084fe368786231851d9c1440a7161f984220f1",
+          "pubkey_pem_path": "pubkeys/198493807e92540a-google-titan-security-key-v2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Titan Security Key Root,OU=Authenticator Attestation,O=Google,C=US",
+          "issuer": "CN=Titan Security Key Root,OU=Authenticator Attestation,O=Google,C=US",
+          "not_before": "2021-12-01T15:23:51Z",
+          "not_after": "2121-12-02T15:23:51Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEapjVs3AzR+t6PE86HQdo5PW+PVT7\nHyL16XYWlsXy2sqOCwWw618sRdyUdT+lumbKlghGK19KGCMQKIN4QhOMnQ==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "918a618c220cfdaeda51ea4eae0eb5dea106deef721882a82e5df5a9b04728e7",
+          "cert_pem_path": "certs/918a618c220cfdae-google-titan-security-key-v2.pem",
+          "pubkey_sha256": "6775da47e8e5a91756d59ff8f713cdc8931dbb2f3fa63807082fd4ec1cf7a8f5",
+          "pubkey_pem_path": "pubkeys/918a618c220cfdae-google-titan-security-key-v2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Titan Security Key Signing,OU=Authenticator Attestation,O=Google,C=US",
+          "issuer": "CN=Titan Security Key Root,OU=Authenticator Attestation,O=Google,C=US",
+          "not_before": "2021-12-01T15:26:31Z",
+          "not_after": "2121-12-02T15:26:31Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAERkl/9FpqErWH4Zpc0jweEgEYZkwa\nT4tKN8mMoEuLJp/+DhXRjSXbD8ZLm+tqTpVntCOnCUofVtxABwNmTzvkvg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
     {
       "aaguid": "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed",
       "name": "HID Crescendo 4000 FIPS",
       "vendor": "HID Global",
       "match_method": "curated",
-      "match_notes": "NIST #5390 (HID Global - HID Applets v4.0 on NXP JCOP 4.5 P71D600, FIPS 140-3 Level 2) matched to HID Crescendo 4000 FIPS (FIDO2 L2).",
+      "match_notes": "NIST #5390 (HID Applets v4.0 on NXP JCOP 4.5 P71D600, Active FIPS 140-3 Level 2, Physical Level 4) matched to HID Crescendo 4000 FIPS.",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-07-09T23:59:59Z",
@@ -18,12 +1672,18 @@
         "all_active_cert_numbers": [
           "5390"
         ],
+        "all_matched_cert_numbers": [
+          "5390"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 4,
         "status": "Active",
-        "validation_date": "2026-07-10",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-10",
         "sunset_date": "2031-07-09",
         "sunset_iso": "2031-07-09T23:59:59Z",
         "module_name": "HID Applets v4.0 on NXP JCOP 4.5 P71D600",
@@ -63,11 +1723,208 @@
       ]
     },
     {
+      "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
+      "name": "HID Crescendo C2300",
+      "vendor": "HID Global",
+      "match_method": "curated",
+      "match_notes": "HID Crescendo C2300 smart card backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3882 FIPS 140-2 L3 / #3854 FIPS 140-2 L2; Historical via sunset).",
+      "assurance": "fips140-2-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2044-04-27T19:31:12Z",
+      "nist": {
+        "cert_number": "3882",
+        "all_active_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "all_matched_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-04-05",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (OSB)",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3882",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3882.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020190821001",
+        "certification_descriptor": "HID Crescendo C2300",
+        "effective_date": "2019-09-27"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "a7d926099c8fa56ef68f3ad942d726ad1ccd14799f82647efe2d8af3c1dd4807",
+          "cert_pem_path": "certs/a7d926099c8fa56e-hid-crescendo-c2300.pem",
+          "pubkey_sha256": "ce6b25a66e5731825a16864434fbffed343aa1b73babae99cf14087386cd9575",
+          "pubkey_pem_path": "pubkeys/a7d926099c8fa56e-hid-crescendo-c2300.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FIDO Attestation CA 1,OU=Authenticator Attestation,O=HID Global,C=US",
+          "issuer": "CN=FIDO Attestation Root CA 1,OU=Authenticator Attestation,O=HID Global,C=US",
+          "not_before": "2019-04-24T19:31:12Z",
+          "not_after": "2044-04-27T19:31:12Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGhSML7cupCxTBCzsrcipwgPoz3dv\nT3rBn1zakDzBg6Uc3HdGKJrVbrD+yXF6Y4ZqksUU7rbRivqOOzKxcJvPFg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
+      "name": "HID Crescendo Key",
+      "vendor": "HID Global",
+      "match_method": "curated",
+      "match_notes": "HID Crescendo Key backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3854 FIPS 140-2 L2 / #3882 FIPS 140-2 L3; Historical via sunset).",
+      "assurance": "fips140-2-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2044-04-27T19:31:23Z",
+      "nist": {
+        "cert_number": "3882",
+        "all_active_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "all_matched_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-04-05",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (OSB)",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3882",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3882.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020190821002",
+        "certification_descriptor": "HID Crescendo Key",
+        "effective_date": "2019-10-08"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "6834aecc369824e56c3804edb514fea92b72973d3804999d90362371b9175afe",
+          "cert_pem_path": "certs/6834aecc369824e5-hid-crescendo-key.pem",
+          "pubkey_sha256": "23863f2da20369ab04a1bda35b85f9669fad01d4d075f8d1aefc4d1714a8f8ab",
+          "pubkey_pem_path": "pubkeys/6834aecc369824e5-hid-crescendo-key.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FIDO Attestation CA 2,OU=Authenticator Attestation,O=HID Global,C=US",
+          "issuer": "CN=FIDO Attestation Root CA 1,OU=Authenticator Attestation,O=HID Global,C=US",
+          "not_before": "2019-04-24T19:31:23Z",
+          "not_after": "2044-04-27T19:31:23Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE4nK9ctzk6GEGFNQBcrnBBmWU+dCn\nuHQAARrB2Eyc8MbsljkSFhZtfz/Rw6SuVIDk5VakDzrKBAOJ9v0Rvg/40w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "2d3bec26-15ee-4f5d-88b2-53622490270b",
+      "name": "HID Crescendo Key V2",
+      "vendor": "HID Global",
+      "match_method": "curated",
+      "match_notes": "HID Crescendo Key V2 backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3854 FIPS 140-2 L2 / #3882 FIPS 140-2 L3; Historical via sunset).",
+      "assurance": "fips140-2-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2047-11-04T21:10:27Z",
+      "nist": {
+        "cert_number": "3882",
+        "all_active_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "all_matched_cert_numbers": [
+          "3882",
+          "3854"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-04-05",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (OSB)",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3882",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3882.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020230120001",
+        "certification_descriptor": "HID Crescendo Key V2",
+        "effective_date": "2023-01-20"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "47a1b53523de068bb9af9cb723a7ca08a397c3e4b07f924f7b299639aea39519",
+          "cert_pem_path": "certs/47a1b53523de068b-hid-crescendo-key-v2.pem",
+          "pubkey_sha256": "dfd887c345cd67b811195c6ead096688f804192bb49802866e267866dfeb1ebe",
+          "pubkey_pem_path": "pubkeys/47a1b53523de068b-hid-crescendo-key-v2.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FIDO Attestation CA 5,OU=Authenticator Attestation,O=HID Global,C=US",
+          "issuer": "CN=FIDO Attestation Root CA 2,OU=Authenticator Attestation,O=HID Global,C=US",
+          "not_before": "2022-11-04T21:10:27Z",
+          "not_after": "2047-11-04T21:10:27Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIeco+yMo10CzRII2CxaVLgNyhuTs\nDuWTNAOQyRouct7qJtbyv7uTeufwhRKj7nEwwu0gQn+y8kyAFlbFSgPGxQ==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "19bca99b-7c09-44fe-a969-8cba45764542",
       "name": "HID Crescendo Key V3 FIPS",
       "vendor": "HID Global",
       "match_method": "curated",
-      "match_notes": "NIST #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform, FIPS 140-3 Level 2) matched to HID Crescendo Key V3 FIPS (FIDO2 L2).",
+      "match_notes": "NIST #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform, Active FIPS 140-3 Level 2, Physical Level 3) matched to HID Crescendo Key V3 FIPS.",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2030-06-17T23:59:59Z",
@@ -76,11 +1933,17 @@
         "all_active_cert_numbers": [
           "5028"
         ],
+        "all_matched_cert_numbers": [
+          "5028"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2025-06-18",
         "sunset_date": "2030-06-17",
         "sunset_iso": "2030-06-17T23:59:59Z",
@@ -122,11 +1985,555 @@
       ]
     },
     {
+      "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
+      "name": "Hyper FIDO Bio Security Key",
+      "vendor": "Hypersecu Information Systems Inc.",
+      "match_method": "curated",
+      "match_notes": "Hypersecu Hyper FIDO Bio Security Key validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2047-12-31T23:59:59Z",
+      "nist": {
+        "cert_number": "4680",
+        "all_active_cert_numbers": [
+          "4680"
+        ],
+        "all_matched_cert_numbers": [
+          "4680"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2024-03-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "Hypersecu HYP2003 MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4680",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4680.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020210208001",
+        "certification_descriptor": "Hyper FIDO® Bio Security Key",
+        "effective_date": "2021-02-09"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "915cddba4cc45c8d13ac0ceb62be483fd72719ffd4c7f11b9bfc1da6b1807dd3",
+          "cert_pem_path": "certs/915cddba4cc45c8d-hyper-fido-bio-security-key.pem",
+          "pubkey_sha256": "cac962d104c140e573076e5b2c20bc40798f4038798d762582b97d8489652d4d",
+          "pubkey_pem_path": "pubkeys/915cddba4cc45c8d-hyper-fido-bio-security-key.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=HYPERFIDO 0200,O=HYPERSECU,C=CA",
+          "issuer": "CN=HYPERFIDO 0200,O=HYPERSECU,C=CA",
+          "not_before": "2018-01-01T00:00:00Z",
+          "not_after": "2047-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErKUI1G0S7a6IOLlmHipLlBuxTYjs\nEESQvzQh3dB7dvxxWWm7kWL91rq6S7ayZG0gZPR+zYqdFzwAYDcG4+aX6w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
+      "name": "Hyper FIDO Pro",
+      "vendor": "Hypersecu Information Systems Inc.",
+      "match_method": "curated",
+      "match_notes": "Hypersecu Hyper FIDO Pro validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2047-12-31T23:59:59Z",
+      "nist": {
+        "cert_number": "4680",
+        "all_active_cert_numbers": [
+          "4680"
+        ],
+        "all_matched_cert_numbers": [
+          "4680"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2024-03-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "Hypersecu HYP2003 MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4680",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4680.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020190805001",
+        "certification_descriptor": "Hyper FIDO® Pro",
+        "effective_date": "2020-07-17"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "915cddba4cc45c8d13ac0ceb62be483fd72719ffd4c7f11b9bfc1da6b1807dd3",
+          "cert_pem_path": "certs/915cddba4cc45c8d-hyper-fido-pro.pem",
+          "pubkey_sha256": "cac962d104c140e573076e5b2c20bc40798f4038798d762582b97d8489652d4d",
+          "pubkey_pem_path": "pubkeys/915cddba4cc45c8d-hyper-fido-pro.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=HYPERFIDO 0200,O=HYPERSECU,C=CA",
+          "issuer": "CN=HYPERFIDO 0200,O=HYPERSECU,C=CA",
+          "not_before": "2018-01-01T00:00:00Z",
+          "not_after": "2047-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAErKUI1G0S7a6IOLlmHipLlBuxTYjs\nEESQvzQh3dB7dvxxWWm7kWL91rq6S7ayZG0gZPR+zYqdFzwAYDcG4+aX6w==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "6999180d-630c-442d-b8f7-424b90a43fae",
+      "name": "Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)",
+      "vendor": "Hypersecu Information Systems Inc.",
+      "match_method": "curated",
+      "match_notes": "Hypersecu Hyper FIDO Pro matched to #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 L2) and Active FIPS 140-3 L3 #5255.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-01-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5255",
+        "all_active_cert_numbers": [
+          "5255",
+          "4680"
+        ],
+        "all_matched_cert_numbers": [
+          "5255",
+          "4680"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-05-04",
+        "sunset_date": "2031-01-27",
+        "sunset_iso": "2031-01-27T23:59:59Z",
+        "module_name": "HYPERSECU HyperPKI Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5255",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5255.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020250729001",
+        "certification_descriptor": "Hyper FIDO Pro",
+        "effective_date": "2025-07-29"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "1d7bef758469b5029473ac66580544c0a621e101cf7c0c462d6d27fdb2663ed0",
+          "cert_pem_path": "certs/1d7bef758469b502-hyper-fido-pro-ctap2-1-ctap2-0-u2f.pem",
+          "pubkey_sha256": "5c4659d5b1098f4774c4f873769012954dab8dc5924f1b5cb8bc6fab303ec1d2",
+          "pubkey_pem_path": "pubkeys/1d7bef758469b502-hyper-fido-pro-ctap2-1-ctap2-0-u2f.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=Hypersecu CA 02,O=HYPERSECU,C=CA",
+          "issuer": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2100-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEzrVme2W1p1aq4o/ELbF2s+JaT6tQ2ZoM\nG0PcH79wdJwOrQeA2EPCewu+emSsgfbUYUIrL0WhGCP7RzfsVhfBQld7LZeUhTPi\nO12zuP8k9QqvLccnbjym1zzR3InvXEMY\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "f49dc59a4db5b39e1efd507e74afd2f819575b817e386f1413c6d8525a7d3394",
+          "cert_pem_path": "certs/f49dc59a4db5b39e-hyper-fido-pro-ctap2-1-ctap2-0-u2f.pem",
+          "pubkey_sha256": "d9d841d48b6e4c23edab67beeb6d7acb8a1d0f4807c4c9e93dd5b7fc42f31a2d",
+          "pubkey_pem_path": "pubkeys/f49dc59a4db5b39e-hyper-fido-pro-ctap2-1-ctap2-0-u2f.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "issuer": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2124-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQBRaz2/CgywMOB7GC1OXMHr6D0tCek\nGqPB28dqNdfq2L7MQMK1dz/ztjLZLgOGw5JmEgNGC+QPidmKOL/3df0D9lEBdXaj\nxZJlNu1WYQuD1wnXF/hTHbrm/+PyxMFWjjMD01AIPfEkcHAY0s7jFgZcXthtFkBZ\n3TdrZ9mNrGbm1+8kCB8=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "23195a52-62d9-40fa-8ee5-23b173f4fb52",
+      "name": "Hyper FIDO Pro NFC",
+      "vendor": "Hypersecu Information Systems Inc.",
+      "match_method": "curated",
+      "match_notes": "Hypersecu Hyper FIDO Pro NFC validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2100-12-31T23:59:59Z",
+      "nist": {
+        "cert_number": "4680",
+        "all_active_cert_numbers": [
+          "4680"
+        ],
+        "all_matched_cert_numbers": [
+          "4680"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2024-03-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "Hypersecu HYP2003 MFA Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4680",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4680.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250729002",
+        "certification_descriptor": "Hyper FIDO Pro NFC",
+        "effective_date": "2025-07-29"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "1d7bef758469b5029473ac66580544c0a621e101cf7c0c462d6d27fdb2663ed0",
+          "cert_pem_path": "certs/1d7bef758469b502-hyper-fido-pro-nfc.pem",
+          "pubkey_sha256": "5c4659d5b1098f4774c4f873769012954dab8dc5924f1b5cb8bc6fab303ec1d2",
+          "pubkey_pem_path": "pubkeys/1d7bef758469b502-hyper-fido-pro-nfc.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=Hypersecu CA 02,O=HYPERSECU,C=CA",
+          "issuer": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2100-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEzrVme2W1p1aq4o/ELbF2s+JaT6tQ2ZoM\nG0PcH79wdJwOrQeA2EPCewu+emSsgfbUYUIrL0WhGCP7RzfsVhfBQld7LZeUhTPi\nO12zuP8k9QqvLccnbjym1zzR3InvXEMY\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "f49dc59a4db5b39e1efd507e74afd2f819575b817e386f1413c6d8525a7d3394",
+          "cert_pem_path": "certs/f49dc59a4db5b39e-hyper-fido-pro-nfc.pem",
+          "pubkey_sha256": "d9d841d48b6e4c23edab67beeb6d7acb8a1d0f4807c4c9e93dd5b7fc42f31a2d",
+          "pubkey_pem_path": "pubkeys/f49dc59a4db5b39e-hyper-fido-pro-nfc.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "issuer": "CN=Hypersecu Root CA,O=HYPERSECU,C=CA",
+          "not_before": "2025-01-01T00:00:00Z",
+          "not_after": "2124-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQBRaz2/CgywMOB7GC1OXMHr6D0tCek\nGqPB28dqNdfq2L7MQMK1dz/ztjLZLgOGw5JmEgNGC+QPidmKOL/3df0D9lEBdXaj\nxZJlNu1WYQuD1wnXF/hTHbrm/+PyxMFWjjMD01AIPfEkcHAY0s7jFgZcXthtFkBZ\n3TdrZ9mNrGbm1+8kCB8=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "82b0a720-127a-4788-b56d-d1d4b2d82eac",
+      "name": "ID-One Key",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Key.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "wired",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241227001",
+        "certification_descriptor": "ID-One Key",
+        "effective_date": "2024-12-27"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "023465554da6ec7ec9dc5d095600fa0d4956784b96c9493e6df7abe1137790a0",
+          "cert_pem_path": "certs/023465554da6ec7e-id-one-key.pem",
+          "pubkey_sha256": "ba00c9fe681a570d1bac625f459039600a90e024ee3119a4176b448d615c13ad",
+          "pubkey_pem_path": "pubkeys/023465554da6ec7e-id-one-key.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "issuer": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "not_before": "2024-09-18T22:00:00Z",
+          "not_after": "2064-09-19T21:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAlcTYsCV2LxuwK8Q5PK+03/wSAPSp\nQZR6k12P2pqfB1p7M3JUfUwvemitohKJY2EepPLadIiwz2gVarPB6MFc/H4BRmv5\nycUYhWwJyPiRfqFJQrcnOr2QmGUm7n/GZhQKVz5ur8L7NOpnonvxcuhceujee1xH\npIU+WryCo2hpNfXoYiI=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "f2145e86-211e-4931-b874-e22bba7d01cc",
+      "name": "ID-One Key",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Key.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "wired",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241227004",
+        "certification_descriptor": "ID-One Key",
+        "effective_date": "2024-12-27"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "023465554da6ec7ec9dc5d095600fa0d4956784b96c9493e6df7abe1137790a0",
+          "cert_pem_path": "certs/023465554da6ec7e-id-one-key.pem",
+          "pubkey_sha256": "ba00c9fe681a570d1bac625f459039600a90e024ee3119a4176b448d615c13ad",
+          "pubkey_pem_path": "pubkeys/023465554da6ec7e-id-one-key.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "issuer": "CN=IDEMIA Identity and Security USA LLC Root CA,O=IDEMIA Identity and Security USA LLC,L=Reston,ST=VA,C=US",
+          "not_before": "2024-09-18T22:00:00Z",
+          "not_after": "2064-09-19T21:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAlcTYsCV2LxuwK8Q5PK+03/wSAPSp\nQZR6k12P2pqfB1p7M3JUfUwvemitohKJY2EepPLadIiwz2gVarPB6MFc/H4BRmv5\nycUYhWwJyPiRfqFJQrcnOr2QmGUm7n/GZhQKVz5ur8L7NOpnonvxcuhceujee1xH\npIU+WryCo2hpNfXoYiI=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "23485084-2d0d-49e1-9b7d-b1a63cd8c891",
+      "name": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
+      "vendor": "IDEMIA",
+      "match_method": "curated",
+      "match_notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA Cosmo FIDO R2 USB-C FIPS E.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-11-18T23:59:59Z",
+      "nist": {
+        "cert_number": "5597",
+        "all_active_cert_numbers": [
+          "5597"
+        ],
+        "all_matched_cert_numbers": [
+          "5597"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2026-11-19",
+        "sunset_date": "2031-11-18",
+        "sunset_iso": "2031-11-18T23:59:59Z",
+        "module_name": "ID-One PIV 243 & FIDO 213",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5597",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5597.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "wired",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FA001202600045",
+        "certification_descriptor": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
+        "effective_date": "2026-11-16"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "e489ca78b8fc3b50143b4d486fe10bfb31b65b756ea626f8f6dd54b1c0a9080f",
+          "cert_pem_path": "certs/e489ca78b8fc3b50-idemia-cosmo-fido-r2-usb-c-fips-e.pem",
+          "pubkey_sha256": "2ae132773c3d4b71922ba4691a01fb40d73b9dc2f7fbb05579db4b2466668304",
+          "pubkey_pem_path": "pubkeys/e489ca78b8fc3b50-idemia-cosmo-fido-r2-usb-c-fips-e.pub.pem",
+          "pubkey_algorithm": "ECDSA secp521r1",
+          "subject": "CN=IDEMIA Secure Transactions - Root CA,O=IDEMIA Secure Transactions,L=Courbevoie,ST=IDF,C=FR",
+          "issuer": "CN=IDEMIA Secure Transactions - Root CA,O=IDEMIA Secure Transactions,L=Courbevoie,ST=IDF,C=FR",
+          "not_before": "2025-08-28T22:00:00Z",
+          "not_after": "2065-08-29T21:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIGbMBAGByqGSM49AgEGBSuBBAAjA4GGAAQAJ7yN1KdVMq3OSCwIokW6KlYv25SL\nOxGvr+JMJ74MqufTZKemw8dnKjhZnnylS7rpPqS98HxoYDmLt6pQlKCFC0YARt+V\n1LMYhu1a9c+ECMRF7J9KfdvGgQFF+m3XGHaXUYla2ASrpgj1KqQIhdYGnVHfHqJp\nsT0dbc5gVAgOuYlS4TQ=\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
+      "name": "IDPrime 3930 FIDO",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales IDPrime 3930 FIDO validated under NIST #4517 (FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2028-06-09T14:45:50Z",
+      "nist": {
+        "cert_number": "4517",
+        "all_active_cert_numbers": [
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "4517"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2023-05-09",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "IDPrime 3930 FIDO",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4517",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4517.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020220722001",
+        "certification_descriptor": "IDPrime 3930 FIDO",
+        "effective_date": "2022-07-22"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "050d4ebb551eac10382d05c147124f1c6347af433802dc51702c0cbf1153de1a",
+          "cert_pem_path": "certs/050d4ebb551eac10-idprime-3930-fido.pem",
+          "pubkey_sha256": "74ea905ea02928c8c717dbd22b5053881d8e3dafdeaf5eabe16662d351bfcc21",
+          "pubkey_pem_path": "pubkeys/050d4ebb551eac10-idprime-3930-fido.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "issuer": "CN=Gemalto MultiApp FIDO Subca CA,OU=CS,O=DIS,C=FR",
+          "not_before": "2020-07-07T14:37:18Z",
+          "not_after": "2030-07-05T14:37:18Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvAKOeqC5/p0D1isCYKQJ\nlVUOrB6I7DLocunE/Rm8duGTbyxQht3CbFVTv3N2Lp2fbjxlI+3sOSGk33FTYkTq\nxcdJIrJ7SskBcUSNrfKOaQT/6KQcP4Cm7V+655Tq+TWxyxWQhDygt15qoP7MuK6b\nT9SwpCjpfKhaMSmyQaMoUcRAbLqdzBCac0hzB+Ze+gqJlnWV9UaSI2rFsVuH4ZE0\ncRO+MOpaLgM/s248nGGHp22ewSQfbnPaBbb8iqyAP+cu52GLsUpKRJebE+R6+PMQ\n9JCdWeQZR3DkfSidkv3mcb4jq1iIta+MqKhRnwrfXh911KWLnYAl9ENChLX0c6Sj\n1QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "0c247f03fd5237a2df6661bf878faa09b38f2cfdcb89a2f24c61d48ca13b91da",
+          "cert_pem_path": "certs/0c247f03fd5237a2-idprime-3930-fido.pem",
+          "pubkey_sha256": "db8525c25c8067633910e783a395aa3e3425063b8e84e931247ea0b43b614a06",
+          "pubkey_pem_path": "pubkeys/0c247f03fd5237a2-idprime-3930-fido.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Gemalto MultiApp FIDO CA",
+          "issuer": "CN=Gemalto MultiApp FIDO CA",
+          "not_before": "2018-06-12T14:45:50Z",
+          "not_after": "2028-06-09T14:45:50Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxWModalsPtNKUzGhyNOX\nqch/vHfY+axD3Ma4sYaoDRRBmgirdcvMvothS8nkDmDS7IUaWUcR8YAqsRoJDwVW\n89L9SHQXJ/NaFEDOJNKKOMwghWOONS/2b28WZxdJyAeKDs53PzznxXSSs0f32oab\nfCOBo56tNaa36NcJR+fTUiRM/DEbYeWAR3jmM0tJXtWiiX4p7wTaSLiUSRN4fNui\n6VHkZRunecyLsTjtUxBrds3CfNYFuxoFJJCEuTebkdoqGHFrrAkMrjs2IwKQKR0g\ne5ZJAtUB+bzlQA420Q4/CLQ64rept7zIo4UZ/QqEHkwx4DKbsxX8zhbRrj2iA8P2\nkwIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
       "name": "OneSpan DIGIPASS FX1-C",
       "vendor": "OneSpan NV",
       "match_method": "curated",
-      "match_notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX1-C FIDO2 L2.",
+      "match_notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX1-C.",
       "assurance": "fips140-3-level3",
       "meets_shougt_high_assurance": true,
       "valid_until": "2029-03-10T23:59:59Z",
@@ -135,11 +2542,17 @@
         "all_active_cert_numbers": [
           "5048"
         ],
+        "all_matched_cert_numbers": [
+          "5048"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 3,
         "physical_security_level": 4,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2025-07-25",
         "sunset_date": "2029-03-10",
         "sunset_iso": "2029-03-10T23:59:59Z",
@@ -186,7 +2599,7 @@
       "name": "OneSpan DIGIPASS FX2-A",
       "vendor": "OneSpan NV",
       "match_method": "curated",
-      "match_notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX2FIPS FIDO2 L2.",
+      "match_notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX2-A.",
       "assurance": "fips140-3-level3",
       "meets_shougt_high_assurance": true,
       "valid_until": "2029-03-10T23:59:59Z",
@@ -195,11 +2608,17 @@
         "all_active_cert_numbers": [
           "5048"
         ],
+        "all_matched_cert_numbers": [
+          "5048"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 3,
         "physical_security_level": 4,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2025-07-25",
         "sunset_date": "2029-03-10",
         "sunset_iso": "2029-03-10T23:59:59Z",
@@ -255,11 +2674,539 @@
       ]
     },
     {
+      "aaguid": "30b5035e-d297-4ff7-010b-addc96ba6a98",
+      "name": "OneSpan DIGIPASS FX7-B",
+      "vendor": "OneSpan NV",
+      "match_method": "curated",
+      "match_notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX7-B.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "5048",
+        "all_active_cert_numbers": [
+          "5048"
+        ],
+        "all_matched_cert_numbers": [
+          "5048"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2025-07-25",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "DIGIPASS FX Crypto Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5048.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250826001",
+        "certification_descriptor": "DIGIPASS FX7FIPS",
+        "effective_date": "2025-08-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "81c07bd46de18417bd4fca7b3bdc0932553c63926efcbfd78bf6e221e8fd5425",
+          "cert_pem_path": "certs/81c07bd46de18417-onespan-digipass-fx7-b.pem",
+          "pubkey_sha256": "747aaddc9ee4eea4e9fd663423dd5786e78c7b083c39b476b7b9ac9a24b9010e",
+          "pubkey_pem_path": "pubkeys/81c07bd46de18417-onespan-digipass-fx7-b.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX7-B CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX7-B CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-09-01T12:53:57Z",
+          "not_after": "2055-09-02T12:53:57Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEYJ8psHGi5WSVbeoFS0bFuEjqZCJw\n+8EMcFkS9iz9lXLehWUeV5YOJph+veJ4sOKUTQGwyVEnDCcLjiiLNP6u1g==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "e48a4fc3d4fbd3d3aee8cb3b4a1e7f97f088cb30fb370485d6275291c48e30da",
+          "cert_pem_path": "certs/e48a4fc3d4fbd3d3-onespan-digipass-fx7-b.pem",
+          "pubkey_sha256": "cdd88ce8715215b0f712d15cf65e2692542bb15634d09fefb51fab500cadc2ac",
+          "pubkey_pem_path": "pubkeys/e48a4fc3d4fbd3d3-onespan-digipass-fx7-b.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX7FIPS L2 CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX7FIPS L2 CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-01-29T14:58:03Z",
+          "not_after": "2055-01-30T14:58:03Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7VeFbl0FwBWnHK9raK2drWQAaAxd\n73yKtw5pJx35EjSZ3hfOmfJ/ybwkbu8ezFi+RNUA0GcPCkHkgLic3mSFWQ==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff7-030b-addc96ba6a98",
+      "name": "OneSpan DIGIPASS FX7-C",
+      "vendor": "OneSpan NV",
+      "match_method": "curated",
+      "match_notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX7-C.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "5048",
+        "all_active_cert_numbers": [
+          "5048"
+        ],
+        "all_matched_cert_numbers": [
+          "5048"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2025-07-25",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "DIGIPASS FX Crypto Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5048.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250826004",
+        "certification_descriptor": "OneSpan FX7C",
+        "effective_date": "2025-08-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "1b1678b4b9bdb1e6164dece87fd38147b00aa417df15f087679e0262e6fed206",
+          "cert_pem_path": "certs/1b1678b4b9bdb1e6-onespan-digipass-fx7-c.pem",
+          "pubkey_sha256": "b78e7fa4a98e19ffd51bce66fce7a8af3be2444fd5efa94f1b4d43fcfe134a5f",
+          "pubkey_pem_path": "pubkeys/1b1678b4b9bdb1e6-onespan-digipass-fx7-c.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX7-C CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX7-C CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-06-25T07:33:25Z",
+          "not_after": "2055-06-26T07:33:25Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEHZSbWrmwLN2V2lRRLPeLPRjyyOmY\noNuQWLXWrSb8t7J90T57Hi9+zEcHIyAvUGz5lLre06fLuabB+aYQmvVCUg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+      "name": "OpenSK authenticator",
+      "vendor": "Google, LLC.",
+      "match_method": "curated",
+      "match_notes": "NIST #5087 (Google OpenSK Cryptographic Module, Active FIPS 140-3 Overall Level 1 / Physical Level 3; excluded from Level 2+ trust bundle).",
+      "assurance": "standard",
+      "meets_shougt_high_assurance": false,
+      "valid_until": "2030-10-22T23:59:59Z",
+      "nist": {
+        "cert_number": "5087",
+        "all_active_cert_numbers": [
+          "5087"
+        ],
+        "all_matched_cert_numbers": [
+          "5087"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 1,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2025-10-23",
+        "sunset_date": "2030-10-22",
+        "sunset_iso": "2030-10-22T23:59:59Z",
+        "module_name": "OpenSK Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5087",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5087.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020210209001",
+        "certification_descriptor": "OpenSK authenticator",
+        "effective_date": "2021-02-09"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "62cc6c9ccc33f0573486d50bde231d42344cc9c61eac9ea16794369732ad2114",
+          "cert_pem_path": "certs/62cc6c9ccc33f057-opensk-authenticator.pem",
+          "pubkey_sha256": "b957ee6ab75c714f584a49c91f5f957fd1901b90ec19003b4c600bd5577150af",
+          "pubkey_pem_path": "pubkeys/62cc6c9ccc33f057-opensk-authenticator.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OpenSK CA",
+          "issuer": "CN=OpenSK CA",
+          "not_before": "2020-09-14T12:12:40Z",
+          "not_after": "2080-09-14T12:12:40Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEs/54X/I8ydmZgFVEJ4yKnlA4uIJr\namAQcc3do2xDzRGcxDTzttIbdk4XX2rz6aZETeXt7E8+7HMLI4khuJpUXg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "9152406a-de8e-46dd-8685-3875c067e486",
+      "name": "SafeNet eToken Fusion NFC 930C FIDO2.1",
+      "vendor": "Thales",
+      "match_method": "curated",
+      "match_notes": "Thales SafeNet eToken Fusion NFC 930C FIDO2.1 backed by Active FIPS 140-3 Level 2 (#5532, IDPrime PIV 4.0 FIDO on IDCore3230 Platform) with 930C/3930C FIDO2.1 MIP tracking.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-09-27T23:59:59Z",
+      "nist": {
+        "cert_number": "5532",
+        "all_active_cert_numbers": [
+          "5532",
+          "4517"
+        ],
+        "all_matched_cert_numbers": [
+          "5532",
+          "4517"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "IDPrime930C/3930C",
+          "vendor": "THALES",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Comment Resolution - Lab (11/19/2026)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2026-10-13",
+        "sunset_date": "2031-09-27",
+        "sunset_iso": "2031-09-27T23:59:59Z",
+        "module_name": "IDPrime PIV 4.0 FIDO on IDCore3230 Platform",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5532",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5532.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FA001202600038",
+        "certification_descriptor": "SafeNet eToken Fusion NFC 930C FIDO2.1",
+        "effective_date": "2026-10-15"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "b0747482d4f31a62ceef32bca6534dd9c2f6914cee21d23ad1ff38ce26a8acfb",
+          "cert_pem_path": "certs/b0747482d4f31a62-safenet-etoken-fusion-nfc-930c-fido2-1.pem",
+          "pubkey_sha256": "694c52c8abcb323270f4027cbe2de2ac4bbc3f1965d4acf9dec5f69853d9c68b",
+          "pubkey_pem_path": "pubkeys/b0747482d4f31a62-safenet-etoken-fusion-nfc-930c-fido2-1.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Thales DIS Solutions ECDSA CA,O=Thales DIS,L=Tours,C=FR,1.2.840.113549.1.9.1=certificate.automation@thalesgroup.com",
+          "issuer": "CN=Thales DIS Private Root Certificate Authority,O=Thales DIS,L=Tours,C=FR,1.2.840.113549.1.9.1=certificate.automation@thalesgroup.com",
+          "not_before": "2022-10-18T16:29:53Z",
+          "not_after": "2042-09-01T16:34:53Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGCVKZf4SMluKSQAeW08lZhv+7RlW\nUifsaF3d6WsPMmh6sZEWq+5HDdQl2OCyicoLyr1/GhYpZ/bFZdukeHA7zg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "fb1be369f1830fa1e4e4733a23577e2952391167f04d3b82264885eac7fa9a02",
+          "cert_pem_path": "certs/fb1be369f1830fa1-safenet-etoken-fusion-nfc-930c-fido2-1.pem",
+          "pubkey_sha256": "c20112c0164875d674635f3e05c754b150cbb141a92ebc9cbea911c51b1f8aab",
+          "pubkey_pem_path": "pubkeys/fb1be369f1830fa1-safenet-etoken-fusion-nfc-930c-fido2-1.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=Thales DIS CSP FIDO ECDSA,OU=CSP,O=Thales DIS,C=FR",
+          "issuer": "CN=Thales DIS Solutions ECDSA CA,O=Thales DIS,L=Tours,C=FR,1.2.840.113549.1.9.1=certificate.automation@thalesgroup.com",
+          "not_before": "2025-09-30T02:23:25Z",
+          "not_after": "2040-09-26T02:23:25Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEfhil5a2E+oqT9tUCQ90eFaHBV0CS\nM2bqentKmdTNXytI2LBVJ+6c9tikviPFfdRs6GIhEm0DeCdPdNZbEF7EIw==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "817cdab8-0d51-4de1-a821-e25b88519cf3",
+      "name": "Swissbit iShield Key 2 FIPS",
+      "vendor": "Swissbit",
+      "match_method": "curated",
+      "match_notes": "Swissbit iShield Key 2 FIPS backed by Active FIPS 140-3 Level 3 / Physical Level 4 (#4679) as documented by Swissbit/RSA plus live NIST CMVP FIPS 140-3 MIP 'iShield Key Module'.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "4679",
+        "all_active_cert_numbers": [
+          "4679"
+        ],
+        "all_matched_cert_numbers": [
+          "4679"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "platform_plus_in_process",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "iShield Key Module",
+          "vendor": "Swissbit",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Pending Resubmission (12/1/2025)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2024-03-11",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "JCOP 4.5 on P71D600",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4679.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020260320003",
+        "certification_descriptor": "Swissbit iShield Key 2 FIPS",
+        "effective_date": "2026-03-20"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "22142d5363f4fa658bb0ca3bd5b813ae63a206e59bb940f4705cb58d64aa2b88",
+          "cert_pem_path": "certs/22142d5363f4fa65-swissbit-ishield-key-2-fips.pem",
+          "pubkey_sha256": "e33dc82094d82e5a1da54f423e2017610953b535706261392bdef3b455c52d04",
+          "pubkey_pem_path": "pubkeys/22142d5363f4fa65-swissbit-ishield-key-2-fips.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=Swissbit FIDO Root CA,O=Swissbit AG,C=DE",
+          "issuer": "CN=Swissbit FIDO Root CA,O=Swissbit AG,C=DE",
+          "not_before": "2021-10-07T09:30:42Z",
+          "not_after": "2051-10-07T09:30:42Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEtgOC7IKxipMJ7bVPTT83Oe90xzHPCebx\nyCtg/WrsTrRaSnYigmJCB8/jqBN4OQG2dZ5jcNsL6SwHosYDRJc+O1zk9i5GEZWf\n3Ir992A6duMsp51lq4fAga/UzTN9/Ebz\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "5eaff75a-dd43-451f-af9f-87c9eeae293e",
+      "name": "Swissbit iShield Key 2 FIPS Enterprise",
+      "vendor": "Swissbit",
+      "match_method": "curated",
+      "match_notes": "Swissbit iShield Key 2 FIPS Enterprise backed by Active FIPS 140-3 Level 3 / Physical Level 4 (#4679) plus live NIST CMVP FIPS 140-3 MIP 'iShield Key Module'.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "4679",
+        "all_active_cert_numbers": [
+          "4679"
+        ],
+        "all_matched_cert_numbers": [
+          "4679"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "platform_plus_in_process",
+        "in_process_entry": {
+          "list_type": "MIP",
+          "module_name": "iShield Key Module",
+          "vendor": "Swissbit",
+          "standard": "FIPS 140-3",
+          "status_or_date": "Pending Resubmission (12/1/2025)",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
+        },
+        "validation_date": "2024-03-11",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "JCOP 4.5 on P71D600",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4679.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020260320002",
+        "certification_descriptor": "Swissbit iShield Key 2 FIPS Enterprise",
+        "effective_date": "2026-03-20"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "22142d5363f4fa658bb0ca3bd5b813ae63a206e59bb940f4705cb58d64aa2b88",
+          "cert_pem_path": "certs/22142d5363f4fa65-swissbit-ishield-key-2-fips-enterprise.pem",
+          "pubkey_sha256": "e33dc82094d82e5a1da54f423e2017610953b535706261392bdef3b455c52d04",
+          "pubkey_pem_path": "pubkeys/22142d5363f4fa65-swissbit-ishield-key-2-fips-enterprise.pub.pem",
+          "pubkey_algorithm": "ECDSA secp384r1",
+          "subject": "CN=Swissbit FIDO Root CA,O=Swissbit AG,C=DE",
+          "issuer": "CN=Swissbit FIDO Root CA,O=Swissbit AG,C=DE",
+          "not_before": "2021-10-07T09:30:42Z",
+          "not_after": "2051-10-07T09:30:42Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMHYwEAYHKoZIzj0CAQYFK4EEACIDYgAEtgOC7IKxipMJ7bVPTT83Oe90xzHPCebx\nyCtg/WrsTrRaSnYigmJCB8/jqBN4OQG2dZ5jcNsL6SwHosYDRJc+O1zk9i5GEZWf\n3Ir992A6duMsp51lq4fAga/UzTN9/Ebz\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
+      "name": "uTrust FIDO2 Security Key",
+      "vendor": "Hirsch / Identiv",
+      "match_method": "curated",
+      "match_notes": "Hirsch / Identiv uTrust FIDO2 & SecureKey GOV Series backed by Active FIPS 140-3 Level 3 / Physical Level 4 NXP JCOP 4.5 on P71D600 (#4679) plus live NIST CMVP FIPS 140-3 IUT 'HIRSCH uTrust FIDO Cryptographic Module'.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "4679",
+        "all_active_cert_numbers": [
+          "4679"
+        ],
+        "all_matched_cert_numbers": [
+          "4679"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "platform_plus_in_process",
+        "in_process_entry": {
+          "list_type": "IUT",
+          "module_name": "HIRSCH uTrust FIDO Cryptographic Module",
+          "vendor": "Hirsch Inc.",
+          "standard": "FIPS 140-3",
+          "status_or_date": "12/2/2024",
+          "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/iut-list"
+        },
+        "validation_date": "2024-03-11",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "JCOP 4.5 on P71D600",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4679",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4679.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L1",
+        "certificate_number": "FIDO20020200821001",
+        "certification_descriptor": "uTrust FIDO2 Security Key",
+        "effective_date": "2020-08-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "15f7d47c53a4495cf0cc10fd2228b02c810f9139a7dcbb2c26b31c2dc0827f66",
+          "cert_pem_path": "certs/15f7d47c53a4495c-utrust-fido2-security-key.pem",
+          "pubkey_sha256": "fc200b2bcc924067929b7726cddcb3a77fc5a2c7970e221392fec6004cff8ea5",
+          "pubkey_pem_path": "pubkeys/15f7d47c53a4495c-utrust-fido2-security-key.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=uTrust FIDO2 Security Key P1,OU=Authenticator Attestation,O=Identiv Inc.,C=US",
+          "issuer": "CN=Identiv FIDO Intermediate CA",
+          "not_before": "2020-08-14T16:39:54Z",
+          "not_after": "2050-09-06T16:39:54Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEdeGmVvx+7gs/1dzSDkNVfW7br6rZ\nVKlQNUfc3sy/6koUzy04+DfFqR8F1fF78IQsgI96JtBO6jNPrjWIOVayyg==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "cbd00c1c323e7492d633fe712a3447195dbd244de5b4c8f41d9495edf1a4a229",
+          "cert_pem_path": "certs/cbd00c1c323e7492-utrust-fido2-security-key.pem",
+          "pubkey_sha256": "3e0702a823e0fae90792abf314964b3d9a963803f21bf5fd5eab11e119fee2df",
+          "pubkey_pem_path": "pubkeys/cbd00c1c323e7492-utrust-fido2-security-key.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Identiv FIDO Root CA Serial 74085709211970",
+          "issuer": "CN=Identiv FIDO Root CA Serial 74085709211970",
+          "not_before": "2020-04-29T05:41:20Z",
+          "not_after": "2060-04-19T05:41:20Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtGB+EOBp2Jd3v7VEAkZY\nUQuuO2/a51vtL/tvGCJHTbQ+m8uf3gE6tWy8zDYoj0Zd++/EIjggdRrOD1dYH5l+\ny5ipRT3Jsm6ZU1NButT+X8Kr5K8Tx6EQ8S/ySxYvFoTJdsPPzt7YtZRxH8E7GMb7\noO8wejKD2gBTrTESs3d2FMYa4j/trE63+t+4NqckJW0teO6eOFmIaXQKPx/wuIX3\nReE9ZoNCQOnNj3UZDNRZZXL1VETCrRogQcvj/cQcYFSwSeB23TkesNQxRKriEbeV\n+j8yqVE2TuzJIPz4J10u2OmmrRQOxw8CdENZMaj6Et/tY51aGlAHr6x9pR8qW3Ph\nCQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "f7cff33e02d5aedaa5d72ef1707c15e503182089d01575ae7f9099673c0db8b0",
+          "cert_pem_path": "certs/f7cff33e02d5aeda-utrust-fido2-security-key.pem",
+          "pubkey_sha256": "45cdc0a322ed4076486813e388250d69762fc9d38337bbbcff7076fa19ce329f",
+          "pubkey_pem_path": "pubkeys/f7cff33e02d5aeda-utrust-fido2-security-key.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Identiv FIDO Intermediate CA",
+          "issuer": "CN=Identiv FIDO Root CA Serial 74085709211970",
+          "not_before": "2020-04-29T06:57:44Z",
+          "not_after": "2050-04-22T06:57:44Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuoAozUSmveNu2McsrLRi\nDc2vZ+ODcIzoWNF65zRUQ9UjFYW5dYXkaLYJRsIz5sdigYycMiGgaoNFOlyR0wSR\nX0pZS9AWXWM7pRsZQP9TdwDhgntiFSdmeeaiKESYOTh+YGlsdY4R0Zfv5N32Fpws\nH0vY2F/Kcr3JX6i5vKkzBSm1mgEIdflNAG9s/G09Mpnz0Me/1yIjJv9V9DEAWHJn\n6MYN+fbIBfovlCKYQXNTGxfAgyQ82gasBVWkuiUEztY2UbfgyA2pUZ86OIdinCqO\npgl92bZh1jVxNFjepvyfWKmlAYYStu8jT5kevANQFys4QO063lZB9Ost4AohNMsh\nUQIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
       "name": "YubiKey 5 FIPS Series",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221003, FIDO2 L2.",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series (FIDO20020241221003, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -268,11 +3215,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
@@ -373,11 +3326,74 @@
       ]
     },
     {
+      "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
+      "name": "YubiKey 5 FIPS Series",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2050-09-04T00:00:00Z",
+      "nist": {
+        "cert_number": "3914",
+        "all_active_cert_numbers": [
+          "3914"
+        ],
+        "all_matched_cert_numbers": [
+          "3914"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-08-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3914",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3914.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020230328004",
+        "certification_descriptor": "YubiKey 5 FIPS Series",
+        "effective_date": "2023-03-28"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "0fa1386f80eb8713263ae5c1d84deb455bdf08aea50ab05503cefee82b092d42",
+          "cert_pem_path": "certs/0fa1386f80eb8713-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "29412da192720e5f4f22a408559c057e4ff25347eafb20cfb15a047a07601935",
+          "pubkey_pem_path": "pubkeys/0fa1386f80eb8713-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico U2F Root CA Serial 457200631",
+          "issuer": "CN=Yubico U2F Root CA Serial 457200631",
+          "not_before": "2014-08-01T00:00:00Z",
+          "not_after": "2050-09-04T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv48GLoQVZamomFhDLK1h\nYrICfj7TPdXkq6SOEyu1Od5sAiGsEgx8vL1JpOTdigI/Wm70/TT+UjEtYUIt7rMa\nGBqJ10IHzumV8lAPWvigJKnRZwZ5croEngjnqfBHWRX7GkRbTI5MM+RnM9j8uLyG\nLwnTBz7cGs9G1bs53rniBM+k50IxOt0Xbds28J3m8ExuWcm3lksG88vgSd+GR3FI\nTwGPPciUF7hNCMzGRXBAWzzUW1hAkSoI6v/6k/Z5gzhVZUkQrdsIqj0s5bsJ/r/r\nLkBAbFI0xjBHdubSl105DVttcCFm8XkslKE18C7xkusZcEEoDaZNql2MH/Il4O1V\nmQIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
       "name": "YubiKey 5 FIPS Series (Enterprise Profile)",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221004, FIDO2 L2.",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series Enterprise Profile (FIDO20020241221004, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -386,11 +3402,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
@@ -495,7 +3517,7 @@
       "name": "YubiKey 5 FIPS Series with Lightning",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221005, FIDO2 L2.",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with Lightning (FIDO20020241221005, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -504,11 +3526,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
@@ -609,11 +3637,74 @@
       ]
     },
     {
+      "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
+      "name": "YubiKey 5 FIPS Series with Lightning",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2050-09-04T00:00:00Z",
+      "nist": {
+        "cert_number": "3914",
+        "all_active_cert_numbers": [
+          "3914"
+        ],
+        "all_matched_cert_numbers": [
+          "3914"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-08-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3914",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3914.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020230328005",
+        "certification_descriptor": "YubiKey 5 FIPS Series with Lightning",
+        "effective_date": "2023-03-28"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "0fa1386f80eb8713263ae5c1d84deb455bdf08aea50ab05503cefee82b092d42",
+          "cert_pem_path": "certs/0fa1386f80eb8713-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "29412da192720e5f4f22a408559c057e4ff25347eafb20cfb15a047a07601935",
+          "pubkey_pem_path": "pubkeys/0fa1386f80eb8713-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico U2F Root CA Serial 457200631",
+          "issuer": "CN=Yubico U2F Root CA Serial 457200631",
+          "not_before": "2014-08-01T00:00:00Z",
+          "not_after": "2050-09-04T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv48GLoQVZamomFhDLK1h\nYrICfj7TPdXkq6SOEyu1Od5sAiGsEgx8vL1JpOTdigI/Wm70/TT+UjEtYUIt7rMa\nGBqJ10IHzumV8lAPWvigJKnRZwZ5croEngjnqfBHWRX7GkRbTI5MM+RnM9j8uLyG\nLwnTBz7cGs9G1bs53rniBM+k50IxOt0Xbds28J3m8ExuWcm3lksG88vgSd+GR3FI\nTwGPPciUF7hNCMzGRXBAWzzUW1hAkSoI6v/6k/Z5gzhVZUkQrdsIqj0s5bsJ/r/r\nLkBAbFI0xjBHdubSl105DVttcCFm8XkslKE18C7xkusZcEEoDaZNql2MH/Il4O1V\nmQIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
       "name": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221006, FIDO2 L2.",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with Lightning Enterprise Profile (FIDO20020241221006, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -622,11 +3713,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
@@ -727,11 +3824,76 @@
       ]
     },
     {
+      "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+      "name": "YubiKey 5 FIPS Series with NFC",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset).",
+      "assurance": "fips140-2-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2050-09-04T00:00:00Z",
+      "nist": {
+        "cert_number": "3914",
+        "all_active_cert_numbers": [
+          "3914"
+        ],
+        "all_matched_cert_numbers": [
+          "3914"
+        ],
+        "standard": "FIPS 140-2",
+        "fips_revision": "2",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Historical",
+        "historical_reason": "Moved to historical list due to sunsetting",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
+        "validation_date": "2021-08-19",
+        "sunset_date": "",
+        "sunset_iso": "",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3914",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3914.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020230328001",
+        "certification_descriptor": "YubiKey 5 FIPS Series with NFC",
+        "effective_date": "2023-03-28"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "0fa1386f80eb8713263ae5c1d84deb455bdf08aea50ab05503cefee82b092d42",
+          "cert_pem_path": "certs/0fa1386f80eb8713-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "29412da192720e5f4f22a408559c057e4ff25347eafb20cfb15a047a07601935",
+          "pubkey_pem_path": "pubkeys/0fa1386f80eb8713-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico U2F Root CA Serial 457200631",
+          "issuer": "CN=Yubico U2F Root CA Serial 457200631",
+          "not_before": "2014-08-01T00:00:00Z",
+          "not_after": "2050-09-04T00:00:00Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAv48GLoQVZamomFhDLK1h\nYrICfj7TPdXkq6SOEyu1Od5sAiGsEgx8vL1JpOTdigI/Wm70/TT+UjEtYUIt7rMa\nGBqJ10IHzumV8lAPWvigJKnRZwZ5croEngjnqfBHWRX7GkRbTI5MM+RnM9j8uLyG\nLwnTBz7cGs9G1bs53rniBM+k50IxOt0Xbds28J3m8ExuWcm3lksG88vgSd+GR3FI\nTwGPPciUF7hNCMzGRXBAWzzUW1hAkSoI6v/6k/Z5gzhVZUkQrdsIqj0s5bsJ/r/r\nLkBAbFI0xjBHdubSl105DVttcCFm8XkslKE18C7xkusZcEEoDaZNql2MH/Il4O1V\nmQIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
       "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
       "name": "YubiKey 5 FIPS Series with NFC",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 covers YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2, Physical Level 3); AAGUID verified in FIDO MDS3 (FIDO20020241221002, FIDO2 L2).",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2, Physical Level 3) matched to YubiKey 5 FIPS Series with NFC (FIDO20020241221002, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -740,11 +3902,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
@@ -851,7 +4019,7 @@
       "name": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
       "vendor": "Yubico, Inc.",
       "match_method": "curated",
-      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO MDS3 Enterprise Profile variant (FIDO20020241221001, FIDO2 L2).",
+      "match_notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with NFC Enterprise Profile (FIDO20020241221001, FIDO2 L2).",
       "assurance": "fips140-3-level2",
       "meets_shougt_high_assurance": true,
       "valid_until": "2031-05-21T23:59:59Z",
@@ -860,11 +4028,17 @@
         "all_active_cert_numbers": [
           "5291"
         ],
+        "all_matched_cert_numbers": [
+          "5291"
+        ],
         "standard": "FIPS 140-3",
         "fips_revision": "3",
         "overall_level": 2,
         "physical_security_level": 3,
         "status": "Active",
+        "historical_reason": "",
+        "validation_scope": "direct_module",
+        "in_process_entry": null,
         "validation_date": "2026-05-22",
         "sunset_date": "2031-05-21",
         "sunset_iso": "2031-05-21T23:59:59Z",
