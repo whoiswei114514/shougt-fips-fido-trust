@@ -36,6 +36,7 @@ def export_all(
     review_report: dict,
     *,
     mds_meta: dict,
+    nist_in_process: list[dict] | None = None,
 ) -> dict:
     """Write deterministic certs, pubkeys, JSON/YAML bundles, and update README table."""
     certs_dir = repo_root / "certs"
@@ -92,6 +93,18 @@ def export_all(
                 fido_level = fido["status"]
                 cert_num = fido.get("certificate_number") or "MDS3"
                 cert_level_short = f"L{nist['overall_level']}"
+                nist_status = nist.get("status") or "Unknown"
+                if nist.get("validation_scope") == "platform_plus_in_process" and nist.get("in_process_entry"):
+                    ip = nist["in_process_entry"]
+                    cert_ref = (
+                        f"NIST CMVP #{nist['cert_number']} ({nist['standard']} Level {nist['overall_level']}, "
+                        f"{nist_status}, Platform + {ip['list_type']} {ip['module_name']}, {nist['detail_url']})"
+                    )
+                else:
+                    cert_ref = (
+                        f"NIST CMVP #{nist['cert_number']} ({nist['standard']} Level {nist['overall_level']}, "
+                        f"{nist_status}, {nist['detail_url']})"
+                    )
                 trust_entries.append({
                     "id": trust_id,
                     "root_pem": cert_rel,
@@ -99,14 +112,14 @@ def export_all(
                     "attachment": "cross-platform",
                     "assurance": device["assurance"],
                     "metadata_reference": f"FIDO Alliance MDS3 (AAGUID {device['aaguid']}, {fido_level}, {cert_num})",
-                    "certification_reference": f"NIST CMVP #{nist['cert_number']} ({nist['standard']} Level {nist['overall_level']}, {nist['detail_url']})",
+                    "certification_reference": cert_ref,
                     "valid_until": device["valid_until"],
                     "revoked_certificates": [],
                     "certifications": [
                         {
                             "standard": nist["standard"],
                             "level": cert_level_short,
-                            "reference": f"NIST CMVP #{nist['cert_number']} ({nist['module_name']})",
+                            "reference": f"NIST CMVP #{nist['cert_number']} ({nist['module_name']}, {nist_status})",
                         }
                     ],
                 })
@@ -119,11 +132,15 @@ def export_all(
     _prune_stale_files(certs_dir, expected_certs, ".pem")
     _prune_stale_files(pubkeys_dir, expected_pubkeys, ".pub.pem")
 
+    fips_140_3_count = sum(1 for d in exported_devices if str(d.get("nist", {}).get("fips_revision", "")) == "3")
+    fips_140_2_count = sum(1 for d in exported_devices if str(d.get("nist", {}).get("fips_revision", "")) == "2")
     catalog_payload = {
         "schema_version": 1,
         "mds_blob_no": mds_meta.get("no"),
         "mds_next_update": mds_meta.get("nextUpdate"),
         "device_count": len(exported_devices),
+        "fips_140_3_count": fips_140_3_count,
+        "fips_140_2_count": fips_140_2_count,
         "devices": exported_devices,
     }
     _write_if_changed(
@@ -151,6 +168,11 @@ def export_all(
         data_dir / "nist-fido-candidates.json",
         json.dumps({"count": len(clean_candidates), "candidates": clean_candidates}, ensure_ascii=False, indent=2) + "\n",
     )
+    if nist_in_process is not None:
+        _write_if_changed(
+            data_dir / "nist-in-process.json",
+            json.dumps({"count": len(nist_in_process), "entries": nist_in_process}, ensure_ascii=False, indent=2) + "\n",
+        )
     _write_if_changed(
         data_dir / "unmatched-review.json",
         json.dumps(review_report, ensure_ascii=False, indent=2) + "\n",
@@ -160,6 +182,8 @@ def export_all(
 
     return {
         "device_count": len(exported_devices),
+        "fips_140_3_device_count": fips_140_3_count,
+        "fips_140_2_device_count": fips_140_2_count,
         "trust_entry_count": len(trust_entries),
         "cert_files": len(expected_certs),
         "pubkey_files": len(expected_pubkeys),
@@ -183,10 +207,16 @@ def _update_readme_table(readme_path: Path, devices: list[dict]) -> None:
         nist = dev["nist"]
         fido = dev["fido"]
         vers = ", ".join(fido["versions"])
-        cert_cell = f"[#{nist['cert_number']}]({nist['detail_url']}) ({nist['standard']} L{nist['overall_level']})"
+        if nist.get("validation_scope") == "platform_plus_in_process":
+            ip = nist.get("in_process_entry")
+            scope_tag = f"Platform + {ip['list_type']}" if ip else "Platform + IUT/MIP"
+        else:
+            scope_tag = nist.get("status") or "Unknown"
+        cert_cell = f"[#{nist['cert_number']}]({nist['detail_url']}) ({nist['standard']} L{nist['overall_level']}, {scope_tag})"
+        expiry_cell = nist.get("sunset_date") or (dev["valid_until"][:10] if dev.get("valid_until") else "-")
         root_count = len(dev["attestation_roots"])
         lines.append(
-            f"| {dev['name']} | {dev['vendor']} | `{dev['aaguid']}` | {cert_cell} | {vers} / `{fido['status']}` | {nist['sunset_date'] or '-'} | {root_count} 组 |"
+            f"| {dev['name']} | {dev['vendor']} | `{dev['aaguid']}` | {cert_cell} | {vers} / `{fido['status']}` | {expiry_cell} | {root_count} 组 |"
         )
     if not devices:
         lines.append("| （暂未匹配到设备） | - | - | - | - | - | - |")

@@ -4,79 +4,359 @@
       "nist_cert": "5291",
       "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
       "device_name": "YubiKey 5 FIPS Series with NFC (FW 5.7+)",
-      "notes": "NIST #5291 covers YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2, Physical Level 3); AAGUID verified in FIDO MDS3 (FIDO20020241221002, FIDO2 L2)."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2, Physical Level 3) matched to YubiKey 5 FIPS Series with NFC (FIDO20020241221002, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
       "device_name": "YubiKey 5 FIPS Series with NFC (Enterprise Profile, FW 5.7+)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO MDS3 Enterprise Profile variant (FIDO20020241221001, FIDO2 L2)."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with NFC Enterprise Profile (FIDO20020241221001, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
       "device_name": "YubiKey 5 FIPS Series (USB-A/C, FW 5.7+)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221003, FIDO2 L2."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series (FIDO20020241221003, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
       "device_name": "YubiKey 5 FIPS Series (Enterprise Profile, FW 5.7+)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221004, FIDO2 L2."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series Enterprise Profile (FIDO20020241221004, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
       "device_name": "YubiKey 5 FIPS Series with Lightning (FW 5.7+)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221005, FIDO2 L2."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with Lightning (FIDO20020241221005, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
       "device_name": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile, FW 5.7+)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221006, FIDO2 L2."
+      "notes": "NIST #5291 (Active FIPS 140-3 Level 2) matched to YubiKey 5 FIPS Series with Lightning Enterprise Profile (FIDO20020241221006, FIDO2 L2)."
     },
     {
-      "nist_cert": "3929",
+      "nist_cert": "3914",
       "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
-      "device_name": "YubiKey 5 FIPS Series (FW 5.4 legacy)",
-      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
+      "device_name": "YubiKey 5 FIPS Series (FW 5.4)",
+      "notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset)."
     },
     {
-      "nist_cert": "3929",
+      "nist_cert": "3914",
       "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
-      "device_name": "YubiKey 5 FIPS Series with Lightning (FW 5.4 legacy)",
-      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
+      "device_name": "YubiKey 5 FIPS Series with Lightning (FW 5.4)",
+      "notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset)."
     },
     {
-      "nist_cert": "3930",
+      "nist_cert": "3914",
       "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
-      "device_name": "YubiKey 5 FIPS Series with NFC (FW 5.4 legacy)",
-      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
+      "device_name": "YubiKey 5 FIPS Series with NFC (FW 5.4)",
+      "notes": "NIST #3914 (YubiKey 5 Cryptographic Module FW 5.4.2/5.4.3, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset)."
     },
     {
-      "nist_cert": "5048",
-      "aaguid": "30b5035e-d297-4ff2-010b-addc96ba6a98",
-      "device_name": "OneSpan DIGIPASS FX2-A",
-      "notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX2FIPS FIDO2 L2."
+      "nist_cert": "5151",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "78ba3993-d784-4f44-8d6e-cc0a8ad5230e",
+      "device_name": "Feitian ePass FIDO-NFC (K40 / K9D, CTAP2.1)",
+      "notes": "FEITIAN ePass K40 / K9D Series covered by Active FIPS 140-3 Level 3 (#5151, K9/K40 Security Policy Table 2) and Historical FIPS 140-2 Level 2 (#4422)."
     },
     {
-      "nist_cert": "5048",
-      "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
-      "device_name": "OneSpan DIGIPASS FX1-C",
-      "notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX1-C FIDO2 L2."
+      "nist_cert": "5151",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "39589099-9a75-49fc-afaa-801ca211c62a",
+      "device_name": "Feitian ePass FIDO-NFC Enterprise (K40 / K9D, CTAP2.1)",
+      "notes": "FEITIAN ePass K40 / K9D Enterprise Profile covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422)."
+    },
+    {
+      "nist_cert": "5151",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "234cd403-35a2-4cc2-8015-77ea280c77f5",
+      "device_name": "Feitian ePass FIDO2-NFC Series (K40 Series, CTAP2.1)",
+      "notes": "FEITIAN ePass FIDO2-NFC Series (K40) covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422)."
+    },
+    {
+      "nist_cert": "5151",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "260e3021-482d-442d-838c-7edfbe153b7e",
+      "device_name": "Feitian ePass FIDO2-NFC Plus (K40+ / K9D+)",
+      "notes": "FEITIAN ePass FIDO2-NFC Plus (K40+ / K9D+) covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422)."
+    },
+    {
+      "nist_cert": "4422",
+      "aaguid": "ee041bce-25e5-4cdb-8f86-897fd6418464",
+      "device_name": "Feitian ePass FIDO2-NFC Authenticator (K40 / K9)",
+      "notes": "FEITIAN ePass FIDO2-NFC (K40 / K9) validated under NIST #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset)."
+    },
+    {
+      "nist_cert": "4422",
+      "additional_nist_certs": ["5151"],
+      "aaguid": "12755c32-8ad1-46eb-881c-e0b38d848b09",
+      "device_name": "Feitian ePass FIDO Authenticator (CTAP2.1)",
+      "notes": "FEITIAN ePass FIDO (CTAP2.1) backed by FEITIAN MFA Cryptographic Module (#4422, FIPS 140-2 L2) and ePass Token Cryptographic Module (#5151, FIPS 140-3 L3)."
+    },
+    {
+      "nist_cert": "4422",
+      "aaguid": "833b721a-ff5f-4d00-bb2e-bdda3ec01e29",
+      "device_name": "Feitian ePass FIDO2 Authenticator",
+      "notes": "FEITIAN ePass FIDO2 Authenticator validated under NIST #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset)."
+    },
+    {
+      "nist_cert": "4422",
+      "additional_nist_certs": ["5151"],
+      "aaguid": "3e22415d-7fdf-4ea4-8a0c-dd60c4249b9d",
+      "device_name": "Feitian iePass FIDO Authenticator (K44)",
+      "notes": "FEITIAN iePass FIDO (K44) validated under NIST #4422 (FIPS 140-2 Level 2, Physical Level 3) and covered by #5151 ePass Token line."
+    },
+    {
+      "nist_cert": "4422",
+      "additional_nist_certs": ["5151"],
+      "aaguid": "4c0cf95d-2f40-43b5-ba42-4c83a11c04ba",
+      "device_name": "Feitian BioPass FIDO2 Pro (K45 / K49 / K50)",
+      "notes": "FEITIAN BioPass FIDO2 Pro (K45 / K49 / K50) covered by Active FIPS 140-3 Level 3 (#5151, K49/K50) and Historical FIPS 140-2 Level 2 (#4422)."
+    },
+    {
+      "nist_cert": "4422",
+      "additional_nist_certs": ["5151"],
+      "aaguid": "2bff89f2-323a-48fc-b7c8-9ff7fe87c07e",
+      "device_name": "Feitian BioPass FIDO2 Pro Enterprise (K45 / K49 / K50)",
+      "notes": "FEITIAN BioPass FIDO2 Pro Enterprise (K45 / K49 / K50) covered by Active FIPS 140-3 Level 3 (#5151) and Historical FIPS 140-2 Level 2 (#4422)."
+    },
+    {
+      "nist_cert": "3979",
+      "aaguid": "77010bd7-212a-4fc9-b236-d2ca5e9d4084",
+      "device_name": "Feitian BioPass FIDO2 (K26 / K27)",
+      "notes": "FEITIAN BioPass / ePass K26 & K27 Series validated under NIST #3979 (FEITIAN Biometric FIDO Key Module, FIPS 140-2 Level 2; Historical via 2026-09-21 sunset)."
+    },
+    {
+      "nist_cert": "3979",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "b6ede29c-3772-412c-8a78-539c1f4c62d2",
+      "device_name": "Feitian BioPass FIDO2 Plus (K26 / K27)",
+      "notes": "FEITIAN BioPass FIDO2 Plus (K26 / K27) covered by NIST #3979 (FIPS 140-2 L2) and #4422 (FEITIAN MFA Cryptographic Module, FIPS 140-2 L2)."
+    },
+    {
+      "nist_cert": "3979",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "42df17de-06ba-4177-a2bb-6701be1380d6",
+      "device_name": "Feitian BioPass FIDO2 Plus (K26 / K27 variant)",
+      "notes": "FEITIAN BioPass FIDO2 Plus (K26 / K27 variant) covered by NIST #3979 and #4422 (FIPS 140-2 Level 2)."
+    },
+    {
+      "nist_cert": "3979",
+      "additional_nist_certs": ["4422"],
+      "aaguid": "a02140b7-0cbd-42e1-a9b5-a39da2545114",
+      "device_name": "Feitian BioPass FIDO2 Plus Enterprise (K26 / K27)",
+      "notes": "FEITIAN BioPass FIDO2 Plus Enterprise (K26 / K27) covered by NIST #3979 and #4422 (FIPS 140-2 Level 2)."
+    },
+    {
+      "nist_cert": "4679",
+      "aaguid": "73402251-f2a8-4f03-873e-3cb6db604b03",
+      "vendor": "Hirsch / Identiv",
+      "device_name": "uTrust FIDO2 Security Key / Hirsch Gov Series",
+      "validation_scope": "platform_plus_in_process",
+      "in_process_match": {
+        "vendor": "hirsch",
+        "module_keyword": "utrust"
+      },
+      "notes": "Hirsch / Identiv uTrust FIDO2 & SecureKey GOV Series backed by Active FIPS 140-3 Level 3 / Physical Level 4 NXP JCOP 4.5 on P71D600 (#4679) plus live NIST CMVP FIPS 140-3 IUT 'HIRSCH uTrust FIDO Cryptographic Module'."
+    },
+    {
+      "nist_cert": "4679",
+      "aaguid": "817cdab8-0d51-4de1-a821-e25b88519cf3",
+      "vendor": "Swissbit",
+      "device_name": "Swissbit iShield Key 2 FIPS",
+      "validation_scope": "platform_plus_in_process",
+      "in_process_match": {
+        "vendor": "swissbit",
+        "module_keyword": "ishield"
+      },
+      "notes": "Swissbit iShield Key 2 FIPS backed by Active FIPS 140-3 Level 3 / Physical Level 4 (#4679) as documented by Swissbit/RSA plus live NIST CMVP FIPS 140-3 MIP 'iShield Key Module'."
+    },
+    {
+      "nist_cert": "4679",
+      "aaguid": "5eaff75a-dd43-451f-af9f-87c9eeae293e",
+      "vendor": "Swissbit",
+      "device_name": "Swissbit iShield Key 2 FIPS Enterprise",
+      "validation_scope": "platform_plus_in_process",
+      "in_process_match": {
+        "vendor": "swissbit",
+        "module_keyword": "ishield"
+      },
+      "notes": "Swissbit iShield Key 2 FIPS Enterprise backed by Active FIPS 140-3 Level 3 / Physical Level 4 (#4679) plus live NIST CMVP FIPS 140-3 MIP 'iShield Key Module'."
+    },
+    {
+      "nist_cert": "4517",
+      "aaguid": "ca4cff1b-5a81-4404-8194-59aabcf1660b",
+      "device_name": "IDPrime 3930 FIDO",
+      "notes": "Thales IDPrime 3930 FIDO validated under NIST #4517 (FIPS 140-2 Level 2, Physical Level 3; Historical via 2026-09-21 sunset)."
+    },
+    {
+      "nist_cert": "4517",
+      "aaguid": "050dd0bc-ff20-4265-8d5d-305c4b215192",
+      "device_name": "eToken Fusion FIPS",
+      "in_process_match": {
+        "vendor": "thales",
+        "module_keyword": "3930c"
+      },
+      "notes": "Thales SafeNet eToken Fusion FIPS paired with IDPrime 3930 FIDO (#4517, FIPS 140-2 Level 2) and tracked against Thales IDPrime930C/3930C FIPS 140-3 MIP."
+    },
+    {
+      "nist_cert": "4517",
+      "aaguid": "10c70715-2a9a-4de1-b0aa-3cff6d496d39",
+      "device_name": "eToken Fusion NFC FIPS",
+      "in_process_match": {
+        "vendor": "thales",
+        "module_keyword": "3930c"
+      },
+      "notes": "Thales SafeNet eToken Fusion NFC FIPS paired with IDPrime 3930 FIDO (#4517, FIPS 140-2 Level 2) and tracked against Thales IDPrime930C/3930C FIPS 140-3 MIP."
+    },
+    {
+      "nist_cert": "5532",
+      "additional_nist_certs": ["4517"],
+      "aaguid": "9152406a-de8e-46dd-8685-3875c067e486",
+      "device_name": "SafeNet eToken Fusion NFC 930C FIDO2.1",
+      "in_process_match": {
+        "vendor": "thales",
+        "module_keyword": "930c"
+      },
+      "notes": "Thales SafeNet eToken Fusion NFC 930C FIDO2.1 backed by Active FIPS 140-3 Level 2 (#5532, IDPrime PIV 4.0 FIDO on IDCore3230 Platform) with 930C/3930C FIDO2.1 MIP tracking."
     },
     {
       "nist_cert": "5390",
       "aaguid": "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed",
       "device_name": "HID Crescendo 4000 FIPS",
-      "notes": "NIST #5390 (HID Global - HID Applets v4.0 on NXP JCOP 4.5 P71D600, FIPS 140-3 Level 2) matched to HID Crescendo 4000 FIPS (FIDO2 L2)."
+      "notes": "NIST #5390 (HID Applets v4.0 on NXP JCOP 4.5 P71D600, Active FIPS 140-3 Level 2, Physical Level 4) matched to HID Crescendo 4000 FIPS."
     },
     {
       "nist_cert": "5028",
       "aaguid": "19bca99b-7c09-44fe-a969-8cba45764542",
       "device_name": "HID Crescendo Key V3 FIPS",
-      "notes": "NIST #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform, FIPS 140-3 Level 2) matched to HID Crescendo Key V3 FIPS (FIDO2 L2)."
+      "notes": "NIST #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform, Active FIPS 140-3 Level 2, Physical Level 3) matched to HID Crescendo Key V3 FIPS."
+    },
+    {
+      "nist_cert": "3882",
+      "additional_nist_certs": ["3854"],
+      "aaguid": "aeb6569c-f8fb-4950-ac60-24ca2bbe2e52",
+      "device_name": "HID Crescendo C2300",
+      "notes": "HID Crescendo C2300 smart card backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3882 FIPS 140-2 L3 / #3854 FIPS 140-2 L2; Historical via sunset)."
+    },
+    {
+      "nist_cert": "3854",
+      "additional_nist_certs": ["3882"],
+      "aaguid": "692db549-7ae5-44d5-a1e5-dd20a493b723",
+      "device_name": "HID Crescendo Key",
+      "notes": "HID Crescendo Key backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3854 FIPS 140-2 L2 / #3882 FIPS 140-2 L3; Historical via sunset)."
+    },
+    {
+      "nist_cert": "3854",
+      "additional_nist_certs": ["3882"],
+      "aaguid": "2d3bec26-15ee-4f5d-88b2-53622490270b",
+      "device_name": "HID Crescendo Key V2",
+      "notes": "HID Crescendo Key V2 backed by HID Global Applets v3.0 on NXP JCOP 3 SecID P60 CS (#3854 FIPS 140-2 L2 / #3882 FIPS 140-2 L3; Historical via sunset)."
+    },
+    {
+      "nist_cert": "5048",
+      "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
+      "device_name": "OneSpan DIGIPASS FX1-C",
+      "notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX1-C."
+    },
+    {
+      "nist_cert": "5048",
+      "aaguid": "30b5035e-d297-4ff2-010b-addc96ba6a98",
+      "device_name": "OneSpan DIGIPASS FX2-A",
+      "notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX2-A."
+    },
+    {
+      "nist_cert": "5048",
+      "aaguid": "30b5035e-d297-4ff7-010b-addc96ba6a98",
+      "device_name": "OneSpan DIGIPASS FX7-B",
+      "notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX7-B."
+    },
+    {
+      "nist_cert": "5048",
+      "aaguid": "30b5035e-d297-4ff7-030b-addc96ba6a98",
+      "device_name": "OneSpan DIGIPASS FX7-C",
+      "notes": "NIST #5048 (OneSpan DIGIPASS FX Crypto Module, Active FIPS 140-3 Level 3, Physical Level 4) matched to OneSpan DIGIPASS FX7-C."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "23485084-2d0d-49e1-9b7d-b1a63cd8c891",
+      "device_name": "IDEMIA Cosmo FIDO R2 USB-C FIPS E",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA Cosmo FIDO R2 USB-C FIPS E."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "82b0a720-127a-4788-b56d-d1d4b2d82eac",
+      "device_name": "ID-One Key",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Key."
+    },
+    {
+      "nist_cert": "5597",
+      "aaguid": "f2145e86-211e-4931-b874-e22bba7d01cc",
+      "device_name": "ID-One Key",
+      "notes": "NIST #5597 (IDEMIA ID-One PIV 243 & FIDO 213, Active FIPS 140-3 Level 2, Physical Level 3) matched to IDEMIA ID-One Key."
+    },
+    {
+      "nist_cert": "4680",
+      "additional_nist_certs": ["5255"],
+      "aaguid": "6999180d-630c-442d-b8f7-424b90a43fae",
+      "device_name": "Hyper FIDO Pro (CTAP2.1, CTAP2.0, U2F)",
+      "notes": "Hypersecu Hyper FIDO Pro matched to #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 L2) and Active FIPS 140-3 L3 #5255."
+    },
+    {
+      "nist_cert": "4680",
+      "aaguid": "9f77e279-a6e2-4d58-b700-31e5943c6a98",
+      "device_name": "Hyper FIDO Pro",
+      "notes": "Hypersecu Hyper FIDO Pro validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset)."
+    },
+    {
+      "nist_cert": "4680",
+      "aaguid": "23195a52-62d9-40fa-8ee5-23b173f4fb52",
+      "device_name": "Hyper FIDO Pro NFC",
+      "notes": "Hypersecu Hyper FIDO Pro NFC validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset)."
+    },
+    {
+      "nist_cert": "4680",
+      "aaguid": "d821a7d4-e97c-4cb6-bd82-4237731fd4be",
+      "device_name": "Hyper FIDO Bio Security Key",
+      "notes": "Hypersecu Hyper FIDO Bio Security Key validated under NIST #4680 (Hypersecu HYP2003 MFA Cryptographic Module, FIPS 140-2 Level 2; Historical via sunset)."
+    },
+    {
+      "nist_cert": "4045",
+      "aaguid": "95442b2e-f15e-4def-b270-efb106facb4e",
+      "device_name": "eWBM eFA310 FIDO2 Authenticator",
+      "notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical)."
+    },
+    {
+      "nist_cert": "4045",
+      "aaguid": "87dbc5a1-4c94-4dc8-8a47-97d800fd1f3c",
+      "device_name": "eWBM eFA320 FIDO2 Authenticator",
+      "notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical)."
+    },
+    {
+      "nist_cert": "4045",
+      "aaguid": "361a3082-0278-4583-a16f-72a527f973e4",
+      "device_name": "eWBM eFA500 FIDO2 Authenticator",
+      "notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical)."
+    },
+    {
+      "nist_cert": "4045",
+      "aaguid": "61250591-b2bc-4456-b719-0b17be90bb30",
+      "device_name": "eWBM eFPA FIDO2 Authenticator",
+      "notes": "eWBM / TrustKey authenticator backed by NIST #4045 (eWBM MS1201 Security Sub-system, FIPS 140-2 Level 2, Physical Level 3; Historical)."
+    },
+    {
+      "nist_cert": "5087",
+      "aaguid": "664d9f67-84a2-412a-9ff7-b4f7d8ee6d05",
+      "device_name": "OpenSK authenticator",
+      "notes": "NIST #5087 (Google OpenSK Cryptographic Module, Active FIPS 140-3 Overall Level 1 / Physical Level 3; excluded from Level 2+ trust bundle)."
+    },
+    {
+      "nist_cert": "4574",
+      "aaguid": "42b4fb4a-2866-43b2-9bf7-6c6669c2e5d3",
+      "device_name": "Google Titan Security Key v2",
+      "notes": "NIST #4574 (Google Titan Security Key Chip Boundary, FIPS 140-2 Overall Level 1 / Physical Level 3; excluded from Level 2+ trust bundle)."
     }
   ]
 }

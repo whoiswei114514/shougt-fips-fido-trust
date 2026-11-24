@@ -50,8 +50,16 @@ def validate_repo(repo_root: Path, *, now: datetime | None = None) -> list[str]:
             errors.append(f"Device lacks FIDO2+ version: {aaguid}")
         if not str(device.get("fido", {}).get("status", "")).startswith("FIDO_CERTIFIED"):
             errors.append(f"Non-certified FIDO status present in catalog: {aaguid}")
-        if str(device.get("nist", {}).get("status", "")).lower() != "active":
-            errors.append(f"Inactive NIST cert in catalog: {aaguid}")
+        nist = device.get("nist", {})
+        nist_status = str(nist.get("status", "")).strip().lower()
+        nist_rev = str(nist.get("fips_revision", "")).strip()
+        hist_reason = str(nist.get("historical_reason", "")).strip().lower()
+        is_allowed_nist = (
+            nist_status == "active"
+            or (nist_status == "historical" and nist_rev == "2" and "revoked" not in hist_reason)
+        )
+        if not is_allowed_nist or nist_status == "revoked" or "revoked" in hist_reason:
+            errors.append(f"Disallowed NIST cert status in catalog: {aaguid} ({nist.get('status')} / FIPS 140-{nist_rev})")
 
         for root in device.get("attestation_roots", []):
             cert_path = repo_root / root["cert_pem_path"]

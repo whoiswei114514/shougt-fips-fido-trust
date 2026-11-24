@@ -264,10 +264,22 @@ def _evaluate_status_reports(reports: list[dict]) -> tuple[bool, str, dict]:
     has_explicit_fips = any(
         bool(r.get("fipsRevision") or r.get("fipsPhysicalSecurityLevel")) for r in ordered
     )
+    all_descriptors = [
+        str(r.get("certificationDescriptor", "")).strip()
+        for r in ordered
+        if str(r.get("certificationDescriptor", "")).strip()
+    ]
+    status_urls = [
+        str(r.get("url", "")).strip()
+        for r in ordered
+        if str(r.get("url", "")).strip()
+    ]
     return True, "certified", {
         "highest_status": best.get("status", ""),
         "certificate_number": best.get("certificateNumber", ""),
         "certification_descriptor": best.get("certificationDescriptor", ""),
+        "all_certification_descriptors": all_descriptors,
+        "status_urls": status_urls,
         "effective_date": best.get("effectiveDate", ""),
         "fips_revision": next((r.get("fipsRevision") for r in reversed(ordered) if r.get("fipsRevision") is not None), None),
         "fips_physical_security_level": next((r.get("fipsPhysicalSecurityLevel") for r in reversed(ordered) if r.get("fipsPhysicalSecurityLevel") is not None), None),
@@ -304,7 +316,7 @@ def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[di
         hints = [str(h).lower() for h in ms.get("attachmentHint", []) if isinstance(h, str)]
         if not hints or ("external" not in hints and "internal" in hints):
             continue
-        if "external" not in hints and not any(h in hints for h in ("wired", "wireless", "nfc", "bluetooth")):
+        if "external" not in hints and not any(h in hints for h in ("wired", "wireless", "nfc", "bluetooth", "network")):
             continue
 
         raw_roots = [r for r in ms.get("attestationRootCertificates", []) if isinstance(r, str) and r.strip()]
@@ -315,9 +327,10 @@ def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[di
         ok, reason, status_info = _evaluate_status_reports(reports)
         description = str(ms.get("description") or "").strip()
         cert_descriptor = str(status_info.get("certification_descriptor") or "")
+        all_descriptors = " ".join(status_info.get("all_certification_descriptors", []))
         mentions_fips = bool(
             status_info.get("explicit_fips_report")
-            or re.search(r"\bfips\b", f"{description} {cert_descriptor}", re.I)
+            or re.search(r"\bfips\b", f"{description} {cert_descriptor} {all_descriptors}", re.I)
         )
 
         if not ok:
