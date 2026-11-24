@@ -1,1 +1,822 @@
-[]
+[
+  {
+    "id": "hid-crescendo-4000-fips-8eec9bf9-4a576571",
+    "root_pem": "certs/4a576571111816aa-hid-crescendo-4000-fips.pem",
+    "aaguids": [
+      "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 8eec9bf9-486c-46da-9a67-1fbb4f66b9ed, FIDO_CERTIFIED_L2, FIDO20020250609001)",
+    "certification_reference": "NIST CMVP #5390 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5390)",
+    "valid_until": "2031-07-09T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5390 (HID Applets v4.0 on NXP JCOP 4.5 P71D600)"
+      }
+    ]
+  },
+  {
+    "id": "hid-crescendo-key-v3-fips-19bca99b-2eab74db",
+    "root_pem": "certs/2eab74db14a0056f-hid-crescendo-key-v3-fips.pem",
+    "aaguids": [
+      "19bca99b-7c09-44fe-a969-8cba45764542"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 19bca99b-7c09-44fe-a969-8cba45764542, FIDO_CERTIFIED_L2, FIDO20020260715001)",
+    "certification_reference": "NIST CMVP #5028 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5028)",
+    "valid_until": "2030-06-17T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform)"
+      }
+    ]
+  },
+  {
+    "id": "onespan-digipass-fx1-c-30b5035e-ab0c31ff",
+    "root_pem": "certs/ab0c31ff852ae30e-onespan-digipass-fx1-c.pem",
+    "aaguids": [
+      "30b5035e-d297-4ff1-020b-addc96ba6a98"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level3",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 30b5035e-d297-4ff1-020b-addc96ba6a98, FIDO_CERTIFIED_L2, FIDO20020250826003)",
+    "certification_reference": "NIST CMVP #5048 (FIPS 140-3 Level 3, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048)",
+    "valid_until": "2029-03-10T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L3",
+        "reference": "NIST CMVP #5048 (DIGIPASS FX Crypto Module)"
+      }
+    ]
+  },
+  {
+    "id": "onespan-digipass-fx2-a-30b5035e-55ead7d7",
+    "root_pem": "certs/55ead7d79cdd2f8e-onespan-digipass-fx2-a.pem",
+    "aaguids": [
+      "30b5035e-d297-4ff2-010b-addc96ba6a98"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level3",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 30b5035e-d297-4ff2-010b-addc96ba6a98, FIDO_CERTIFIED_L2, FIDO20020250826002)",
+    "certification_reference": "NIST CMVP #5048 (FIPS 140-3 Level 3, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048)",
+    "valid_until": "2029-03-10T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L3",
+        "reference": "NIST CMVP #5048 (DIGIPASS FX Crypto Module)"
+      }
+    ]
+  },
+  {
+    "id": "onespan-digipass-fx2-a-30b5035e-abacb925",
+    "root_pem": "certs/abacb925dfcc30b1-onespan-digipass-fx2-a.pem",
+    "aaguids": [
+      "30b5035e-d297-4ff2-010b-addc96ba6a98"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level3",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 30b5035e-d297-4ff2-010b-addc96ba6a98, FIDO_CERTIFIED_L2, FIDO20020250826002)",
+    "certification_reference": "NIST CMVP #5048 (FIPS 140-3 Level 3, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048)",
+    "valid_until": "2029-03-10T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L3",
+        "reference": "NIST CMVP #5048 (DIGIPASS FX Crypto Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-57f7de54-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series.pem",
+    "aaguids": [
+      "57f7de54-c807-4eab-b1c6-1c9be7984e92"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 57f7de54-c807-4eab-b1c6-1c9be7984e92, FIDO_CERTIFIED_L2, FIDO20020241221003)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-enterprise-profile-905b4cb4-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-enterprise-profile.pem",
+    "aaguids": [
+      "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7, FIDO_CERTIFIED_L2, FIDO20020241221004)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-7b96457d-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning.pem",
+    "aaguids": [
+      "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 7b96457d-e3cd-432b-9ceb-c9fdd7ef7432, FIDO_CERTIFIED_L2, FIDO20020241221005)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-lightning-enterpr-3a662962-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning-enterpr.pem",
+    "aaguids": [
+      "3a662962-c6d4-4023-bebb-98ae92e78e20"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 3a662962-c6d4-4023-bebb-98ae92e78e20, FIDO_CERTIFIED_L2, FIDO20020241221006)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-fcc0118f-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc.pem",
+    "aaguids": [
+      "fcc0118f-cd45-435b-8da1-9782b2da0715"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID fcc0118f-cd45-435b-8da1-9782b2da0715, FIDO_CERTIFIED_L2, FIDO20020241221002)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-3c6fe819",
+    "root_pem": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-4698a1d3",
+    "root_pem": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-4eadda86",
+    "root_pem": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-4ebabc9c",
+    "root_pem": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-62760c6a",
+    "root_pem": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  },
+  {
+    "id": "yubikey-5-fips-series-with-nfc-enterprise-pr-79f3c8ba-d4cc3f45",
+    "root_pem": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+    "aaguids": [
+      "79f3c8ba-9e35-484b-8f47-53a5a0f5c630"
+    ],
+    "attachment": "cross-platform",
+    "assurance": "fips140-3-level2",
+    "metadata_reference": "FIDO Alliance MDS3 (AAGUID 79f3c8ba-9e35-484b-8f47-53a5a0f5c630, FIDO_CERTIFIED_L2, FIDO20020241221001)",
+    "certification_reference": "NIST CMVP #5291 (FIPS 140-3 Level 2, https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291)",
+    "valid_until": "2031-05-21T23:59:59Z",
+    "revoked_certificates": [],
+    "certifications": [
+      {
+        "standard": "FIPS 140-3",
+        "level": "L2",
+        "reference": "NIST CMVP #5291 (YubiKey 5 Cryptographic Module)"
+      }
+    ]
+  }
+]

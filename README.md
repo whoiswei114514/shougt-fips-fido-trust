@@ -28,7 +28,16 @@
 <!-- DEVICES_TABLE_START -->
 | 型号名称 | 厂商 | AAGUID | FIPS 证书 | FIDO2 版本 / 等级 | 有效期至 | 根证书 / 公钥数 |
 | --- | --- | --- | --- | --- | --- | --- |
-| （暂未匹配到设备） | - | - | - | - | - | - |
+| HID Crescendo 4000 FIPS | HID Global | `8eec9bf9-486c-46da-9a67-1fbb4f66b9ed` | [#5390](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5390) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1 / `FIDO_CERTIFIED_L2` | 2031-07-09 | 1 组 |
+| HID Crescendo Key V3 FIPS | HID Global | `19bca99b-7c09-44fe-a969-8cba45764542` | [#5028](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5028) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1 / `FIDO_CERTIFIED_L2` | 2030-06-17 | 1 组 |
+| OneSpan DIGIPASS FX1-C | OneSpan NV | `30b5035e-d297-4ff1-020b-addc96ba6a98` | [#5048](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048) (FIPS 140-3 L3) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2029-03-10 | 1 组 |
+| OneSpan DIGIPASS FX2-A | OneSpan NV | `30b5035e-d297-4ff2-010b-addc96ba6a98` | [#5048](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048) (FIPS 140-3 L3) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2029-03-10 | 2 组 |
+| YubiKey 5 FIPS Series | Yubico, Inc. | `57f7de54-c807-4eab-b1c6-1c9be7984e92` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
+| YubiKey 5 FIPS Series (Enterprise Profile) | Yubico, Inc. | `905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
+| YubiKey 5 FIPS Series with Lightning | Yubico, Inc. | `7b96457d-e3cd-432b-9ceb-c9fdd7ef7432` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
+| YubiKey 5 FIPS Series with Lightning (Enterprise Profile) | Yubico, Inc. | `3a662962-c6d4-4023-bebb-98ae92e78e20` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
+| YubiKey 5 FIPS Series with NFC | Yubico, Inc. | `fcc0118f-cd45-435b-8da1-9782b2da0715` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
+| YubiKey 5 FIPS Series with NFC (Enterprise Profile) | Yubico, Inc. | `79f3c8ba-9e35-484b-8f47-53a5a0f5c630` | [#5291](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291) (FIPS 140-3 L2) | FIDO_2_0, FIDO_2_1, FIDO_2_1_PRE / `FIDO_CERTIFIED_L2` | 2031-05-21 | 6 组 |
 <!-- DEVICES_TABLE_END -->
 
 ## 本地运行与自动化调度

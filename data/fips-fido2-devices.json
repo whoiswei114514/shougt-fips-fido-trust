@@ -2,6 +2,969 @@
   "schema_version": 1,
   "mds_blob_no": 303,
   "mds_next_update": "2026-12-01",
-  "device_count": 0,
-  "devices": []
+  "device_count": 10,
+  "devices": [
+    {
+      "aaguid": "8eec9bf9-486c-46da-9a67-1fbb4f66b9ed",
+      "name": "HID Crescendo 4000 FIPS",
+      "vendor": "HID Global",
+      "match_method": "curated",
+      "match_notes": "NIST #5390 (HID Global - HID Applets v4.0 on NXP JCOP 4.5 P71D600, FIPS 140-3 Level 2) matched to HID Crescendo 4000 FIPS (FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-07-09T23:59:59Z",
+      "nist": {
+        "cert_number": "5390",
+        "all_active_cert_numbers": [
+          "5390"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 4,
+        "status": "Active",
+        "validation_date": "2026-07-10",
+        "sunset_date": "2031-07-09",
+        "sunset_iso": "2031-07-09T23:59:59Z",
+        "module_name": "HID Applets v4.0 on NXP JCOP 4.5 P71D600",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5390",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5390.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "external",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250609001",
+        "certification_descriptor": "HID Crescendo 4000 FIPS",
+        "effective_date": "2025-06-09"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "4a576571111816aa6c300af1dc0c78c0101449d2fbf74082904f38f9b268b385",
+          "cert_pem_path": "certs/4a576571111816aa-hid-crescendo-4000-fips.pem",
+          "pubkey_sha256": "73d65ccec97911bf02420927899d4b505e17349f6b86f72c75ced439265b0c1f",
+          "pubkey_pem_path": "pubkeys/4a576571111816aa-hid-crescendo-4000-fips.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FIDO Attestation CA 7,OU=Authenticator Attestation,O=HID Global,C=US",
+          "issuer": "CN=FIDO Attestation Root CA 2,OU=Authenticator Attestation,O=HID Global,C=US",
+          "not_before": "2024-05-02T19:14:51Z",
+          "not_after": "2049-05-02T19:14:51Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEVYAEomE+hxhO5t97OixqSEhnLd+S\nSN6tzGDB/XrTxqkL1vb6hzuURNfTt906KnqIRL/KZ27HScacvUaQ00/1tA==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "19bca99b-7c09-44fe-a969-8cba45764542",
+      "name": "HID Crescendo Key V3 FIPS",
+      "vendor": "HID Global",
+      "match_method": "curated",
+      "match_notes": "NIST #5028 (HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform, FIPS 140-3 Level 2) matched to HID Crescendo Key V3 FIPS (FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2030-06-17T23:59:59Z",
+      "nist": {
+        "cert_number": "5028",
+        "all_active_cert_numbers": [
+          "5028"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2025-06-18",
+        "sunset_date": "2030-06-17",
+        "sunset_iso": "2030-06-17T23:59:59Z",
+        "module_name": "HID Global ActivID Applet 2.7.7 & 2.7.8 on Thales IDCore 3230 Platform",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5028",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5028.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020260715001",
+        "certification_descriptor": "HID Crescendo Key V3 FIPS",
+        "effective_date": "2026-07-15"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "2eab74db14a0056f996bc57ab470f8dec66900b9a9d35b982c9e9c6ac7edc80c",
+          "cert_pem_path": "certs/2eab74db14a0056f-hid-crescendo-key-v3-fips.pem",
+          "pubkey_sha256": "b68dfd9add217ef6c35956e7cd77a8a4c82a5499c961b9cf3f0d915d9533b592",
+          "pubkey_pem_path": "pubkeys/2eab74db14a0056f-hid-crescendo-key-v3-fips.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=FIDO Attestation CA 9,OU=Authenticator Attestation,O=HID Global,C=US",
+          "issuer": "CN=FIDO Attestation Root CA 2,OU=Authenticator Attestation,O=HID Global,C=US",
+          "not_before": "2024-10-30T18:16:42Z",
+          "not_after": "2049-10-30T18:16:42Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE9VAWw/uMsmBwuVzVHeNGaUe8iTmN\nlAHrnYNSYPVEYy3vKB5ZVnlyZYRvoHXD8+qklRQnvXbqqBY5PbbSldvZKA==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
+      "name": "OneSpan DIGIPASS FX1-C",
+      "vendor": "OneSpan NV",
+      "match_method": "curated",
+      "match_notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX1-C FIDO2 L2.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "5048",
+        "all_active_cert_numbers": [
+          "5048"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "validation_date": "2025-07-25",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "DIGIPASS FX Crypto Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5048.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250826003",
+        "certification_descriptor": "DIGIPASS FX1 FIPS",
+        "effective_date": "2025-08-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "ab0c31ff852ae30e1eb8307817aeb26fe745b7b20acdb6074e98877d9b6804b6",
+          "cert_pem_path": "certs/ab0c31ff852ae30e-onespan-digipass-fx1-c.pem",
+          "pubkey_sha256": "85a25b71b3674bf63770654297ef49d9114b808dd7c38f0b708921f078c0e1ec",
+          "pubkey_pem_path": "pubkeys/ab0c31ff852ae30e-onespan-digipass-fx1-c.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX1-C CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX1-C CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-09-01T12:34:11Z",
+          "not_after": "2055-09-02T12:34:11Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE7zLA0zozg1YjE/gnKqORDvC6nM/t\nauto2Mp4rFC1Hev2MjDPW9tzOUhqHybQa7TLtO8M/ABaAxFxpxxV/WS5fQ==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "30b5035e-d297-4ff2-010b-addc96ba6a98",
+      "name": "OneSpan DIGIPASS FX2-A",
+      "vendor": "OneSpan NV",
+      "match_method": "curated",
+      "match_notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX2FIPS FIDO2 L2.",
+      "assurance": "fips140-3-level3",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2029-03-10T23:59:59Z",
+      "nist": {
+        "cert_number": "5048",
+        "all_active_cert_numbers": [
+          "5048"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 3,
+        "physical_security_level": 4,
+        "status": "Active",
+        "validation_date": "2025-07-25",
+        "sunset_date": "2029-03-10",
+        "sunset_iso": "2029-03-10T23:59:59Z",
+        "module_name": "DIGIPASS FX Crypto Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5048",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5048.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc",
+          "bluetooth"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020250826002",
+        "certification_descriptor": "DIGIPASS FX2FIPS",
+        "effective_date": "2025-08-26"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "55ead7d79cdd2f8ee4a5e96eadb55605bb936e8b9ee90458fda80529b6aa46c3",
+          "cert_pem_path": "certs/55ead7d79cdd2f8e-onespan-digipass-fx2-a.pem",
+          "pubkey_sha256": "8f633a6722c8c8df3760d8a3f720536e26735e361452e0e633e0d110b9b17f3e",
+          "pubkey_pem_path": "pubkeys/55ead7d79cdd2f8e-onespan-digipass-fx2-a.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX2-A CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX2-A CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-09-01T12:43:41Z",
+          "not_after": "2055-09-02T12:43:41Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE65sryghJMOQ3SwWHojSpeUW3DdnV\n2cglHRR/DI85x12dfr+bJoCMq5kvZvdOgSUartGw1oPSO9KCUFuScX5INw==\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "abacb925dfcc30b1abc9a73e2058ce0b7c115c22d95eea5ce189c6da0a9f54d6",
+          "cert_pem_path": "certs/abacb925dfcc30b1-onespan-digipass-fx2-a.pem",
+          "pubkey_sha256": "16aae95b30a74cfcba63027895f9367d65ae1f77059360de8baaba1a0876cda1",
+          "pubkey_pem_path": "pubkeys/abacb925dfcc30b1-onespan-digipass-fx2-a.pub.pem",
+          "pubkey_algorithm": "ECDSA secp256r1",
+          "subject": "CN=OneSpan DIGIPASS FX2FIPS L2 CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "issuer": "CN=OneSpan DIGIPASS FX2FIPS L2 CA,OU=Authenticator Attestation,O=OneSpan,C=US",
+          "not_before": "2025-01-29T14:54:03Z",
+          "not_after": "2055-01-30T14:54:03Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEGn+Qx18Dp8ZePY/T5hh6jPfyCLf+\n4D5vwVWMIzHHr7jQy7Yss5xc6Ys+nLDZenPV3JOAVbpxZ68/5ifyrvOEDg==\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
+      "name": "YubiKey 5 FIPS Series",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221003, FIDO2 L2.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221003",
+        "certification_descriptor": "YubiKey 5 FIPS Series",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
+      "name": "YubiKey 5 FIPS Series (Enterprise Profile)",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221004, FIDO2 L2.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221004",
+        "certification_descriptor": "YubiKey 5 FIPS Series (Enterprise Profile)",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-enterprise-profile.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series-enterprise-profile.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
+      "name": "YubiKey 5 FIPS Series with Lightning",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221005, FIDO2 L2.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221005",
+        "certification_descriptor": "YubiKey 5 FIPS Series with Lightning",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
+      "name": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221006, FIDO2 L2.",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221006",
+        "certification_descriptor": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile)",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning-enterpr.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-lightning-enterpr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
+      "name": "YubiKey 5 FIPS Series with NFC",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 covers YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2, Physical Level 3); AAGUID verified in FIDO MDS3 (FIDO20020241221002, FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221002",
+        "certification_descriptor": "YubiKey 5 FIPS Series with NFC",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    },
+    {
+      "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
+      "name": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
+      "vendor": "Yubico, Inc.",
+      "match_method": "curated",
+      "match_notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO MDS3 Enterprise Profile variant (FIDO20020241221001, FIDO2 L2).",
+      "assurance": "fips140-3-level2",
+      "meets_shougt_high_assurance": true,
+      "valid_until": "2031-05-21T23:59:59Z",
+      "nist": {
+        "cert_number": "5291",
+        "all_active_cert_numbers": [
+          "5291"
+        ],
+        "standard": "FIPS 140-3",
+        "fips_revision": "3",
+        "overall_level": 2,
+        "physical_security_level": 3,
+        "status": "Active",
+        "validation_date": "2026-05-22",
+        "sunset_date": "2031-05-21",
+        "sunset_iso": "2031-05-21T23:59:59Z",
+        "module_name": "YubiKey 5 Cryptographic Module",
+        "module_type": "Hardware",
+        "detail_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5291",
+        "security_policy_pdf_url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf"
+      },
+      "fido": {
+        "protocol_family": "fido2",
+        "versions": [
+          "FIDO_2_0",
+          "FIDO_2_1",
+          "FIDO_2_1_PRE"
+        ],
+        "attachment_hints": [
+          "external",
+          "wired",
+          "wireless",
+          "nfc"
+        ],
+        "status": "FIDO_CERTIFIED_L2",
+        "certificate_number": "FIDO20020241221001",
+        "certification_descriptor": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
+        "effective_date": "2024-12-21"
+      },
+      "attestation_roots": [
+        {
+          "cert_sha256": "3c6fe819adbd80afe75dc90af7bba34c95b2b7ac64384816e033f63b7c93848b",
+          "cert_pem_path": "certs/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "e8cb1c7db5bce7e9e1347d7e252ba8297e76c5d4d4311f8e4cdc53373c0e574a",
+          "pubkey_pem_path": "pubkeys/3c6fe819adbd80af-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B2 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2025-08-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAu1Mevny9dyO9ZUC39SoM\nhLcR/DXrtF/ciM12tciy2EXAZ6MkrivVtCfEVM9X6ISTEnBP6uSYYov6ppv6O6Jh\n2NHmYm4w+JnS4VnCPU7mHAMfVI2MGTTMVOew0xUsG7sISIkIDUBmuk8YK9c5zic9\n+vFQGLIksdXO5iVFIgNG53cGXD4ZLZoAPiu0PEozxAqYIaI4gxKhOA3S8/W8mIWs\nu6ofyj4GvkFG6Z7kyF3107P7mwFHLrI3ENaPWMOFcTaGa0dw+/vVRwjRcEZBVsuu\nT/87ckSs0a5pkt3vZBlaYeT8pzSreV7mowcIM90L2iaATlP0nxmaE6nOyTbojFVl\n2wIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4698a1d3389c3ec60016c216250f1d0439922832d65142327436376dc2942b55",
+          "cert_pem_path": "certs/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "3b5059f4fe88fb6f265d95bf19e1757b3a831c61c30ed301658d4b61eabff7ac",
+          "pubkey_pem_path": "pubkeys/4698a1d3389c3ec6-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate A 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5ueeW1mPVlvrTmNKyFh5\nXYfmjWp6AmQhYexpN2Ga0Jj1MNIZEhuqmB0LT/n2ckt91RK74PgUKp5rpoDYX8Ra\n5MBGRC3onQXAvAuAIOJ6qoj1qc7LyNezXMWJSJyzSxXGWP/oDojemTk4oTuf7wWT\nG4/a4mgHKpYmJjRiT4E3DBmhAMjMxDDctp5uhKfqYz+WheoIttbf1EBbLidY9kY/\n8pzP0nUbfnnGpeTmKLcR5BWy/b779gNjr+SE2QpcOGzkvZ6cqUIpjmeUAGMrZmGk\nKVpf6TGM+s0o/EapFQzRCRqjX0ygNory2MF+pUrbTD2qYNCfOJfV9L6FTfxaUuFQ\nlQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4eadda86ff62cff987e111a07910d8554de42f71d5d6da7744610e09012dd319",
+          "cert_pem_path": "certs/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "13531bb68fbf4d19872077d8cf1344bd66c4e92269205f43a41b6de6135c5d04",
+          "pubkey_pem_path": "pubkeys/4eadda86ff62cff9-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation B 1",
+          "issuer": "CN=Yubico Attestation Intermediate B 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1jRZv2g+hGgqhDJY9omn\nPXW+tZODrNO2Y2PZWgpGfK8oZGqnNvzfDmXpgD3pRiRgENA/SKU7YM97rBapVHnM\nN9HN1wfxuH4vt0Ya9p7qFFNmGQWQKlcOzgdxySesN/wUKUnsd7f0l/jb8bVCbbPP\n1Zaas9e2CIr/HTkaOxB8a4MbXN/lBNRSJ7yXDKYrdN9068154kAA97amfsi19Fv6\ntWs1aIPOVGfa82dnbA+jjAf9Ynp2Fdkb6sxZP5roGhyDVR8jDqR26cbhtOlnOy9p\nwVjJHSal/4N46elJYCbLAlYe9OV/ZhfEXJ5dxMAJ1CVww0YnZWFlDjzG0/n9EE//\nyQIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "4ebabc9cbc964f722c985f3784d057e9ef5dcf454dcb4f767fccca58cf16a4e8",
+          "cert_pem_path": "certs/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "a7e69f1fa07c13da84e0de40ebae8a960ac146acbde4c1627dce1977b6c1f384",
+          "pubkey_pem_path": "pubkeys/4ebabc9cbc964f72-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico FIDO Attestation A 1",
+          "issuer": "CN=Yubico Attestation Intermediate A 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6xePeTTgFqfhNh21kqoP\n848nHIPJo+YIFQVSJpkiBO15mePdfbkOGClllewLgPTJ0hyuUDrA1Qic5Ev8v3MF\ntMQgwBUwajqDtQoCZvYwXoAdueFgl316KS6lU1ZKEc1g1zgYF07Vg3oB9Sq8mEdt\n7dXhI0w+YFEQok9XPtOHCCaCBN7xazYrT/Cyq/bBITulsIGxRmEhfnVtkzemoPAk\n9OZEUS+3T/q0bl47wXePXg5ep8SGaOfVW/EoNhA4tkDELDCALQ/gJ19a/fLw9JHw\njfniE7Vj4bM2O8ipffw0ovLC4hgcV6s7E2XEQwG8WFgG5G5gCSSBRo+o3pQGGwgu\nuwIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "62760c6a6ef91679f454c8902b80fd009825b3f25da90f1fbace2ec6586cd5a8",
+          "cert_pem_path": "certs/62760c6a6ef91679-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "1f43e2b88e964a5d03b8058bbaaced68199c9256200f1bb28eaab2f82a1e06f2",
+          "pubkey_pem_path": "pubkeys/62760c6a6ef91679-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Root 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxnr9PEzyshP4Rqg+8bzW\nie0w6j/aZDZEHAkdLRBlzFVo1e+XXYtSEFnkuaIFJwhl3VGfHWh3nzmH792EruES\nbskAAuQoq2zV87ncoY0tm6PPmHfAadyviHIoXQbvhv9Tcr2ETmYY0PrOphyEJEAd\n+tgxhEMXhgvRfgPmcZ3G+mkDLqeQSa1aYyfA7eLRMC5yytsTjzke8YzivRWmBV0m\nm+BCOJMkJMir4PfmHC1PxAMi/6ca+lzKLnBwh8KTPIKKYm6SFjLoqio0wpAR2k2J\nI69bIMxMy3VvAK8TOnD3W76axS3iuPR5+c72zRk7B3AxEOcfjGBSXlkvCus+R8LX\n/QIDAQAB\n-----END PUBLIC KEY-----\n"
+        },
+        {
+          "cert_sha256": "d4cc3f456fdaf4e7812a21aab1dfe9d8e27d24e2fd2d6f21c9940109f0daa754",
+          "cert_pem_path": "certs/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc-enterprise-pr.pem",
+          "pubkey_sha256": "0d7f3bf511c9dffab3867aee71fc100c8b01f59f5a7da7cf12203bd0fb4b334a",
+          "pubkey_pem_path": "pubkeys/d4cc3f456fdaf4e7-yubikey-5-fips-series-with-nfc-enterprise-pr.pub.pem",
+          "pubkey_algorithm": "RSA-2048",
+          "subject": "CN=Yubico Attestation Intermediate B 1",
+          "issuer": "CN=Yubico Attestation Root 1",
+          "not_before": "2024-12-01T00:00:00Z",
+          "not_after": "9999-12-31T23:59:59Z",
+          "pubkey_pem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyO15x/mbw8DAkFPDPGXl\nearHLm5b1WGmkbd2G2sZ/YKHS8ebMB9JV63YI4eYexaVYAoGGF+xOG5db281C3pq\nzFk/Dd1jBlHvEACWwXoqFe1vxPoU2T/9EiiVWt3sCgaOlC3jJ30GQ61TkQJPMEy6\ntr+S5Y+bzI+ybTqLSmvSe5x0vJC5s110mo9EsBD4eTgGVEzVeM7NW76EwEEFqy+P\nyfULirelghROZ1DYkUHBG1RfJpaitm8ds+qJFZbcg1SwsWG6VExC72NbrEdw0xj1\nKCApTpuHK6cJw0S1R742HjxgQf/6RMs8QP4HEnMY8Gh9WVMPW50mx8rqyqm02tSr\n4wIDAQAB\n-----END PUBLIC KEY-----\n"
+        }
+      ]
+    }
+  ]
 }
