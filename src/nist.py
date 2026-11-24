@@ -105,16 +105,12 @@ class _ActiveTableParser(HTMLParser):
 
 
 class _RowDivParser(HTMLParser):
-    """Extract label/value div pairs from Bootstrap `<div class="row">` elements cleanly."""
+    """Extract label/value div pairs even when Bootstrap `.row` containers are nested."""
 
     def __init__(self) -> None:
         super().__init__()
-        self._div_stack: list[tuple[str, int]] = []
-        self._row_depth: int | None = None
-        self._child_col = False
-        self._col_depth = 0
-        self._current_cols: list[str] = []
-        self._col_parts: list[str] = []
+        self._depth = 0
+        self._row_stack: list[dict] = []
         self.pairs: list[tuple[str, str]] = []
         self.pdf_links: list[str] = []
         self.title = ""
@@ -131,38 +127,40 @@ class _RowDivParser(HTMLParser):
             self._in_h1 = True
             self._h1_parts = []
         if tag == "div":
-            classes = (attr_map.get("class") or "").split()
-            depth = len(self._div_stack) + 1
-            self._div_stack.append((attr_map.get("class") or "", depth))
-            if self._row_depth is None and "row" in classes:
-                self._row_depth = depth
-                self._current_cols = []
-            elif self._row_depth is not None and not self._child_col and depth == self._row_depth + 1:
-                self._child_col = True
-                self._col_depth = depth
-                self._col_parts = []
-        elif self._child_col and tag in {"br", "p", "li"}:
-            self._col_parts.append(" ")
+            self._depth += 1
+            classes = set((attr_map.get("class") or "").split())
+            if "row" in classes:
+                self._row_stack.append({"depth": self._depth, "cols": [], "col_depth": None, "parts": []})
+            elif self._row_stack:
+                top = self._row_stack[-1]
+                if top["col_depth"] is None and self._depth == top["depth"] + 1:
+                    top["col_depth"] = self._depth
+                    top["parts"] = []
+        elif self._row_stack and self._row_stack[-1]["col_depth"] is not None and tag in {"br", "p", "li"}:
+            self._row_stack[-1]["parts"].append(" ")
 
     def handle_data(self, data: str) -> None:
         if self._in_h1:
             self._h1_parts.append(data)
-        if self._child_col:
-            self._col_parts.append(data)
+        for row in self._row_stack:
+            if row["col_depth"] is not None:
+                row["parts"].append(data)
 
     def handle_endtag(self, tag: str) -> None:
         if tag == "h1" and self._in_h1:
             self._in_h1 = False
             self.title = _clean_space("".join(self._h1_parts))
-        if tag == "div" and self._div_stack:
-            _, depth = self._div_stack.pop()
-            if self._child_col and depth == self._col_depth:
-                self._child_col = False
-                self._current_cols.append(_clean_space("".join(self._col_parts)))
-            elif self._row_depth is not None and depth == self._row_depth:
-                self._row_depth = None
-                if len(self._current_cols) == 2 and self._current_cols[0]:
-                    self.pairs.append((self._current_cols[0], self._current_cols[1]))
+        if tag == "div" and self._depth > 0:
+            if self._row_stack:
+                top = self._row_stack[-1]
+                if top["col_depth"] == self._depth:
+                    top["cols"].append(_clean_space("".join(top["parts"])))
+                    top["col_depth"] = None
+                elif top["depth"] == self._depth:
+                    finished = self._row_stack.pop()
+                    if len(finished["cols"]) == 2 and finished["cols"][0]:
+                        self.pairs.append((finished["cols"][0], finished["cols"][1]))
+            self._depth -= 1
 
 
 def parse_active_index(html: str) -> list[dict]:
@@ -339,7 +337,7 @@ def fetch_active_nist_candidates(
         cert_no = item["cert_number"]
         cached = cache.get(cert_no)
         fresh_cache = False
-        if cached and not force_refresh and cached.get("validation_date") == item["validation_date"]:
+        if cached and not force_refresh and cached.get("status") and cached.get("overall_level") and cached.get("validation_date") == item["validation_date"]:
             fetched_at_raw = cached.get("cached_at", "")
             try:
                 fetched_at = datetime.fromisoformat(fetched_at_raw.replace("Z", "+00:00"))

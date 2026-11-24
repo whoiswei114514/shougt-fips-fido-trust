@@ -4,31 +4,67 @@
       "nist_cert": "5291",
       "aaguid": "fcc0118f-cd45-435b-8da1-9782b2da0715",
       "device_name": "YubiKey 5 FIPS Series with NFC (FW 5.7+)",
-      "notes": "NIST #5291 covers YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2, Physical Level 3); AAGUID verified in FIDO MDS3 (FIDO2 L2)."
+      "notes": "NIST #5291 covers YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2, Physical Level 3); AAGUID verified in FIDO MDS3 (FIDO20020241221002, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
       "aaguid": "79f3c8ba-9e35-484b-8f47-53a5a0f5c630",
-      "device_name": "YubiKey 5 FIPS Series with NFC (Enterprise Profile)",
-      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO MDS3 Enterprise Profile variant."
+      "device_name": "YubiKey 5 FIPS Series with NFC (Enterprise Profile, FW 5.7+)",
+      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO MDS3 Enterprise Profile variant (FIDO20020241221001, FIDO2 L2)."
     },
     {
       "nist_cert": "5291",
+      "aaguid": "57f7de54-c807-4eab-b1c6-1c9be7984e92",
+      "device_name": "YubiKey 5 FIPS Series (USB-A/C, FW 5.7+)",
+      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221003, FIDO2 L2."
+    },
+    {
+      "nist_cert": "5291",
+      "aaguid": "905b4cb4-ed6f-4da9-92fc-45e0d4e9b5c7",
+      "device_name": "YubiKey 5 FIPS Series (Enterprise Profile, FW 5.7+)",
+      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221004, FIDO2 L2."
+    },
+    {
+      "nist_cert": "5291",
+      "aaguid": "7b96457d-e3cd-432b-9ceb-c9fdd7ef7432",
+      "device_name": "YubiKey 5 FIPS Series with Lightning (FW 5.7+)",
+      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221005, FIDO2 L2."
+    },
+    {
+      "nist_cert": "5291",
+      "aaguid": "3a662962-c6d4-4023-bebb-98ae92e78e20",
+      "device_name": "YubiKey 5 FIPS Series with Lightning (Enterprise Profile, FW 5.7+)",
+      "notes": "NIST #5291 YubiKey 5 Cryptographic Module (FIPS 140-3 Level 2); FIDO20020241221006, FIDO2 L2."
+    },
+    {
+      "nist_cert": "3929",
       "aaguid": "73bb0cd4-e502-49b8-9c6f-b59445bf720b",
-      "device_name": "YubiKey 5 FIPS Series",
-      "notes": "NIST #5291 / earlier YubiKey 5 FIPS wired AAGUID (FIDO2 L2)."
+      "device_name": "YubiKey 5 FIPS Series (FW 5.4 legacy)",
+      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
     },
     {
-      "nist_cert": "5291",
+      "nist_cert": "3929",
       "aaguid": "85203421-48f9-4355-9bc8-8a53846e5083",
-      "device_name": "YubiKey 5 FIPS Series with Lightning",
-      "notes": "NIST #5291 / YubiKey 5Ci FIPS Lightning AAGUID (FIDO2 L2)."
+      "device_name": "YubiKey 5 FIPS Series with Lightning (FW 5.4 legacy)",
+      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
+    },
+    {
+      "nist_cert": "3930",
+      "aaguid": "c1f9a0bc-1dd2-404a-b27f-8e29047a43fd",
+      "device_name": "YubiKey 5 FIPS Series with NFC (FW 5.4 legacy)",
+      "notes": "Legacy FIPS 140-2 5.4 series; excluded automatically once NIST FIPS 140-2 certificate leaves Active list."
     },
     {
       "nist_cert": "5048",
       "aaguid": "30b5035e-d297-4ff2-010b-addc96ba6a98",
       "device_name": "OneSpan DIGIPASS FX2-A",
       "notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX2FIPS FIDO2 L2."
+    },
+    {
+      "nist_cert": "5048",
+      "aaguid": "30b5035e-d297-4ff1-020b-addc96ba6a98",
+      "device_name": "OneSpan DIGIPASS FX1-C",
+      "notes": "NIST #5048 (OneSpan NV - DIGIPASS FX Crypto Module, FIPS 140-3 Level 3) matched to MDS3 DIGIPASS FX1-C FIDO2 L2."
     },
     {
       "nist_cert": "5390",

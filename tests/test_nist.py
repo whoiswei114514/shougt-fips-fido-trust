@@ -22,16 +22,19 @@ SAMPLE_INDEX_HTML = """
 """
 
 SAMPLE_DETAIL_HTML = """
-<h1>YubiKey 5 Cryptographic Module</h1>
-<div class="row"><div class="col-md-3">Standard</div><div class="col-md-9">FIPS 140-3</div></div>
-<div class="row"><div class="col-md-3">Status</div><div class="col-md-9">Active</div></div>
-<div class="row"><div class="col-md-3">Validation Date</div><div class="col-md-9">05/22/2026</div></div>
-<div class="row"><div class="col-md-3">Sunset Date</div><div class="col-md-9">5/21/2031</div></div>
-<div class="row"><div class="col-md-3">Overall Level</div><div class="col-md-9">2</div></div>
-<div class="row"><div class="col-md-3">Security Level Exceptions</div><div class="col-md-9">Physical security: Level 3</div></div>
-<div class="row"><div class="col-md-3">Module Type</div><div class="col-md-9">Hardware</div></div>
-<div class="row"><div class="col-md-3">Description</div><div class="col-md-9">Secure element token with FIDO2.</div></div>
-<a href="/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf">Security Policy</a>
+<div class="row">
+  <div class="col-md-8">
+    <h1>YubiKey 5 Cryptographic Module</h1>
+    <div class="row padrow"><div class="col-md-3"><span>Standard</span></div><div class="col-md-9">FIPS 140-3</div></div>
+    <div class="row padrow"><div class="col-md-3">Status</div><div class="col-md-9">Active</div></div>
+    <div class="row padrow"><div class="col-md-3"><span>Sunset Date</span></div><div class="col-md-9">5/21/2031</div></div>
+    <div class="row padrow"><div class="col-md-3"><span>Overall Level</span></div><div class="col-md-9">2</div></div>
+    <div class="row padrow"><div class="col-md-3"><span>Security Level Exceptions</span></div><div class="col-md-9"><ul><li>Physical security: Level 3</li></ul></div></div>
+    <div class="row padrow"><div class="col-md-3"><span>Module Type</span></div><div class="col-md-9">Hardware</div></div>
+    <div class="row padrow"><div class="col-md-3"><span>Description</span></div><div class="col-md-9">Secure element token with FIDO2.</div></div>
+    <a href="/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5291.pdf">Security Policy</a>
+  </div>
+</div>
 """
 
 
