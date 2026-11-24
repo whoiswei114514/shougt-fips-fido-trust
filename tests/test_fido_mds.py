@@ -196,14 +196,37 @@ class FidoMdsTests(unittest.TestCase):
                     },
                     "statusReports": [{"status": "FIDO_CERTIFIED_L1", "effectiveDate": "2023-01-01"}],
                 },
+                {
+                    "aaguid": "44444444-4444-4444-4444-444444444444",
+                    "metadataStatement": {
+                        "protocolFamily": "fido2",
+                        "description": "Malformed Root Consumer Key",
+                        "attachmentHint": ["external", "wired"],
+                        "authenticatorGetInfo": {"versions": ["FIDO_2_0"]},
+                        "attestationRootCertificates": [base64.b64encode(b"not-a-valid-der-cert").decode("ascii")],
+                    },
+                    "statusReports": [{"status": "FIDO_CERTIFIED_L1", "effectiveDate": "2023-01-01"}],
+                },
+                {
+                    "aaguid": "55555555-5555-5555-5555-555555555555",
+                    "metadataStatement": {
+                        "protocolFamily": "fido2",
+                        "description": "Malformed Root FIPS Key",
+                        "attachmentHint": ["external", "wired"],
+                        "authenticatorGetInfo": {"versions": ["FIDO_2_0"]},
+                        "attestationRootCertificates": [base64.b64encode(b"not-a-valid-der-cert").decode("ascii")],
+                    },
+                    "statusReports": [{"status": "FIDO_CERTIFIED_L2", "effectiveDate": "2023-01-01"}],
+                },
             ]
         }
 
         qualified, excluded_fips = extract_fido2_authenticators(payload)
         self.assertEqual([item["aaguid"] for item in qualified], ["fcc0118f-cd45-435b-8da1-9782b2da0715"])
-        self.assertEqual(len(excluded_fips), 2)
+        self.assertEqual(len(excluded_fips), 3)
         self.assertTrue(any(e["reason"] == "not_fido_certified:NOT_FIDO_CERTIFIED" for e in excluded_fips))
         self.assertTrue(any(e["reason"] == "disqualified_status:REVOKED" for e in excluded_fips))
+        self.assertTrue(any(e["reason"] == "invalid_attestation_root_certificate" for e in excluded_fips))
 
 
 if __name__ == "__main__":

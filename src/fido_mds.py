@@ -330,7 +330,25 @@ def extract_fido2_authenticators(mds_payload: dict) -> tuple[list[dict], list[di
                 })
             continue
 
-        parsed_roots = [_extract_root_cert_info(b64_der) for b64_der in raw_roots]
+        parsed_roots: list[dict] = []
+        root_parse_errors: list[str] = []
+        for b64_der in raw_roots:
+            try:
+                parsed_roots.append(_extract_root_cert_info(b64_der))
+            except (ValueError, TypeError) as exc:
+                root_parse_errors.append(str(exc))
+
+        if not parsed_roots:
+            if mentions_fips:
+                excluded_fips.append({
+                    "aaguid": raw_aaguid,
+                    "description": description,
+                    "reason": "invalid_attestation_root_certificate",
+                    "status_info": status_info,
+                    "errors": root_parse_errors,
+                })
+            continue
+
         qualified.append({
             "aaguid": raw_aaguid,
             "description": description,
