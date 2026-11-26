@@ -110,7 +110,7 @@
       "module_name": "IDPrime PIV 4.1 FIDO 2.1 on IDcore 3230",
       "vendor": "Thales",
       "standard": "FIPS 140-3",
-      "status_or_date": "Comment Resolution - Lab (11/13/2026)",
+      "status_or_date": "Comment Resolution - CMVP (11/24/2026)",
       "source_url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list"
     },
     {
